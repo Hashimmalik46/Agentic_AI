@@ -124,6 +124,7 @@ def test_db():
         return jsonify({"status": "error", "detail": str(e)}), 500
 
 
+port = int(os.getenv("PORT", 5000))
+
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=(port == 5000))
