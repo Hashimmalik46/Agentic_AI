@@ -9,5 +9,7 @@ requests
 beautifulsoup4 
 lxml 
 playwright
+apify-client
 #npx playwright install chromium
 #playwright install
+
