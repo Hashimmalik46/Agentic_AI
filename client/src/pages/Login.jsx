@@ -26,7 +26,7 @@ export default function Authentication() {
       setError(error.message);
       setIsLoading(false);
     } else {
-      navigate('/');
+      navigate('/profile');
     }
   };
 
