@@ -20,12 +20,12 @@ export default function WorkspaceProfile() {
   const initialProfileData = useMemo(() => {
     const state = location.state;
     return {
-      startupName: state?.startupName || 'Acme Corp',
-      niche: state?.niche || 'B2B SaaS',
-      targetRoles: state?.targetRoles || '',
-      location: state?.location || '',
-      companySize: state?.companySize || '',
-      keywords: state?.keywords || '',
+      startupName: state?.startupName ,
+      niche: state?.niche ,
+      targetRoles: state?.targetRoles ,
+      location: state?.location ,
+      companySize: state?.companySize ,
+      keywords: state?.keywords ,
       serviceType: 'website_development',
       maxResults: 10,
     };
@@ -35,6 +35,24 @@ export default function WorkspaceProfile() {
   const [isSaved, setIsSaved] = useState(false);
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState('');
+  const [fieldErrors, setFieldErrors] = useState({});
+
+  const REQUIRED_FIELDS = [
+    { key: 'niche',       label: 'Industry / Niche' },
+    { key: 'targetRoles', label: 'Target Roles' },
+    { key: 'location',    label: 'Geographic Focus' },
+    { key: 'companySize', label: 'Company Size' },
+    { key: 'keywords',    label: 'Keywords / Tech Stack' },
+  ];
+
+  const validate = () => {
+    const errors = {};
+    REQUIRED_FIELDS.forEach(({ key, label }) => {
+      if (!profileData[key]?.trim()) errors[key] = `${label} is required`;
+    });
+    setFieldErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
 
   // Load saved profile from DB on mount
   useEffect(() => {
@@ -69,6 +87,7 @@ export default function WorkspaceProfile() {
     const { name, value } = e.target;
     setProfileData(prev => ({ ...prev, [name]: value }));
     setIsSaved(false);
+    if (fieldErrors[name]) setFieldErrors(prev => ({ ...prev, [name]: '' }));
   };
 
   const handleUpdateProfile = async (e) => {
@@ -88,6 +107,10 @@ export default function WorkspaceProfile() {
   };
 
   const handleGenerateLeads = async () => {
+    if (!validate()) {
+      setError('Please fill in all required fields before generating leads.');
+      return;
+    }
     setIsGenerating(true);
     setError('');
     // Auto-save profile before running pipeline
@@ -180,16 +203,20 @@ export default function WorkspaceProfile() {
               <Building2 className="w-5 h-5 text-[#ba9eff]" /> Startup Identity
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="flex flex-col relative group">
+              <div className="flex flex-col relative">
                 <label className="text-[11px] uppercase tracking-[0.1em] text-[#ba9eff] mb-2 font-medium">Startup Name</label>
-                <input name="startupName" value={profileData.startupName} onChange={handleChange}
-                  className="bg-transparent border-b border-[#40485d]/50 py-2.5 text-lg outline-none transition-all duration-300 text-[#dee5ff] focus:border-[#699cff]" />
+                <div className="border-b border-[#40485d]/30 py-2.5 text-lg text-[#a3aac4] select-none cursor-default">
+                  {profileData.startupName || user?.user_metadata?.full_name || '—'}
+                </div>
+                <span className="text-[10px] text-[#a3aac4]/50 mt-1">Set during sign-up · not editable</span>
               </div>
               <div className="flex flex-col relative group">
-                <label className="text-[11px] uppercase tracking-[0.1em] text-[#ba9eff] mb-2 font-medium">Industry / Niche</label>
-                <input name="niche" value={profileData.niche} onChange={handleChange}
+                <label className={`text-[11px] uppercase tracking-[0.1em] mb-2 font-medium ${fieldErrors.niche ? 'text-red-400' : 'text-[#ba9eff]'}`}>
+                  Industry / Niche {fieldErrors.niche && <span className="normal-case">— {fieldErrors.niche}</span>}
+                </label>
+                <input name="niche" value={profileData.niche || ''} onChange={handleChange}
                   placeholder="e.g. restaurants, dental clinics"
-                  className="bg-transparent border-b border-[#40485d]/50 py-2.5 text-lg outline-none transition-all duration-300 text-[#dee5ff] focus:border-[#699cff]" />
+                  className={`bg-transparent border-b py-2.5 text-lg outline-none transition-all duration-300 text-[#dee5ff] focus:border-[#699cff] ${fieldErrors.niche ? 'border-red-400/70' : 'border-[#40485d]/50'}`} />
               </div>
             </div>
           </div>
@@ -201,25 +228,36 @@ export default function WorkspaceProfile() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="flex flex-col relative group">
-                <label className="text-[11px] uppercase tracking-[0.1em] text-[#ba9eff] mb-2 font-medium">Target Roles</label>
-                <input name="targetRoles" value={profileData.targetRoles} onChange={handleChange}
-                  className="bg-transparent border-b border-[#40485d]/50 py-2.5 text-lg outline-none transition-all duration-300 text-[#dee5ff] focus:border-[#699cff]" />
+                <label className={`text-[11px] uppercase tracking-[0.1em] mb-2 font-medium ${fieldErrors.targetRoles ? 'text-red-400' : 'text-[#ba9eff]'}`}>
+                  Target Roles {fieldErrors.targetRoles && <span className="normal-case">— {fieldErrors.targetRoles}</span>}
+                </label>
+                <input name="targetRoles" value={profileData.targetRoles || ''} onChange={handleChange}
+                  placeholder="e.g. founders, marketing managers"
+                  className={`bg-transparent border-b py-2.5 text-lg outline-none transition-all duration-300 text-[#dee5ff] focus:border-[#699cff] ${fieldErrors.targetRoles ? 'border-red-400/70' : 'border-[#40485d]/50'}`} />
               </div>
               <div className="flex flex-col relative group">
-                <label className="text-[11px] uppercase tracking-[0.1em] text-[#ba9eff] mb-2 font-medium">Geographic Focus</label>
-                <input name="location" value={profileData.location} onChange={handleChange}
+                <label className={`text-[11px] uppercase tracking-[0.1em] mb-2 font-medium ${fieldErrors.location ? 'text-red-400' : 'text-[#ba9eff]'}`}>
+                  Geographic Focus {fieldErrors.location && <span className="normal-case">— {fieldErrors.location}</span>}
+                </label>
+                <input name="location" value={profileData.location || ''} onChange={handleChange}
                   placeholder="e.g. Delhi, Mumbai"
-                  className="bg-transparent border-b border-[#40485d]/50 py-2.5 text-lg outline-none transition-all duration-300 text-[#dee5ff] focus:border-[#699cff]" />
+                  className={`bg-transparent border-b py-2.5 text-lg outline-none transition-all duration-300 text-[#dee5ff] focus:border-[#699cff] ${fieldErrors.location ? 'border-red-400/70' : 'border-[#40485d]/50'}`} />
               </div>
               <div className="flex flex-col relative group">
-                <label className="text-[11px] uppercase tracking-[0.1em] text-[#ba9eff] mb-2 font-medium">Company Size</label>
-                <input name="companySize" value={profileData.companySize} onChange={handleChange}
-                  className="bg-transparent border-b border-[#40485d]/50 py-2.5 text-lg outline-none transition-all duration-300 text-[#dee5ff] focus:border-[#699cff]" />
+                <label className={`text-[11px] uppercase tracking-[0.1em] mb-2 font-medium ${fieldErrors.companySize ? 'text-red-400' : 'text-[#ba9eff]'}`}>
+                  Company Size {fieldErrors.companySize && <span className="normal-case">— {fieldErrors.companySize}</span>}
+                </label>
+                <input name="companySize" value={profileData.companySize || ''} onChange={handleChange}
+                  placeholder="e.g. 1-10, 10-50"
+                  className={`bg-transparent border-b py-2.5 text-lg outline-none transition-all duration-300 text-[#dee5ff] focus:border-[#699cff] ${fieldErrors.companySize ? 'border-red-400/70' : 'border-[#40485d]/50'}`} />
               </div>
               <div className="flex flex-col relative group">
-                <label className="text-[11px] uppercase tracking-[0.1em] text-[#ba9eff] mb-2 font-medium">Keywords / Tech Stack</label>
-                <input name="keywords" value={profileData.keywords} onChange={handleChange}
-                  className="bg-transparent border-b border-[#40485d]/50 py-2.5 text-lg outline-none transition-all duration-300 text-[#dee5ff] focus:border-[#699cff]" />
+                <label className={`text-[11px] uppercase tracking-[0.1em] mb-2 font-medium ${fieldErrors.keywords ? 'text-red-400' : 'text-[#ba9eff]'}`}>
+                  Keywords / Tech Stack {fieldErrors.keywords && <span className="normal-case">— {fieldErrors.keywords}</span>}
+                </label>
+                <input name="keywords" value={profileData.keywords || ''} onChange={handleChange}
+                  placeholder="e.g. no website, low reviews"
+                  className={`bg-transparent border-b py-2.5 text-lg outline-none transition-all duration-300 text-[#dee5ff] focus:border-[#699cff] ${fieldErrors.keywords ? 'border-red-400/70' : 'border-[#40485d]/50'}`} />
               </div>
             </div>
           </div>
