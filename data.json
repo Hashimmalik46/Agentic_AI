@@ -1,455 +1,240 @@
 [
     {
-        "name": "EDUCADD LEARNING SOLUTIONS",
-        "phone": "+91 70514 90048",
-        "website": "http://www.educadd.co.in/",
-        "address": "Qureshi Manzil, opposite Wani Medicate, behind J And K Bank, Jawahar Nagar, Srinagar, Jammu and Kashmir 190008",
+        "name": "I. T. Solutions",
+        "phone": "+91 11 4152 3242",
+        "website": "http://www.itsolutioncp.com/",
+        "address": "Gate No. 8, A-6, 1st Floor, Inner Circle, Above Post office, near ICICI Bank, Bon Ton and Metro, Connaught Place, New Delhi, Delhi 110001, India",
         "rating": 4.9,
-        "review_count": 34,
-        "category": "Training center",
+        "review_count": 1406,
+        "category": "Computer repair service",
         "opening_hours": [
             {
                 "day": "Monday",
-                "hours": "10 AM to 5 PM"
+                "hours": "10 AM to 8 PM"
             },
             {
                 "day": "Tuesday",
-                "hours": "10 AM to 5 PM"
+                "hours": "10 AM to 8 PM"
             },
             {
                 "day": "Wednesday",
-                "hours": "10 AM to 5 PM"
+                "hours": "10 AM to 8 PM"
             },
             {
                 "day": "Thursday",
-                "hours": "10 AM to 5 PM"
+                "hours": "10 AM to 8 PM"
             },
             {
                 "day": "Friday",
-                "hours": "10 AM to 5 PM"
+                "hours": "10 AM to 8 PM"
             },
             {
                 "day": "Saturday",
-                "hours": "10 AM to 5 PM"
+                "hours": "10 AM to 8 PM"
             },
             {
                 "day": "Sunday",
                 "hours": "Closed"
             }
         ],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=EDUCADD%20LEARNING%20SOLUTIONS&query_place_id=ChIJ679S7yOP4TgROGLY-HBdv50",
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=I.%20T.%20Solutions&query_place_id=ChIJC3MN3zb9DDkR-JxtEG9cQg0",
         "reviews": [
             {
-                "author": "Irtika farooq",
+                "author": "Mohan",
                 "rating": 5,
-                "text": "Great experience & learned a lot\nthanks to Shamiya ma'am for being  such a motivational and understanding  teacher ❣️🥹",
-                "date": "2024-02-14T17:15:14.974Z"
+                "text": "Excellent service provided .",
+                "date": "2026-03-25T10:23:33.980Z"
             },
             {
-                "author": "ishrat jan",
+                "author": "Renu Sheoran",
                 "rating": 5,
-                "text": null,
-                "date": "2023-09-28T05:17:11.825Z"
+                "text": "Best printer goods repair",
+                "date": "2026-03-24T08:29:07.775Z"
             },
             {
-                "author": "wajid Rather",
+                "author": "Ravina Rai",
                 "rating": 5,
-                "text": "Great experience, special thanks to shamiya maam",
-                "date": "2023-09-21T05:59:01.688Z"
+                "text": "Excellent services",
+                "date": "2026-03-24T06:11:16.851Z"
             },
             {
-                "author": "sohail saa",
+                "author": "Abhishek Nirmalkar",
                 "rating": 5,
-                "text": "Thanks thanks a lot  shamiya mam and the institution edu CADD learning centre jawahar nagar Srinagar .I recommend all students to join you will find learning above your expectations.\nThanking you\nMam shamiya Mam",
-                "date": "2023-09-21T05:05:22.851Z"
+                "text": "Excelent",
+                "date": "2026-03-14T05:17:06.646Z"
             },
             {
-                "author": "Khaja Saleem",
+                "author": "TARUN GOYAL",
                 "rating": 5,
-                "text": "Great experience & We learned a lot\nSpecial thanks to Shamiya ma'am",
-                "date": "2023-09-21T04:55:33.891Z"
+                "text": "Excellent Service",
+                "date": "2026-03-13T11:13:29.716Z"
             },
             {
-                "author": "Nailah 39",
+                "author": "Devraj Paswan",
                 "rating": 5,
-                "text": "I was amazed with the faculty the teacher was too good 👍",
-                "date": "2023-08-16T07:58:11.644Z"
+                "text": "Very nice excellent service",
+                "date": "2026-03-13T08:01:27.212Z"
             },
             {
-                "author": "khubiya",
+                "author": "Monika Singhal",
                 "rating": 5,
-                "text": "Best autocad training institute",
-                "date": "2023-08-16T07:57:54.282Z"
+                "text": "EXCELLENT SERVICE",
+                "date": "2026-03-12T12:03:35.419Z"
             },
             {
-                "author": "unknown",
+                "author": "Tarun Gandhi",
                 "rating": 5,
-                "text": "The AutoCAD training program exceeded my expectations with its comprehensive curriculum  and hands on project, greatly enhancing my design skills.\nThe training was well structured and paced perfectly making it easy to grasp concepts even for someone new to CAD software.\nThanks to EduCADD  srinagar  skilled instructors who made the journey enjoyable and insightful.",
-                "date": "2023-08-11T09:47:42.782Z"
+                "text": "brilliant Tally services , Nice staff",
+                "date": "2026-03-11T06:20:42.040Z"
             },
             {
-                "author": "sabreena langoo",
+                "author": "Tarun Kumar",
                 "rating": 5,
-                "text": null,
-                "date": "2023-06-08T10:32:32.932Z"
+                "text": "Brilliant service 👍🏻",
+                "date": "2026-03-09T11:14:02.824Z"
             },
             {
-                "author": "Syed Sadiq",
+                "author": "Manish Kaushik",
                 "rating": 5,
-                "text": null,
-                "date": "2023-06-07T09:34:03.544Z"
+                "text": "Experience is good..",
+                "date": "2026-03-09T10:52:53.607Z"
             }
         ],
-        "emails": [
-            "contact@educadd.net",
-            "support@educadd.net",
-            "franchise@educadd.net"
-        ]
+        "emails": []
     },
     {
-        "name": "Education Zone",
-        "phone": null,
-        "website": "http://www.educationzone.in/",
-        "address": "3rd floor, city center plaza, Karan Nagar Gole Market Rd, opposite j&k bank, Karan Nagar, Srinagar, Jammu and Kashmir 190010",
-        "rating": 4.9,
-        "review_count": 146,
-        "category": "Educational consultant",
+        "name": "Indian Institute Of Technology Delhi (IIT Delhi)",
+        "phone": "+91 11 2659 7135",
+        "website": "https://home.iitd.ac.in/",
+        "address": "IIT Campus, Hauz Khas, New Delhi, Delhi 110016, India",
+        "rating": 4.6,
+        "review_count": 4770,
+        "category": "Institute of technology",
         "opening_hours": [
             {
                 "day": "Monday",
-                "hours": "9 AM to 6 PM"
+                "hours": "9 AM to 5:30 PM"
             },
             {
                 "day": "Tuesday",
-                "hours": "9 AM to 6 PM"
+                "hours": "9 AM to 5:30 PM"
             },
             {
                 "day": "Wednesday",
-                "hours": "9 AM to 6 PM"
+                "hours": "9 AM to 5:30 PM"
             },
             {
                 "day": "Thursday",
-                "hours": "9 AM to 6 PM"
+                "hours": "9 AM to 5:30 PM"
             },
             {
                 "day": "Friday",
-                "hours": "9 AM to 6 PM"
+                "hours": "9 AM to 5:30 PM"
             },
             {
                 "day": "Saturday",
-                "hours": "9 AM to 6 PM"
+                "hours": "Closed"
             },
             {
                 "day": "Sunday",
                 "hours": "Closed"
             }
         ],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Education%20Zone&query_place_id=ChIJ197dhsyP4TgRMiLjwy9xdlI",
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indian%20Institute%20Of%20Technology%20Delhi%20(IIT%20Delhi)&query_place_id=ChIJtV8FufYdDTkRwKMeayYLwYE",
         "reviews": [
             {
-                "author": "amir roohi",
+                "author": "Diya Sharma",
+                "rating": 5,
+                "text": "Nice College",
+                "date": "2026-03-27T09:09:09.811Z"
+            },
+            {
+                "author": "ritwik agarwal",
                 "rating": 5,
                 "text": null,
-                "date": "2026-01-08T16:10:20.897Z"
+                "date": "2026-03-26T17:10:09.141Z"
             },
             {
-                "author": "Sana Pakdaman",
-                "rating": 5,
-                "text": null,
-                "date": "2026-01-08T16:07:18.612Z"
-            },
-            {
-                "author": "Naheem Ali",
-                "rating": 5,
-                "text": null,
-                "date": "2026-01-08T16:05:12.958Z"
-            },
-            {
-                "author": "Muskan Nizam",
-                "rating": 5,
-                "text": null,
-                "date": "2025-10-12T16:24:44.404Z"
-            },
-            {
-                "author": "Zainab Ejaz",
-                "rating": 5,
-                "text": "One of the best consultancy, they guide you from beginning to settling down in the country you took admission. If you're looking forward for a consultancy i would like to recommend education zone.",
-                "date": "2025-08-03T12:59:48.914Z"
-            },
-            {
-                "author": "Altaf Wani",
-                "rating": 5,
-                "text": "Top Notch Service ❤️",
-                "date": "2025-08-01T15:37:14.355Z"
-            },
-            {
-                "author": "Aabid Guru",
-                "rating": 5,
-                "text": null,
-                "date": "2025-08-01T15:36:04.838Z"
-            },
-            {
-                "author": "Rather Aajaz 7211",
-                "rating": 5,
-                "text": null,
-                "date": "2025-08-01T15:29:15.314Z"
-            },
-            {
-                "author": "Rouf Dar",
-                "rating": 5,
-                "text": null,
-                "date": "2025-08-01T15:28:23.031Z"
-            },
-            {
-                "author": "Manzoor Ahmad",
-                "rating": 5,
-                "text": null,
-                "date": "2025-08-01T15:21:42.092Z"
-            }
-        ],
-        "emails": [
-            "info@educationzone.in",
-            "admin@educationzone.in",
-            "director@educationzone.in",
-            "info@example.com"
-        ]
-    },
-    {
-        "name": "Multichannel Educational Institute Pvt. Ltd.",
-        "phone": null,
-        "website": "http://www.meinstitute.org/",
-        "address": "Post Office Road, Lal Bazar, Srinagar, Jammu and Kashmir 190023",
-        "rating": 4.9,
-        "review_count": 73,
-        "category": "Vocational school",
-        "opening_hours": [
-            {
-                "day": "Monday",
-                "hours": "10 AM to 5 PM"
-            },
-            {
-                "day": "Tuesday",
-                "hours": "10 AM to 5 PM"
-            },
-            {
-                "day": "Wednesday",
-                "hours": "10 AM to 5 PM"
-            },
-            {
-                "day": "Thursday",
-                "hours": "10 AM to 5 PM"
-            },
-            {
-                "day": "Friday",
-                "hours": "10 AM to 5 PM"
-            },
-            {
-                "day": "Saturday",
-                "hours": "10 AM to 5 PM"
-            },
-            {
-                "day": "Sunday",
-                "hours": "Closed"
-            }
-        ],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Multichannel%20Educational%20Institute%20Pvt.%20Ltd.&query_place_id=ChIJT5msAAKF4TgRr-xMX5QjKJ8",
-        "reviews": [
-            {
-                "author": "Rutba Bashir",
-                "rating": 5,
-                "text": null,
-                "date": "2025-10-13T09:25:56.906Z"
-            },
-            {
-                "author": "Rifat Rifat",
-                "rating": 5,
-                "text": null,
-                "date": "2025-10-13T09:21:25.032Z"
-            },
-            {
-                "author": "Bhat Nighat",
-                "rating": 5,
-                "text": null,
-                "date": "2025-10-13T09:16:39.394Z"
-            },
-            {
-                "author": "Teddy Bear",
-                "rating": 5,
-                "text": null,
-                "date": "2025-10-13T09:12:29.636Z"
-            },
-            {
-                "author": "Insha Mushtaq",
-                "rating": 5,
-                "text": null,
-                "date": "2025-10-13T09:11:34.049Z"
-            },
-            {
-                "author": "Munazah Malla",
-                "rating": 5,
-                "text": null,
-                "date": "2025-10-13T09:11:31.767Z"
-            },
-            {
-                "author": "sheikh nadia",
-                "rating": 5,
-                "text": null,
-                "date": "2025-10-13T09:11:03.031Z"
-            },
-            {
-                "author": "Jaan Rubeena",
-                "rating": 5,
-                "text": null,
-                "date": "2025-10-13T09:08:57.300Z"
-            },
-            {
-                "author": "Tanu Malik",
-                "rating": 5,
-                "text": null,
-                "date": "2025-10-13T09:06:51.607Z"
-            },
-            {
-                "author": "Kounsar Jan",
-                "rating": 5,
-                "text": null,
-                "date": "2025-10-13T09:06:48.976Z"
-            }
-        ],
-        "emails": [
-            "hello@example.com"
-        ]
-    },
-    {
-        "name": "ILS Srinagar",
-        "phone": "+91 90864 41234",
-        "website": "https://ilssrinagar.com/",
-        "address": "Regal Lane, Residency Road, near Hotel Regal Palace, Srinagar, Jammu and Kashmir 190001",
-        "rating": 4.5,
-        "review_count": 106,
-        "category": "Software training institute",
-        "opening_hours": [
-            {
-                "day": "Monday",
-                "hours": "9:30 AM to 6 PM"
-            },
-            {
-                "day": "Tuesday",
-                "hours": "9:30 AM to 6 PM"
-            },
-            {
-                "day": "Wednesday",
-                "hours": "9:30 AM to 6 PM"
-            },
-            {
-                "day": "Thursday",
-                "hours": "9:30 AM to 6 PM"
-            },
-            {
-                "day": "Friday",
-                "hours": "9:30 AM to 6 PM"
-            },
-            {
-                "day": "Saturday",
-                "hours": "9:30 AM to 6 PM"
-            },
-            {
-                "day": "Sunday",
-                "hours": "Closed"
-            }
-        ],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ILS%20Srinagar&query_place_id=ChIJy5oDBdYExkgR54MknAJAtaA",
-        "reviews": [
-            {
-                "author": "16__Murtaza Bashir",
-                "rating": 2,
-                "text": "I was informed at the time of admission that  paid internship would be provided after the 3 month course. Now after completing the course, the requirement changed to a 6 month unpaid internship. This difference in commitment was disappointing. I hope the institute improves transparency and communication with students",
-                "date": "2026-02-06T11:36:27.165Z"
-            },
-            {
-                "author": "Adeeba Nawchoo",
-                "rating": 5,
-                "text": "My experience was extremely positive. The content was well-structured, easy to understand, and delivered in a very effective way. I genuinely enjoyed it and found it highly beneficial.",
-                "date": "2026-02-02T09:54:00.184Z"
-            },
-            {
-                "author": "Noorain Zehra",
-                "rating": 5,
-                "text": "It was a very good experience overall. The quality, clarity, and effort put into it were excellent. I really appreciated it.",
-                "date": "2026-02-02T09:52:28.156Z"
-            },
-            {
-                "author": "The NxT LvL",
-                "rating": 5,
-                "text": "This institution helped me to choose my job career (i.e. Data Science). They had a 15-days  data science bootcamp that covered all the necessary topics to kick start career in Data Science and the quality was top-grade. And in the end we had a Capstone project too that laid a strong foundation in the field.",
-                "date": "2026-01-16T05:04:10.795Z"
-            },
-            {
-                "author": "Aabid Najar",
-                "rating": 5,
-                "text": "If you’re passionate about programming, ILS is a great place to be. The institute provides a supportive environment that helps you build strong technical skills and grow with confidence!",
-                "date": "2025-12-31T20:17:24.204Z"
-            },
-            {
-                "author": "Wasiq Manzoor",
-                "rating": 5,
-                "text": null,
-                "date": "2025-12-31T07:16:15.840Z"
-            },
-            {
-                "author": "Numan Altaf",
-                "rating": 5,
-                "text": null,
-                "date": "2025-12-31T07:10:37.690Z"
-            },
-            {
-                "author": "Tuba Mushtaq",
-                "rating": 5,
-                "text": null,
-                "date": "2025-12-31T06:51:16.654Z"
-            },
-            {
-                "author": "Life Lessons",
+                "author": "Ashwani Sharma",
                 "rating": 4,
                 "text": null,
-                "date": "2025-12-31T05:59:06.306Z"
+                "date": "2026-03-25T05:59:53.488Z"
             },
             {
-                "author": "Sheikh Saqib",
+                "author": "AKSHAT",
                 "rating": 3,
+                "text": "Agar aloo pedh pe ugta toh vo seb ke keemat pe bikta ya aloo ke?  Kash mai koi na hota",
+                "date": "2026-03-24T08:33:11.050Z"
+            },
+            {
+                "author": "Divya Anand",
+                "rating": 5,
                 "text": null,
-                "date": "2025-12-31T05:56:38.209Z"
+                "date": "2026-03-21T08:17:33.958Z"
+            },
+            {
+                "author": "Anshu Kumawat",
+                "rating": 5,
+                "text": null,
+                "date": "2026-03-18T11:30:22.235Z"
+            },
+            {
+                "author": "Rohit Khaitan",
+                "rating": 5,
+                "text": "Your future is #Justhere",
+                "date": "2026-03-17T16:59:08.506Z"
+            },
+            {
+                "author": "Anisha Kalivarapu",
+                "rating": 5,
+                "text": null,
+                "date": "2026-03-17T09:00:03.870Z"
+            },
+            {
+                "author": "Abhishek Yadav",
+                "rating": 5,
+                "text": null,
+                "date": "2026-03-15T10:59:10.004Z"
+            },
+            {
+                "author": "manish gupta",
+                "rating": 5,
+                "text": null,
+                "date": "2026-03-15T09:56:49.948Z"
             }
         ],
-        "emails": []
+        "emails": [
+            "webadmincsc@iitd.ac.in"
+        ]
     },
     {
-        "name": "EDTECH EDU LLC",
-        "phone": "(541) 357-7647",
-        "website": "http://www.edtechedu.com/",
-        "address": "255 River Ave, Eugene, OR 97404",
+        "name": "Information Technology Department, Government of National Capital Territory of Delhi",
+        "phone": "+91 11 2339 2723",
+        "website": "https://it.delhi.gov.in/",
+        "address": "9th Level, B-Wing, Delhi Secretariat, IP Estate, Delhi, 110002, India",
         "rating": 5,
-        "review_count": 4,
-        "category": "Educational consultant",
+        "review_count": 2,
+        "category": "Government office",
         "opening_hours": [
             {
                 "day": "Monday",
-                "hours": "Closed"
+                "hours": "9:30 AM to 6 PM"
             },
             {
                 "day": "Tuesday",
-                "hours": "9 AM to 5 PM"
+                "hours": "9:30 AM to 6 PM"
             },
             {
                 "day": "Wednesday",
-                "hours": "9 AM to 5 PM"
+                "hours": "9:30 AM to 6 PM"
             },
             {
                 "day": "Thursday",
-                "hours": "9 AM to 5 PM"
+                "hours": "9:30 AM to 6 PM"
             },
             {
                 "day": "Friday",
-                "hours": "9 AM to 5 PM"
+                "hours": "9:30 AM to 6 PM"
             },
             {
                 "day": "Saturday",
@@ -460,33 +245,445 @@
                 "hours": "Closed"
             }
         ],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=EDTECH%20EDU%20LLC&query_place_id=ChIJGRtYu8MdwVQRJahFSMSz5KU",
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Information%20Technology%20Department%2C%20Government%20of%20National%20Capital%20Territory%20of%20Delhi&query_place_id=ChIJdZWk9Of9DDkR8xHrdkIZtrA",
         "reviews": [
             {
-                "author": "mark desilva",
+                "author": "Istkar Malik",
                 "rating": 5,
-                "text": "Working with Raven at EDTECH EDU LLC was an absolute pleasure. She undertook the challenge of recreating our website for Champion Equipment Finance in a remarkably short period, transforming a potentially stressful situation into an enjoyable and fun experience. Raven's expertise in web design and development is top-notch.\n\nThroughout the entire process, she collaborated with us every step of the way, ensuring we were involved in all major decisions and updates. Her dedication to educating us on new technologies was invaluable, leaving us more informed and confident about our online presence.\n\nRaven’s professionalism, creativity, and commitment to excellence exceeded our expectations. We are extremely pleased and feel blessed to have had her cross our paths. Thank you again, Raven, and we can't wait to start our next project with you on our company LMS!",
-                "date": "2024-06-24T14:25:32.872Z"
+                "text": null,
+                "date": "2025-06-25T08:02:24.297Z"
             },
             {
-                "author": "Sarah Sewalelot",
+                "author": "Harish Chauhan",
                 "rating": 5,
-                "text": "I’ve worked with Raven on a few different projects and she was nothing but the best! Her attention to detail and ability to interpret your through process is impressive.\nI’m a solo entrepreneur and am so blessed to have been referred  to this company.",
-                "date": "2024-01-06T02:56:02.213Z"
+                "text": null,
+                "date": "2025-03-16T05:28:08.302Z"
+            }
+        ],
+        "emails": [
+            "webupdate@nic.in"
+        ]
+    },
+    {
+        "name": "Indraprastha Institute of Information Technology Delhi",
+        "phone": null,
+        "website": "http://www.iiitd.ac.in/",
+        "address": "Okhla Industrial Estate, Phase III, near Govind Puri Metro Station, Shyam Nagar, Okhla Industrial Estate, New Delhi, Delhi 110020, India",
+        "rating": 4.5,
+        "review_count": 1073,
+        "category": "University",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "8 AM to 5 PM"
             },
             {
-                "author": "Chalice Savage",
-                "rating": 5,
-                "text": "Anything that Raven is involved with turns to gold because of her creative mind and open heart. I have utilized her services in the past and she was able capture me in a way I could not do for myself. She is a creative genius and I am trilled to continue my journey with her on my team.",
-                "date": "2018-12-04T04:21:28.340Z"
+                "day": "Tuesday",
+                "hours": "8 AM to 5 PM"
             },
             {
-                "author": "Julie Kristine Sonam",
+                "day": "Wednesday",
+                "hours": "8 AM to 5 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "8 AM to 5 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "8 AM to 5 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "8 AM to 5 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "Closed"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indraprastha%20Institute%20of%20Information%20Technology%20Delhi&query_place_id=ChIJHazaZOXjDDkRVsV7DjQuWCw",
+        "reviews": [
+            {
+                "author": "Pintu Kumar Kumar",
                 "rating": 5,
-                "text": "You will not find a more dedicated and caring professional to help you with your needs. I recommend this company! You won’t regret the investment.",
-                "date": "2018-11-29T03:10:47.648Z"
+                "text": null,
+                "date": "2026-03-28T02:18:28.347Z"
+            },
+            {
+                "author": "Rajeev",
+                "rating": 5,
+                "text": "Best college in Delhi ;)",
+                "date": "2026-03-23T19:36:05.438Z"
+            },
+            {
+                "author": "012 BTH1AGTI24Devendra Singh",
+                "rating": 5,
+                "text": null,
+                "date": "2026-03-08T15:34:30.472Z"
+            },
+            {
+                "author": "Grenco Engineers",
+                "rating": 5,
+                "text": null,
+                "date": "2026-03-05T19:30:51.534Z"
+            },
+            {
+                "author": "Priyanksu Mandal",
+                "rating": 4,
+                "text": null,
+                "date": "2026-02-26T07:56:23.757Z"
+            },
+            {
+                "author": "puneet m",
+                "rating": 4,
+                "text": null,
+                "date": "2026-02-22T16:30:02.885Z"
+            },
+            {
+                "author": "atma ram bansal",
+                "rating": 5,
+                "text": "Very academic and research oriented",
+                "date": "2026-02-20T02:08:48.336Z"
+            },
+            {
+                "author": "Arif Khan",
+                "rating": 5,
+                "text": null,
+                "date": "2026-02-19T11:33:34.539Z"
+            },
+            {
+                "author": "Vibhuti Khanduri",
+                "rating": 5,
+                "text": null,
+                "date": "2026-02-13T01:01:39.873Z"
+            },
+            {
+                "author": "Saurabh Verma 20EC52",
+                "rating": 5,
+                "text": null,
+                "date": "2026-02-08T05:32:50.664Z"
+            }
+        ],
+        "emails": [
+            "admin-placement@iiitd.ac.in",
+            "info@iiitd.ac.in",
+            "admin-btech@iiitd.ac.in",
+            "admin-phd@iiitd.ac.in",
+            "admin-mtech@iiitd.ac.in",
+            "admin-web@iiitd.ac.in",
+            "admin-academic@iiitd.ac.in"
+        ]
+    },
+    {
+        "name": "Department of Computer Science and Engineering",
+        "phone": "+91 11 2659 1291",
+        "website": "http://www.cse.iitd.ac.in/",
+        "address": "G5WR+27P, Block IIA,Bharti Building, Khosla IT Building, Indian Institute of Technology Delhi, Hauz Khas, New Delhi, Delhi 110016, India",
+        "rating": 4.7,
+        "review_count": 59,
+        "category": "Academic department",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "9 AM to 10 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Department%20of%20Computer%20Science%20and%20Engineering&query_place_id=ChIJa4_srvYdDTkR67Zwa9yGaA0",
+        "reviews": [
+            {
+                "author": "Nikhil Gupta",
+                "rating": 5,
+                "text": null,
+                "date": "2025-06-11T08:17:41.284Z"
+            },
+            {
+                "author": "Anitha Nagraja",
+                "rating": 5,
+                "text": null,
+                "date": "2025-03-22T13:47:48.278Z"
+            },
+            {
+                "author": "Mridul Gupta",
+                "rating": 5,
+                "text": null,
+                "date": "2023-02-22T11:16:15.607Z"
+            },
+            {
+                "author": "Sushant Gaurav",
+                "rating": 4,
+                "text": null,
+                "date": "2023-02-22T11:01:13.134Z"
+            },
+            {
+                "author": "Ramya Murthy Hebbalaguppe",
+                "rating": 4,
+                "text": null,
+                "date": "2023-02-17T08:56:57.391Z"
+            },
+            {
+                "author": "Sohail Khan",
+                "rating": 3,
+                "text": null,
+                "date": "2023-02-14T18:16:08.874Z"
+            },
+            {
+                "author": "Vijay Parmar",
+                "rating": 5,
+                "text": null,
+                "date": "2023-01-16T03:19:44.608Z"
+            },
+            {
+                "author": "Mrinmoy Halder",
+                "rating": 5,
+                "text": "Awesome",
+                "date": "2022-08-31T19:00:05.211Z"
+            },
+            {
+                "author": "Ayush Prasad",
+                "rating": 5,
+                "text": null,
+                "date": "2022-08-22T12:01:12.986Z"
+            },
+            {
+                "author": "Ranjeeta Shrivastava",
+                "rating": 5,
+                "text": "Best place",
+                "date": "2022-05-05T12:19:32.786Z"
             }
         ],
         "emails": []
+    },
+    {
+        "name": "NIELIT Delhi Centre Inderlok, Janakpuri and Karkardooma",
+        "phone": "+91 11 2364 4849",
+        "website": "https://www.nielit.gov.in/delhi/index.php",
+        "address": "2nd Floor, Metro Station Inderlok, Parsvnath Metro Mall, Inderlok, New Delhi, Delhi, 110035, India",
+        "rating": 4.1,
+        "review_count": 474,
+        "category": "Education center",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "9 AM to 5:30 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "9 AM to 5:30 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "9 AM to 5:30 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "9 AM to 5:30 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "9 AM to 5:30 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "Closed"
+            },
+            {
+                "day": "Sunday",
+                "hours": "Closed"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=NIELIT%20Delhi%20Centre%20Inderlok%2C%20Janakpuri%20and%20Karkardooma&query_place_id=ChIJD6vqdF0CDTkRqhNG2321uHo",
+        "reviews": [
+            {
+                "author": "Himanshu Paliwal",
+                "rating": 5,
+                "text": null,
+                "date": "2026-03-13T21:47:52.677Z"
+            },
+            {
+                "author": "Diya Daima",
+                "rating": 5,
+                "text": "All facilities and staff is very helpful and nice. Here's infrastructure is also well managed",
+                "date": "2026-03-13T10:21:31.929Z"
+            },
+            {
+                "author": "Kanishka Saini",
+                "rating": 5,
+                "text": "Teachers are so polite.. infrastructure is also good... Everything is well managed",
+                "date": "2026-03-13T10:20:51.966Z"
+            },
+            {
+                "author": "saurabh 123456",
+                "rating": 4,
+                "text": "I have done the course of certified computer application accounting and publishing assistant from nielit delhi. Kajol mam taught us accounting and tally and she taught every concept deeply, Priya mam taught us publishing which was new but I got to learn a lot and ritesh sir taught us information technology tools who gave us insights about excel.\nCons\nMore time needs to be given to each candidate.Teacher should devote more time to each candidate.",
+                "date": "2026-03-03T06:57:44.372Z"
+            },
+            {
+                "author": "Sahil Rajput",
+                "rating": 1,
+                "text": "Worst centre ever i seen , teachers never come on time , total wastage of money and time , kindly think about for taking admission , explore another centre for course and learning.",
+                "date": "2026-02-25T17:04:16.267Z"
+            },
+            {
+                "author": "Suman Yadav",
+                "rating": 5,
+                "text": null,
+                "date": "2026-02-13T04:59:53.499Z"
+            },
+            {
+                "author": "Dr ASHOK KUMAR",
+                "rating": 4,
+                "text": null,
+                "date": "2026-01-03T10:55:11.745Z"
+            },
+            {
+                "author": "Dewang /See bike number.",
+                "rating": 5,
+                "text": null,
+                "date": "2025-12-25T12:07:30.747Z"
+            },
+            {
+                "author": "Yachika",
+                "rating": 5,
+                "text": null,
+                "date": "2025-12-23T15:29:27.477Z"
+            },
+            {
+                "author": "Mohit Dhanwaria",
+                "rating": 5,
+                "text": null,
+                "date": "2025-12-20T08:22:20.881Z"
+            }
+        ],
+        "emails": []
+    },
+    {
+        "name": "Indian Technocrat Limited",
+        "phone": "+91 11 4953 1100",
+        "website": "http://www.itl.net.in/",
+        "address": "SG Shopping Mall, Community Center, 301-301A, Rohini Sector 9, Sector 9, Rohini, Delhi, 110085, India",
+        "rating": 4.5,
+        "review_count": 25,
+        "category": "Engineering consultant",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "9:30 AM to 6:15 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "9 AM to 6 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "9 AM to 6 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "9 AM to 6 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "9 AM to 6 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "Closed"
+            },
+            {
+                "day": "Sunday",
+                "hours": "Closed"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indian%20Technocrat%20Limited&query_place_id=ChIJr2x2ttMdDTkRHAITAJ2ZJOI",
+        "reviews": [
+            {
+                "author": "Sanjeev Kulshrestha",
+                "rating": 5,
+                "text": null,
+                "date": "2023-05-15T11:40:01.368Z"
+            },
+            {
+                "author": "Abhishek Kashyap",
+                "rating": 3,
+                "text": null,
+                "date": "2023-04-29T16:29:09.275Z"
+            },
+            {
+                "author": "Sandeep Pandey",
+                "rating": 5,
+                "text": null,
+                "date": "2023-02-10T13:19:06.965Z"
+            },
+            {
+                "author": "Pankaj Haldar",
+                "rating": 5,
+                "text": null,
+                "date": "2023-01-27T10:19:56.429Z"
+            },
+            {
+                "author": "Parvesh Kumar",
+                "rating": 1,
+                "text": null,
+                "date": "2022-09-16T15:09:35.767Z"
+            },
+            {
+                "author": "chinmaya kumar Mallick",
+                "rating": 4,
+                "text": null,
+                "date": "2021-01-14T10:46:15.632Z"
+            },
+            {
+                "author": "Kumar Alok",
+                "rating": 5,
+                "text": null,
+                "date": "2020-01-12T10:55:18.955Z"
+            },
+            {
+                "author": "Rakesh Kumar Boro",
+                "rating": 4,
+                "text": null,
+                "date": "2019-10-23T05:55:03.034Z"
+            },
+            {
+                "author": "Epfo solution (Ashish Agrawal)",
+                "rating": 5,
+                "text": "Amazing service helps fully company",
+                "date": "2019-09-29T13:20:15.574Z"
+            },
+            {
+                "author": "amir khan",
+                "rating": 5,
+                "text": "Vist for IBM server service",
+                "date": "2019-09-27T06:44:57.929Z"
+            }
+        ],
+        "emails": [
+            "info@itl.net.in"
+        ]
     }
 ]

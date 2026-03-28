@@ -1,32 +1,27 @@
 {
     "meta": {
-        "niche": "EdTech in Srinagar",
+        "niche": "IT in delhi",
         "service": "Website Development",
         "parsed": {
-            "industry": "EdTech",
-            "location": "Srinagar"
+            "industry": "IT",
+            "location": "delhi"
         },
-        "total_leads": 4,
+        "total_leads": 6,
         "high": 0,
         "medium": 3,
-        "low": 1
+        "low": 3
     },
     "leads": [
         {
-            "name": "Education Zone",
-            "phone": null,
-            "emails": [
-                "info@educationzone.in",
-                "admin@educationzone.in",
-                "director@educationzone.in",
-                "info@example.com"
-            ],
-            "category": "Educational consultant",
-            "address": "3rd floor, city center plaza, Karan Nagar Gole Market Rd, opposite j&k bank, Karan Nagar, Srinagar, Jammu and Kashmir 190010",
+            "name": "I. T. Solutions",
+            "phone": "+91 11 4152 3242",
+            "emails": [],
+            "category": "Computer repair service",
+            "address": "Gate No. 8, A-6, 1st Floor, Inner Circle, Above Post office, near ICICI Bank, Bon Ton and Metro, Connaught Place, New Delhi, Delhi 110001, India",
             "rating": 4.9,
-            "review_count": 146,
-            "website": "http://www.educationzone.in/",
-            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Education%20Zone&query_place_id=ChIJ197dhsyP4TgRMiLjwy9xdlI",
+            "review_count": 1406,
+            "website": "http://www.itsolutioncp.com/",
+            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=I.%20T.%20Solutions&query_place_id=ChIJC3MN3zb9DDkR-JxtEG9cQg0",
             "negative_reviews": [],
             "website_flaws": [],
             "website_improvements": [],
@@ -39,49 +34,49 @@
             },
             "priority": "MEDIUM",
             "why_approach": "The business has a website, but it's not available or not scraped, indicating a potential issue with their online presence that needs to be addressed",
-            "why_not": "The business has a high rating and no negative reviews, suggesting a strong reputation, but the website issue presents an opportunity for improvement"
+            "why_not": "The business has a high rating and no negative reviews, suggesting a strong reputation, but the website issue still presents an opportunity for improvement"
         },
         {
-            "name": "Multichannel Educational Institute Pvt. Ltd.",
-            "phone": null,
+            "name": "Indian Technocrat Limited",
+            "phone": "+91 11 4953 1100",
             "emails": [
-                "hello@example.com"
+                "info@itl.net.in"
             ],
-            "category": "Vocational school",
-            "address": "Post Office Road, Lal Bazar, Srinagar, Jammu and Kashmir 190023",
-            "rating": 4.9,
-            "review_count": 73,
-            "website": "http://www.meinstitute.org/",
-            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Multichannel%20Educational%20Institute%20Pvt.%20Ltd.&query_place_id=ChIJT5msAAKF4TgRr-xMX5QjKJ8",
+            "category": "Engineering consultant",
+            "address": "SG Shopping Mall, Community Center, 301-301A, Rohini Sector 9, Sector 9, Rohini, Delhi, 110085, India",
+            "rating": 4.5,
+            "review_count": 25,
+            "website": "http://www.itl.net.in/",
+            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indian%20Technocrat%20Limited&query_place_id=ChIJr2x2ttMdDTkRHAITAJ2ZJOI",
             "negative_reviews": [],
             "website_flaws": [],
             "website_improvements": [],
             "signal_matches": [],
             "scores": {
-                "llm_score": 72,
+                "llm_score": 85,
                 "website_gap": 50,
                 "signals_score": 0,
-                "final_score": 51
+                "final_score": 58
             },
             "priority": "MEDIUM",
-            "why_approach": "The website is not available or not scraped, indicating potential issues with their online presence that need to be addressed",
-            "why_not": "The business has a high rating and no negative reviews, suggesting a strong reputation and potentially lower motivation to change their current setup"
+            "why_approach": "The business has a website, but it's not available or not scraped, indicating a potential issue with their online presence that needs to be addressed",
+            "why_not": "The business has a high rating and no negative reviews, suggesting a strong reputation, but the website issue still presents an opportunity for improvement"
         },
         {
-            "name": "ILS Srinagar",
-            "phone": "+91 90864 41234",
+            "name": "NIELIT Delhi Centre Inderlok, Janakpuri and Karkardooma",
+            "phone": "+91 11 2364 4849",
             "emails": [],
-            "category": "Software training institute",
-            "address": "Regal Lane, Residency Road, near Hotel Regal Palace, Srinagar, Jammu and Kashmir 190001",
-            "rating": 4.5,
-            "review_count": 106,
-            "website": "https://ilssrinagar.com/",
-            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ILS%20Srinagar&query_place_id=ChIJy5oDBdYExkgR54MknAJAtaA",
+            "category": "Education center",
+            "address": "2nd Floor, Metro Station Inderlok, Parsvnath Metro Mall, Inderlok, New Delhi, Delhi, 110035, India",
+            "rating": 4.1,
+            "review_count": 474,
+            "website": "https://www.nielit.gov.in/delhi/index.php",
+            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=NIELIT%20Delhi%20Centre%20Inderlok%2C%20Janakpuri%20and%20Karkardooma&query_place_id=ChIJD6vqdF0CDTkRqhNG2321uHo",
             "negative_reviews": [
                 {
-                    "author": "16__Murtaza Bashir",
-                    "rating": 2,
-                    "text": "I was informed at the time of admission that  paid internship would be provided after the 3 month course. Now after completing the course, the requirement changed to a 6 month unpaid internship. This difference in commitment was disappointing. I hope the institute improves transparency and communication with students"
+                    "author": "Sahil Rajput",
+                    "rating": 1,
+                    "text": "Worst centre ever i seen , teachers never come on time , total wastage of money and time , kindly think about for taking admission , explore another centre for course and learning."
                 }
             ],
             "website_flaws": [],
@@ -94,23 +89,83 @@
                 "final_score": 51
             },
             "priority": "MEDIUM",
-            "why_approach": "The business has a website, but it's not available or not scraped, indicating potential website flaws that need to be addressed",
-            "why_not": "The business already has a website and a high rating, which might indicate a lower need for website development services"
+            "why_approach": "The business has a website, but it's not available or not scraped, and negative customer feedback indicates potential issues with their overall online presence and customer experience",
+            "why_not": "The business already has a website and a relatively high rating, which might indicate a lower need for website development services"
         },
         {
-            "name": "EDUCADD LEARNING SOLUTIONS",
-            "phone": "+91 70514 90048",
+            "name": "Indian Institute Of Technology Delhi (IIT Delhi)",
+            "phone": "+91 11 2659 7135",
             "emails": [
-                "contact@educadd.net",
-                "support@educadd.net",
-                "franchise@educadd.net"
+                "webadmincsc@iitd.ac.in"
             ],
-            "category": "Training center",
-            "address": "Qureshi Manzil, opposite Wani Medicate, behind J And K Bank, Jawahar Nagar, Srinagar, Jammu and Kashmir 190008",
-            "rating": 4.9,
-            "review_count": 34,
-            "website": "http://www.educadd.co.in/",
-            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=EDUCADD%20LEARNING%20SOLUTIONS&query_place_id=ChIJ679S7yOP4TgROGLY-HBdv50",
+            "category": "Institute of technology",
+            "address": "IIT Campus, Hauz Khas, New Delhi, Delhi 110016, India",
+            "rating": 4.6,
+            "review_count": 4770,
+            "website": "https://home.iitd.ac.in/",
+            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indian%20Institute%20Of%20Technology%20Delhi%20(IIT%20Delhi)&query_place_id=ChIJtV8FufYdDTkRwKMeayYLwYE",
+            "negative_reviews": [
+                {
+                    "author": "AKSHAT",
+                    "rating": 3,
+                    "text": "Agar aloo pedh pe ugta toh vo seb ke keemat pe bikta ya aloo ke?  Kash mai koi na hota"
+                }
+            ],
+            "website_flaws": [],
+            "website_improvements": [],
+            "signal_matches": [],
+            "scores": {
+                "llm_score": 40,
+                "website_gap": 50,
+                "signals_score": 0,
+                "final_score": 35
+            },
+            "priority": "LOW",
+            "why_approach": "their website is not available or not scraped, indicating potential issues with online presence",
+            "why_not": "the business has a strong overall rating and existing website, suggesting a lower need for services"
+        },
+        {
+            "name": "Indraprastha Institute of Information Technology Delhi",
+            "phone": null,
+            "emails": [
+                "admin-placement@iiitd.ac.in",
+                "info@iiitd.ac.in",
+                "admin-btech@iiitd.ac.in",
+                "admin-phd@iiitd.ac.in",
+                "admin-mtech@iiitd.ac.in",
+                "admin-web@iiitd.ac.in",
+                "admin-academic@iiitd.ac.in"
+            ],
+            "category": "University",
+            "address": "Okhla Industrial Estate, Phase III, near Govind Puri Metro Station, Shyam Nagar, Okhla Industrial Estate, New Delhi, Delhi 110020, India",
+            "rating": 4.5,
+            "review_count": 1073,
+            "website": "http://www.iiitd.ac.in/",
+            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indraprastha%20Institute%20of%20Information%20Technology%20Delhi&query_place_id=ChIJHazaZOXjDDkRVsV7DjQuWCw",
+            "negative_reviews": [],
+            "website_flaws": [],
+            "website_improvements": [],
+            "signal_matches": [],
+            "scores": {
+                "llm_score": 40,
+                "website_gap": 50,
+                "signals_score": 0,
+                "final_score": 35
+            },
+            "priority": "LOW",
+            "why_approach": "their website has flaws, being not available or not scraped, which indicates potential for improvement",
+            "why_not": "they already have a website and a strong online presence with a high rating, indicating a low need for services"
+        },
+        {
+            "name": "Department of Computer Science and Engineering",
+            "phone": "+91 11 2659 1291",
+            "emails": [],
+            "category": "Academic department",
+            "address": "G5WR+27P, Block IIA,Bharti Building, Khosla IT Building, Indian Institute of Technology Delhi, Hauz Khas, New Delhi, Delhi 110016, India",
+            "rating": 4.7,
+            "review_count": 59,
+            "website": "http://www.cse.iitd.ac.in/",
+            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Department%20of%20Computer%20Science%20and%20Engineering&query_place_id=ChIJa4_srvYdDTkR67Zwa9yGaA0",
             "negative_reviews": [],
             "website_flaws": [],
             "website_improvements": [],
@@ -123,7 +178,7 @@
             },
             "priority": "LOW",
             "why_approach": "their website is not available or not scraped, indicating potential issues with online presence",
-            "why_not": "they already have a website and high customer ratings, suggesting a strong online presence"
+            "why_not": "they already have a website and a high rating with no negative reviews, indicating a strong online presence"
         }
     ]
 }
