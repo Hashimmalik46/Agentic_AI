@@ -13,69 +13,84 @@ def _get_client():
     return Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 
-# ==========================================
-# 1. Profile Builder
-# ==========================================
 def build_profile(lead: dict) -> str:
-    """Convert a single Apify lead dict into a plain-text profile for the LLM."""
-    review_texts = [
-        r["text"] for r in lead.get("reviews", [])
-        if r.get("text") and r["text"].strip()
+    """
+    Build a plain-text profile for the LLM.
+    Only includes negative reviews (≤ 3.5 stars) and website flaws.
+    """
+    negative_reviews = [
+        r for r in lead.get("reviews", [])
+        if r.get("rating") is not None
+        and r["rating"] <= 3.5
+        and (r.get("text") or "").strip()
     ]
-    reviews_combined = ". ".join(review_texts)
+    reviews_combined = ". ".join(r["text"] for r in negative_reviews) if negative_reviews else "No negative reviews."
 
-    city = lead.get("address", "").split(",")[-2].strip() if lead.get("address") else "Unknown"
+    website_flaws = lead.get("website_flaws", [])
+    flaws_text = "; ".join(website_flaws) if website_flaws else "Website not available or not scraped."
 
     profile = (
-        f"{lead['name']} — {lead.get('category', 'Unknown')} in {city} — "
-        f"Rating: {lead.get('rating')} from {lead.get('review_count')} reviews — "
-        f"Customer feedback: {reviews_combined}"
+        f"Business: {lead.get('name')}\n"
+        f"Category: {lead.get('category', 'Unknown')}\n"
+        f"Location: {lead.get('address', 'Unknown')}\n"
+        f"Rating: {lead.get('rating')} from {lead.get('review_count')} reviews\n"
+        f"Website: {'Yes — ' + lead['website'] if lead.get('website') else 'No website'}\n"
+        f"Website flaws: {flaws_text}\n"
+        f"Negative customer feedback: {reviews_combined}"
     )
+
+    # Append service-specific enrichment signals if present
+    enrichment_lines = []
+    if "has_video_presence" in lead:
+        if lead["has_video_presence"]:
+            enrichment_lines.append(f"Video presence: Yes — platforms: {', '.join(lead.get('video_channels', []))}")
+        else:
+            enrichment_lines.append("Video presence: None detected")
+    if "social_links" in lead:
+        platforms = list(lead["social_links"].keys())
+        enrichment_lines.append(f"Social platforms found: {', '.join(platforms) if platforms else 'None'}")
+        if lead.get("missing_major_platforms"):
+            enrichment_lines.append(f"Missing platforms: {', '.join(lead['missing_major_platforms'])}")
+    if enrichment_lines:
+        profile += "\nService-specific signals:\n" + "\n".join(enrichment_lines)
+
     return profile
 
 
-# ==========================================
-# 2. LLM Scorer (single lead)
-# ==========================================
-def _score_lead(client: Groq, profile: str) -> dict:
-    """
-    Ask the LLM to score one lead as a potential outreach target.
-
-    Returns:
-        { "score": int (0-100), "reason": str }
-    """
+def _score_lead(client: Groq, profile: str, llm_context: str) -> dict:
     response = client.chat.completions.create(
         model=MODEL,
         messages=[
             {
                 "role": "system",
                 "content": (
-                    "You are a lead qualification specialist for a digital marketing agency. "
-                    "Score businesses as outreach targets based on their online presence gaps, "
-                    "customer sentiment, and growth potential. "
+                    f"{llm_context} "
                     "Always respond with ONLY a valid JSON object. No markdown, no extra text."
                 ),
             },
             {
                 "role": "user",
-                "content": f"""Score this business as a potential outreach target for a digital agency.
+                "content": f"""Score this business as a potential outreach target.
 
 Business Profile:
 {profile}
 
 Scoring criteria:
-- High score (70-100): has a website but reviews reveal clear pain points (slow service, pricing complaints, rude staff) — easy sales pitch
-- Mid score (40-69): decent presence, mixed reviews, moderate opportunity
-- Low score (0-39): no obvious pain points or very strong reputation with no gaps
+- High (70-100): clear need for your service — pain points visible in reviews or website flaws
+- Mid (40-69): some opportunity, moderate need
+- Low (0-39): strong presence, low need
+- No website = +15 bonus
 
-No website = +15 bonus (they need digital help).
-
-Respond with ONLY this JSON:
-{{"score": 72, "reason": "one sentence explaining the score"}}"""
+Respond with ONLY this JSON (one sentence each):
+{{
+  "score": 72,
+  "why_approach": "specific reason WHY we should reach out based on their gaps",
+  "why_not": "specific reason WHY we might skip this one"
+}}"""
             },
         ],
         temperature=0.2,
-        max_tokens=120,
+        max_tokens=200,
     )
 
     raw = response.choices[0].message.content.strip()
@@ -83,19 +98,8 @@ Respond with ONLY this JSON:
     return json.loads(raw)
 
 
-# ==========================================
-# 3. Pipeline: score all leads
-# ==========================================
-def score_leads(leads: list[dict]) -> list[dict]:
-    """
-    Score every lead in the list and return them sorted by score descending.
-
-    Each returned lead gets two extra keys:
-        "score"  — int 0-100
-        "reason" — one-line explanation from the LLM
-    """
+def score_leads(leads: list[dict], llm_context: str = "") -> list[dict]:
     client = _get_client()
-    scored = []
 
     for i, lead in enumerate(leads, 1):
         name = lead.get("name", f"Lead #{i}")
@@ -103,39 +107,14 @@ def score_leads(leads: list[dict]) -> list[dict]:
 
         try:
             profile = build_profile(lead)
-            result = _score_lead(client, profile)
-            lead["score"] = result.get("score", 0)
-            reason = result.get("reason", "")
-            lead["reason"] = reason.split(".")[0].strip() + "." if reason else ""
+            result = _score_lead(client, profile, llm_context)
+            lead["llm_score"]    = result.get("score", 0)
+            lead["why_approach"] = result.get("why_approach", "")
+            lead["why_not"]      = result.get("why_not", "")
         except Exception as e:
             print(f"    Warning: scoring failed for '{name}': {e}")
-            lead["score"] = 0
-            lead["reason"] = "scoring error"
+            lead["llm_score"]    = 0
+            lead["why_approach"] = ""
+            lead["why_not"]      = "scoring error"
 
-        scored.append(lead)
-
-    scored.sort(key=lambda x: x["score"], reverse=True)
-    return scored
-
-
-# ==========================================
-# 4. Standalone entry point
-# ==========================================
-if __name__ == "__main__":
-    input_file = "data.json"
-    output_file = "scored_leads.json"
-
-    with open(input_file, encoding="utf-8") as f:
-        leads = json.load(f)
-
-    print(f"\nScoring {len(leads)} leads...\n")
-    scored = score_leads(leads)
-
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(scored, f, indent=4, ensure_ascii=False)
-
-    print(f"\nTop 5 leads:")
-    for lead in scored[:5]:
-        print(f"  {lead['score']:>3}  {lead['name']}  — {lead['reason']}")
-
-    print(f"\nAll scored leads saved to {output_file}")
+    return leads

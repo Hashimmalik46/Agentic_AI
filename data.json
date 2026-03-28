@@ -1,877 +1,307 @@
 [
     {
-        "name": "Apple Orchard Resort & Spa",
-        "phone": "+91 88999 69818",
-        "website": "http://www.appleorchardresorts.com/",
-        "address": "Chandpora, Shalimar, Rainawari, Srinagar, Jammu and Kashmir 190006",
-        "rating": 4.5,
-        "review_count": 303,
-        "category": "Resort hotel",
-        "opening_hours": [],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Apple%20Orchard%20Resort%20%26%20Spa&query_place_id=ChIJt7lJTzeH4TgRZed1iiPSKPk",
+        "name": "Dhar Pharmacy",
+        "phone": "+91 94190 14886",
+        "website": null,
+        "address": "2RM5+F8M, Chanpora, Srinagar, Jammu and Kashmir 190015",
+        "rating": 3.6,
+        "review_count": 79,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "8:30 AM to 10 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dhar%20Pharmacy&query_place_id=ChIJrQ0xE0aO4TgRoCS0K5aIDUU",
         "reviews": [
             {
-                "author": "Hitesh Ravariya",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-25T06:57:01.986Z"
+                "author": "Sameena Naz",
+                "rating": 4,
+                "text": "Good quality meds no doubt.But the madam there is exceptionally biased,disrespectful and rude towards customers..",
+                "date": "2026-03-17T14:01:54.299Z"
             },
             {
-                "author": "Mansi Patel",
+                "author": "owaise rashid",
                 "rating": 5,
                 "text": null,
-                "date": "2026-03-15T06:41:11.855Z"
+                "date": "2026-01-11T16:29:13.938Z"
             },
             {
-                "author": "Rashid Khilji",
+                "author": "Pinu Andrabi",
+                "rating": 1,
+                "text": "Very rude.",
+                "date": "2026-01-03T05:12:11.932Z"
+            },
+            {
+                "author": "Bashir Ahmad Sheer Gojree, Srinagar",
+                "rating": 5,
+                "text": "Pharmacy",
+                "date": "2025-12-25T05:29:03.589Z"
+            },
+            {
+                "author": "Beigh Bilal (Plumber)",
+                "rating": 4,
+                "text": null,
+                "date": "2025-12-19T08:19:39.233Z"
+            },
+            {
+                "author": "suhaib wani",
+                "rating": 5,
+                "text": null,
+                "date": "2025-10-28T13:50:36.861Z"
+            },
+            {
+                "author": "Shoukat Ahmad",
+                "rating": 4,
+                "text": null,
+                "date": "2025-10-12T08:30:52.224Z"
+            },
+            {
+                "author": "Faisal Majeed",
+                "rating": 1,
+                "text": "Expensive",
+                "date": "2025-09-30T13:20:22.252Z"
+            },
+            {
+                "author": "ZUHAIB KHAN",
+                "rating": 4,
+                "text": "Medicines are sold at MRP and no discount is given. But, if there is a medicine that's not available at most of the medical stores, you have a great chance that you will find it here. So, there is a trade off between medicine availability and cost.",
+                "date": "2025-09-29T19:46:33.987Z"
+            },
+            {
+                "author": "Wani Danish",
+                "rating": 2,
+                "text": null,
+                "date": "2025-07-27T13:47:50.250Z"
+            }
+        ]
+    },
+    {
+        "name": "Haemath",
+        "phone": "+91 96227 70066",
+        "website": "http://www.haemath.com/",
+        "address": "Haemath complex, Nai Sarak Rd, Habba Kadal, Srinagar, Jammu and Kashmir 190001",
+        "rating": 4.9,
+        "review_count": 229,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "8:30 AM to 9:30 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Haemath&query_place_id=ChIJDXQYYbOP4TgR3numDw7j27Q",
+        "reviews": [
+            {
+                "author": "Sheikh Asim",
+                "rating": 5,
+                "text": null,
+                "date": "2026-03-25T08:42:17.255Z"
+            },
+            {
+                "author": "Mohsin",
+                "rating": 5,
+                "text": "Received my medicines within few hours. The packaging was good and with full privacy.",
+                "date": "2026-02-08T12:51:01.111Z"
+            },
+            {
+                "author": "sa i",
                 "rating": 3,
-                "text": null,
-                "date": "2026-02-28T10:03:29.757Z"
+                "text": "I Ordered medicine and baby food and recieved within hour with free delivery amazing service 🙌 Thanks",
+                "date": "2026-01-20T12:30:48.145Z"
             },
             {
-                "author": "Vaasi Bhat",
-                "rating": 1,
-                "text": null,
-                "date": "2026-02-18T13:41:40.126Z"
-            },
-            {
-                "author": "Haider Mun",
+                "author": "nighat bashir",
                 "rating": 5,
                 "text": null,
-                "date": "2026-01-31T09:30:53.257Z"
+                "date": "2025-12-07T13:25:29.324Z"
             },
             {
-                "author": "Bonny Bam",
-                "rating": 5,
-                "text": "An absolute gem in Srinagar! Waking up right in the middle of an apple orchard is a surreal experience and looks amazing on camera. The property is peaceful, well-maintained, and gives you that authentic Kashmiri vibe.\n\nFor riders, the most important thing is parking, and they have ample secure space, so I didn't have to worry about my scooter at night. The staff is very warm and the food is delicious. Highly recommend this spot if you want a scenic, comfortable stay to recharge before hitting the highway.",
-                "date": "2026-01-21T09:39:05.124Z"
-            },
-            {
-                "author": "rohith mohan",
-                "rating": 3,
-                "text": "We wanted a property lil away from town and this was a best choice . We booked through clear trip and got rooms for approx 4k inr. It's worth the money . Interiors are great . Rooms are quiet ok.  Would say lacks maintenance. Overall a 4 star but giving a 3 star for three this . 1 cleaning of rooms not undertaken seriously. We moved a couch and saw old peanuts and biscuits pices . 2 the wardrobe had a wooden plank with nails . Don't know y that was kept there . With children , luck we saw and removed it . 3 the tiles outside the bathroom and room had a height diffrence.  Our son kept tripping over . Food - room service were great . But bf buffet was disappointing . Only eggs were great . Overall a great stay .",
-                "date": "2026-01-17T05:07:52.988Z"
-            },
-            {
-                "author": "dinesh lohia",
-                "rating": 4,
-                "text": "Good rooms but far away from main city and approach road is inner street road. For Main cristmas time it's easy to get within 2 to 2.4 k per night per room.",
-                "date": "2026-01-05T19:16:34.004Z"
-            },
-            {
-                "author": "Sufiyan Fazal",
+                "author": "Chinar Residency G.H.",
                 "rating": 5,
                 "text": null,
-                "date": "2026-01-04T16:01:59.813Z"
+                "date": "2025-12-03T11:14:42.340Z"
             },
             {
-                "author": "Anil Raj",
-                "rating": 4,
+                "author": "Nida Banday",
+                "rating": 5,
+                "text": "Awesome experience. They delivered my ordered medicine on time.I truly appreciate all the hard work. Thank u, Haemath.",
+                "date": "2025-11-26T09:50:45.562Z"
+            },
+            {
+                "author": "Lubran",
+                "rating": 5,
                 "text": null,
-                "date": "2025-11-11T11:21:48.461Z"
+                "date": "2025-11-26T08:24:32.569Z"
+            },
+            {
+                "author": "Faizan Mehraj",
+                "rating": 5,
+                "text": null,
+                "date": "2025-11-21T15:32:20.470Z"
+            },
+            {
+                "author": "Mir Suhail",
+                "rating": 5,
+                "text": null,
+                "date": "2025-11-18T14:43:12.934Z"
+            },
+            {
+                "author": "Syed Hanan Basit Bukhari",
+                "rating": 5,
+                "text": "Great..same day delivery with discounts.\nAnd you will get free delivery as well. 😊",
+                "date": "2025-10-24T16:52:45.778Z"
             }
         ]
     },
     {
-        "name": "The Vintage Srinagar at Dal Lake",
-        "phone": "+91 1800 889 9567",
-        "website": "https://thevintagesrinagar.com/",
-        "address": "Boulevard Rd, Durgjan, Srinagar, Jammu and Kashmir 190001",
-        "rating": 4.4,
-        "review_count": 1375,
-        "category": "Hotel",
-        "opening_hours": [],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The%20Vintage%20Srinagar%20at%20Dal%20Lake&query_place_id=ChIJH9hjiLyP4TgRDwadbS7IcQk",
-        "reviews": [
+        "name": "Kashmir Medical Store",
+        "phone": "+91 99063 45734",
+        "website": null,
+        "address": "1, Hazratbal Rd, near Sub Centre, Habak, Nasim Bagh, Srinagar, Jammu and Kashmir 190006",
+        "rating": 4.8,
+        "review_count": 23,
+        "category": "Pharmacy",
+        "opening_hours": [
             {
-                "author": "Gh Nabi",
-                "rating": 5,
-                "text": "Very very nice hotel in Srinagar dal Lake\nVery good food and nice service\nVery good location",
-                "date": "2026-03-26T02:41:46.522Z"
+                "day": "Monday",
+                "hours": "9 AM to 10 PM"
             },
             {
-                "author": "Tabish Habib",
-                "rating": 1,
-                "text": "I had an extremely disturbing experience at The Vintage, Srinagar. I ordered a chicken dish, and the moment it arrived, the pieces looked visibly discoloured and unappetizing. This should have been the first red flag.\n\nWe raised concern immediately and even left most of it there. Every single person who consumed the food regardless of quantity fell severely ill within hours. What followed was not just discomfort, but acute food poisoning. The condition was so serious that we required IV treatment and medical supervision for the next three days.\n\nThis is not just poor quality it is a serious lapse in food safety and hygiene standards. Serving food in such condition is unacceptable and dangerous.\n\nI strongly caution others to avoid this place until they address their kitchen practices and hygiene protocols. This experience was not only disappointing but genuinely hazardous to health",
-                "date": "2026-03-23T04:48:46.639Z"
+                "day": "Tuesday",
+                "hours": "9 AM to 10 PM"
             },
             {
-                "author": "Piyush Gupta",
-                "rating": 5,
-                "text": "Went with family for lunch. The ambience and locTion is unique . The rooftop restaurant is amazing ... You can over see Dal lake and snow clas peaks.... And sip your favourite beverage. They have a great range of food - indian, continental, chinese, kashmiri... We ordered chicken handi, dish fingers cold coffee and ice tea... All items were curated well... Overall amazing experience... Strongly recommended 👍",
-                "date": "2026-03-22T11:07:53.830Z"
+                "day": "Wednesday",
+                "hours": "9 AM to 10 PM"
             },
             {
-                "author": "Sunil Shah",
-                "rating": 5,
-                "text": "Wonderful service\nThanks\nIrfan Yaseen Malik",
-                "date": "2026-03-18T04:44:49.836Z"
+                "day": "Thursday",
+                "hours": "9 AM to 10 PM"
             },
             {
-                "author": "Imtiyaz Ahmad Malik",
-                "rating": 3,
-                "text": null,
-                "date": "2026-03-17T14:14:29.532Z"
+                "day": "Friday",
+                "hours": "9 AM to 10 PM"
             },
             {
-                "author": "ritu tripathi",
-                "rating": 4,
-                "text": null,
-                "date": "2026-03-17T11:08:48.369Z"
+                "day": "Saturday",
+                "hours": "9 AM to 10 PM"
             },
             {
-                "author": "Ratan Patel",
-                "rating": 5,
-                "text": "Best hotel and wonderful experience. Only problem is in the bathroom while showering the water suddenly gets cold. Otherwise best hotel.",
-                "date": "2026-03-16T06:39:45.958Z"
-            },
-            {
-                "author": "pvs nagarjun",
-                "rating": 5,
-                "text": "Highly recommended !!.\nRooms are clean, hygienic and spacious. Top notch maintenance.It is just opposite to Dal Lake.\nMostly all items in breakfast buffet are delicious.We stayed for 3 days and was worth every penny …location ,food ,staff behaviour all are too good.",
-                "date": "2026-03-14T08:25:09.099Z"
-            },
-            {
-                "author": "Sachin Shehrawat",
-                "rating": 5,
-                "text": "The hotel is real nice, with spacious cozy rooms and lake view.\nThe rooftop restaurant is extremely good.\nFood was extremely delicious.\nCompliments to Mr Malik and all staff for the food.",
-                "date": "2026-03-07T04:01:58.744Z"
-            },
-            {
-                "author": "Bhat Suhail",
-                "rating": 5,
-                "text": "Hotel at dal gives you wonderful sight",
-                "date": "2026-02-28T19:37:31.714Z"
+                "day": "Sunday",
+                "hours": "9 AM to 10 PM"
             }
-        ]
-    },
-    {
-        "name": "Mascot Houseboats",
-        "phone": "+91 94190 05714",
-        "website": "https://www.mascothouseboats.com/",
-        "address": "opposite Nigeen Club, Nigeen Lake, West Side, Srinagar, Jammu and Kashmir 190023",
-        "rating": 4.6,
-        "review_count": 202,
-        "category": "Hotel",
-        "opening_hours": [],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Mascot%20Houseboats&query_place_id=ChIJp5hiIaiF4TgRpFcAax1k-kE",
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kashmir%20Medical%20Store&query_place_id=ChIJ7y3hC8KF4TgRvF1LuVmaeDo",
         "reviews": [
             {
-                "author": "simran kasturi",
+                "author": "Meeran Nazir Janwari",
                 "rating": 5,
-                "text": "Divine Serenity !!\nInsane hospitality , authentic , love filled and hand made food meant to give you comfort ,aling with of the nicest hospitality.\nPerfect stay to get away from the clutter.",
-                "date": "2026-03-10T06:15:47.080Z"
+                "text": "Top notch medicine",
+                "date": "2026-03-17T07:45:56.087Z"
             },
             {
-                "author": "smita agarwal",
+                "author": "Nazir Ahmed",
                 "rating": 5,
-                "text": "I have stayed twice in this houseboat. Its beautiful , well kept, very traditional with modern amenities. The hosts are very warm and accommodating.",
-                "date": "2026-02-22T12:06:11.118Z"
+                "text": "Hi I need a bit of information\nThere is pharmacy at crossing owned by Shah's\nCan you provide the name of that pharmacy\nA bit urgent",
+                "date": "2026-03-07T07:16:03.688Z"
             },
             {
-                "author": "Devika Krishnan",
-                "rating": 5,
-                "text": "The best houseboat experience in the valley. Quiet, serene and excellent service",
-                "date": "2025-10-06T08:46:37.935Z"
-            },
-            {
-                "author": "Sadik Malik",
+                "author": "Gulzar Wani",
                 "rating": 5,
                 "text": null,
-                "date": "2025-08-09T14:15:47.349Z"
+                "date": "2026-02-13T15:41:35.874Z"
             },
             {
-                "author": "Umer Hassan Bhat",
+                "author": "Athar Rafiq",
                 "rating": 5,
                 "text": null,
-                "date": "2025-08-06T12:49:03.932Z"
+                "date": "2026-02-08T05:18:47.507Z"
             },
             {
-                "author": "Hakim Sakhi",
-                "rating": 5,
-                "text": "Fantastic place",
-                "date": "2025-07-23T14:33:34.737Z"
-            },
-            {
-                "author": "Suryakant Kumar",
+                "author": "Emaan Mine",
                 "rating": 5,
                 "text": null,
-                "date": "2025-05-09T14:51:19.171Z"
+                "date": "2026-02-08T03:11:02.790Z"
             },
             {
-                "author": "Jay Trilok Dalaya The Avid Globetrotter",
+                "author": "Bilal Softy Point (Sheikh Bilal)",
                 "rating": 5,
-                "text": "Absolute luxury in the lake.. The rooms are well mantained  intrinsic woodwork great service good food just fantastic.. If it's nageen lake this is the houseboat for luxury.. Best wishes to the mascot team",
-                "date": "2025-04-13T14:23:49.860Z"
+                "text": "Best medical shop in Habak",
+                "date": "2026-02-07T23:58:01.268Z"
             },
             {
-                "author": "Manual John",
-                "rating": 4,
-                "text": "Enjoyed",
-                "date": "2025-04-08T05:25:42.943Z"
-            },
-            {
-                "author": "Surendar Yadvo",
-                "rating": 1,
-                "text": null,
-                "date": "2025-02-27T13:19:45.146Z"
-            }
-        ]
-    },
-    {
-        "name": "Lemon Tree Hotel Srinagar",
-        "phone": "+91 194 246 7328",
-        "website": "https://www.lemontreehotels.com/lemon-tree-hotel/srinagar/hotel-srinagar?utm_source=google&utm_medium=organic&utm_campaign=gmb_listing",
-        "address": "193, Ram Munshi Bagh, BB Cantt, Shiv Pora, Srinagar, Jammu and Kashmir 190004",
-        "rating": 4,
-        "review_count": 1026,
-        "category": "Hotel",
-        "opening_hours": [],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Lemon%20Tree%20Hotel%20Srinagar&query_place_id=ChIJJ3LTAQ-P4TgR2woyNl2sDoE",
-        "reviews": [
-            {
-                "author": "KRUNAL DHAROD",
-                "rating": 1,
-                "text": "Pathetic hotel ,pathetic breakfast if u r vegetarian,hotel manager Owais is the worst manager u can ever approach,never seen such bad guy handling front desk...Make my trip offers this cheap hotel for their commission pls avoid ..",
-                "date": "2026-03-23T16:15:46.033Z"
-            },
-            {
-                "author": "Shobhit Gupta",
+                "author": "Adil Dar",
                 "rating": 5,
                 "text": null,
-                "date": "2026-03-12T00:06:05.965Z"
+                "date": "2026-02-07T17:13:41.770Z"
             },
             {
-                "author": "Ashish Negi",
-                "rating": 3,
-                "text": "Staff was good and helpful. Room was ok. They had given us wrong room on the very first day but after talking to the management they had assigned us correct one. I am giving them 3 star only because of food. My dining experience was not good. Specially non veg items. Tandoor items were hard. Butter chicken was not butter chicken at all and I was surprised how can someone spoil such a basic dish. Dum biryani was very bad. Same feedback was given to reception during check out. Hope they will improve that in future. Overall stay was nice expect food.",
-                "date": "2026-03-10T14:22:49.322Z"
-            },
-            {
-                "author": "Shikha Kadian",
+                "author": "Mir Amir",
                 "rating": 5,
-                "text": "Value for money. Spacious rooms. Great breakfast buffet. Nicely maintained property.",
-                "date": "2026-03-04T12:07:41.227Z"
+                "text": "Kashmir medical store  is very good. It has been there for a long time and all high-quality medicines are always available there.",
+                "date": "2026-02-07T16:46:13.412Z"
             },
             {
-                "author": "Ritu Singh",
+                "author": "Mir Azim",
                 "rating": 5,
-                "text": "Our stay here in Jan 25 was comfortable with all superb amenities, food was delicious with all options. Rooms are specious and cozy. Suheel Ahmad sir helped all possible ways. Staff was humble and cooperative.",
-                "date": "2026-02-28T21:35:40.785Z"
+                "text": "Best quality medison and good service",
+                "date": "2026-01-30T13:57:28.491Z"
             },
             {
-                "author": "vipul kumar",
-                "rating": 5,
-                "text": "Excellent stay with top-notch service and food!\n\n​We recently stayed at the Lemon Tree Hotel in Srinagar and it was a wonderful experience. The hotel’s location is a major highlight, being situated close to the main road for easy access.\n\n​Our room was spacious and well-appointed with all the modern amenities we needed. However, the standout feature was the dining. The food at Citrus Café was consistently tasty, and the service staff deserve a lot of credit—they are professional, approachable, and very attentive to guest needs.\n\n​Overall, a very positive stay. We would definitely return!",
-                "date": "2026-02-23T02:56:47.467Z"
-            },
-            {
-                "author": "Musadiq Rafiq",
-                "rating": 5,
-                "text": null,
-                "date": "2026-02-16T21:21:08.383Z"
-            },
-            {
-                "author": "Ramiz Manzoor",
-                "rating": 4,
-                "text": null,
-                "date": "2026-02-10T05:49:03.673Z"
-            },
-            {
-                "author": "Talib Pathan",
-                "rating": 1,
-                "text": null,
-                "date": "2026-02-05T05:42:48.344Z"
-            },
-            {
-                "author": "Dr. Manjeet Yadav",
-                "rating": 5,
-                "text": "Very good hospitality, clean spaces, scenic look. Very good experience.",
-                "date": "2026-01-28T15:28:04.965Z"
-            }
-        ]
-    },
-    {
-        "name": "Radisson Hotel Srinagar",
-        "phone": "+91 194 248 4000",
-        "website": "https://www.radissonhotels.com/en-us/hotels/radisson-srinagar?cid=a:se+b:gmb+c:apac+i:local+e:rad+d:ind+h:INJKJAMSRI",
-        "address": "11, MA Road, Kashmir Golf Course, Nohata, Srinagar, Jammu and Kashmir 190001",
-        "rating": 4.1,
-        "review_count": 1984,
-        "category": "Hotel",
-        "opening_hours": [],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Radisson%20Hotel%20Srinagar&query_place_id=ChIJU4aJGZ2P4TgRqcKZ1UBU-XU",
-        "reviews": [
-            {
-                "author": "Madhumita Das",
-                "rating": 4,
-                "text": null,
-                "date": "2026-03-25T08:59:28.434Z"
-            },
-            {
-                "author": "Harman preet",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-23T10:11:47.829Z"
-            },
-            {
-                "author": "Tushar Tyagi",
-                "rating": 3,
-                "text": "A very modest property at a good location. It is an old property yearning for an overhaul. Nothing great about the property. Staff is friendly no challenges that side.",
-                "date": "2026-02-25T04:58:21.566Z"
-            },
-            {
-                "author": "Shelina Rajawat",
-                "rating": 5,
-                "text": "Checked in and instantly loved this place. The hospitality and warm behaviour of the staff including Nida at the reception and Aquib, Khushboo, Najeeb, Afreen, Sajad, Majeeb at the restaurant during breakfast , lunch and dinner. Well trained and mannered. Will recommend this place to everyone who want a comfortable stay in Srinagar.",
-                "date": "2026-02-18T10:25:10.432Z"
-            },
-            {
-                "author": "Malla Mall Tour and travels",
-                "rating": 5,
-                "text": "I love this place... service is upto mark...whole staff is quite helpful especially Afreen and Aaqib.",
-                "date": "2026-02-11T08:55:12.941Z"
-            },
-            {
-                "author": "Komal Choudhary",
-                "rating": 5,
-                "text": null,
-                "date": "2026-02-09T18:16:32.849Z"
-            },
-            {
-                "author": "Papumoni Saikia",
-                "rating": 5,
-                "text": "Just looking like a wow",
-                "date": "2026-02-08T21:23:31.942Z"
-            },
-            {
-                "author": "Arhaan Khan",
-                "rating": 5,
-                "text": null,
-                "date": "2026-02-06T07:31:25.512Z"
-            },
-            {
-                "author": "Dr Abhijit Patil",
-                "rating": 5,
-                "text": "Beautiful mountain view window. Best hospitality and cooperative staff. Food was delicious. Ambiance beautiful. And most importantly passage of room is also fresh.\nHappy with Radisson shrinagar team.",
-                "date": "2026-01-31T15:30:05.911Z"
-            },
-            {
-                "author": "Mohammad yaqoob Mir",
-                "rating": 5,
-                "text": null,
-                "date": "2026-01-31T13:36:03.647Z"
-            }
-        ]
-    },
-    {
-        "name": "The Kabo | Luxury Boutique Hotel",
-        "phone": "+91 194 231 3401",
-        "website": "https://thekabo.com/",
-        "address": "3R75+J8V, opp. Tagore Hall, Wazir Bagh, Srinagar, Jammu and Kashmir 190008",
-        "rating": 4.6,
-        "review_count": 617,
-        "category": "Hotel",
-        "opening_hours": [],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The%20Kabo%20%7C%20Luxury%20Boutique%20Hotel&query_place_id=ChIJs4PhBr-P4TgRmEAjk9ja8TY",
-        "reviews": [
-            {
-                "author": "Vidya Shree",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-05T08:41:44.210Z"
-            },
-            {
-                "author": "archana agarwal",
-                "rating": 5,
-                "text": "​A huge thank you to Aabid and Insha at The Kabo. Their professionalism and warm hospitality made my stay truly special. They are credit to the hotel team and went out of their way to ensure everything was perfect. If you visit, you're in great hands with them",
-                "date": "2026-03-02T03:45:32.399Z"
-            },
-            {
-                "author": "Shilpa Devgan",
-                "rating": 5,
-                "text": "I recently stayed at The Kabo Hotel, Kashmir, and it was truly a wonderful experience.\nI travelled from New Zealand🇳🇿, and this was my first visit to the hotel. From the moment I arrived, I felt warmly welcomed and genuinely cared for. The hotel beautifully combines comfort, cleanliness, and exceptional hospitality.\nThe ambiance of the hotel is peaceful, relaxing, and visually stunning. The rooms were spotless, well-maintained, and very comfortable, making my stay extremely pleasant. The views from the hotel are absolutely beautiful.\nI would like to sincerely thank the entire staff for their professionalism, politeness, and friendly nature. Everyone was always ready to assist with a smile.\nA special thank you to Aurmela, Insha, and Akib for their outstanding service and kind support. Your warm and helpful attitude truly made my stay even more memorable.\nI would also like to extend my appreciation to the Manager, Mr. Gowhar, for managing everything so efficiently and ensuring that guests feel valued and comfortable. His excellent leadership clearly reflects in the quality of service provided by the team.\nHeartfelt thanks to the housekeeping department, especially Mr. Ishfaq, for maintaining exceptional cleanliness and keeping the room perfectly neat and comfortable throughout my stay. The attention to detail was truly impressive.\nI would also like to thank the reception team and the staff member who warmly greeted us and opened the door each time. Although I do not know his name, his courteous behaviour and welcoming smile added a lovely touch to the overall experience.\nOverall, my first experience at The Kabo Hotel, Kashmir was delightful and unforgettable. I would highly recommend this hotel to anyone looking for comfort, warmth, and outstanding service.\nThank you once again for such a beautiful stay. I look forward to visiting again.",
-                "date": "2026-02-24T16:06:31.597Z"
-            },
-            {
-                "author": "DAR SHAHID",
-                "rating": 1,
-                "text": "I was very disappointed with the food quality. The taste was below average and not worth the price. I would not recommend this restaurant to anyone.",
-                "date": "2026-02-22T00:03:02.751Z"
-            },
-            {
-                "author": "Ajit Pradhan",
-                "rating": 1,
-                "text": "Very disappointing experience by the hotel staff. I stayed here during my Kashmir visit and accidentally left my tshirt in the room. When I contacted the hotel soon after they completely denied finding it instead of helping. Expected basic honesty and cooperation from a hotel but sadly that's missing. Would not recommend",
-                "date": "2026-02-04T15:39:40.358Z"
-            },
-            {
-                "author": "gaurav bhansali",
-                "rating": 5,
-                "text": "Had a great experience and enjoyed very much the stay at hotel .\nEspecially the time spent at restaurant with mr.Gowhar and the support staff urmila n habbib .",
-                "date": "2026-01-30T02:49:53.741Z"
-            },
-            {
-                "author": "Varun Bhansali",
-                "rating": 5,
-                "text": "Rooms n service was at its best and specially food and its taste was superb and all its staff was so cooperative even in restaurant Mr Gowhar n urmila n all staff was so humble wud definitely like to visit same property again.",
-                "date": "2026-01-30T02:40:51.303Z"
-            },
-            {
-                "author": "tej bhansali",
-                "rating": 5,
-                "text": "Excellent hospitality, food, rooms and room service was at best also a special thanks to Mr. Gowhar for great hospitality at the restaurant.",
-                "date": "2026-01-30T02:35:22.089Z"
-            },
-            {
-                "author": "Shalu Siddiqui",
-                "rating": 5,
-                "text": "Everything’s lovely… never missed this memories thanks for all hotel member special thnx to Burhaan,, gouhar gul n all staff thank you ❤️for everytime supporting",
-                "date": "2026-01-23T11:09:57.093Z"
-            },
-            {
-                "author": "Manzoor Ahmad",
-                "rating": 5,
-                "text": "Great food quality",
-                "date": "2026-01-07T02:32:57.048Z"
-            }
-        ]
-    },
-    {
-        "name": "Sarovar Portico, Airport Road, Humhama Srinagar.",
-        "phone": "+91 194 230 3474",
-        "website": "https://www.sarovarhotels.com/sarovar-portico-srinagar/",
-        "address": "2QCC+JGV Main Chowk, New Airport Rd, opp. SBI ATM, Humhama, Srinagar, Badgam, Jammu and Kashmir 190021",
-        "rating": 4.4,
-        "review_count": 280,
-        "category": "Hotel",
-        "opening_hours": [],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Sarovar%20Portico%2C%20Airport%20Road%2C%20Humhama%20Srinagar.&query_place_id=ChIJ88ATmxCR4TgRJCAi_vs5lq8",
-        "reviews": [
-            {
-                "author": "Dar Munzoor",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-21T22:25:47.703Z"
-            },
-            {
-                "author": "Jisha Sunil",
-                "rating": 5,
-                "text": "Mr. Hilal gave us the best service, all the staff were extremely good, food and ambience was also good.. i recommend if anyone visiting Srinagar kashmir to visit this hotel. They have the best food and best service.",
-                "date": "2026-03-20T05:24:01.499Z"
-            },
-            {
-                "author": "Shabd Dubey",
-                "rating": 4,
-                "text": null,
-                "date": "2026-03-11T01:30:51.411Z"
-            },
-            {
-                "author": "Saliq",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-09T00:20:43.418Z"
-            },
-            {
-                "author": "Kathlyn A.",
-                "rating": 5,
-                "text": "Fantastic stay at Sarovar Portico! The rooms are clean and surprisingly spacious. What really stood out was the staff; they were incredibly helpful and professional. Also, don't miss the room service; the food is amazing! the portions are massive and very fairly priced. Plus, you can't beat the location. it’s only a 10-minute drive to the Srinagar airport. Highly recommended!",
-                "date": "2026-02-22T09:37:22.793Z"
-            },
-            {
-                "author": "Alexander Zacharia",
-                "rating": 4,
-                "text": null,
-                "date": "2026-02-19T15:01:21.389Z"
-            },
-            {
-                "author": "Subarna Chanda",
-                "rating": 3,
-                "text": null,
-                "date": "2026-02-19T02:51:27.109Z"
-            },
-            {
-                "author": "KRISH",
-                "rating": 4,
-                "text": "Great hotel, near to airport, good restaurant.",
-                "date": "2026-02-18T07:33:44.241Z"
-            },
-            {
-                "author": "Mubarak Shera",
-                "rating": 3,
-                "text": null,
-                "date": "2026-02-15T09:53:00.795Z"
-            },
-            {
-                "author": "Tejaswini Rana",
-                "rating": 5,
-                "text": "My husband and I had a truly wonderful stay at Sarovar Portico Srinagar. The warmth and hospitality were exceptional. A heartfelt thanks to the reception team and especially Mr. Hilal Ahmed for his gracious and generous care — they made our visit truly special and unforgettable.",
-                "date": "2026-02-13T16:21:09.045Z"
-            }
-        ]
-    },
-    {
-        "name": "WelcomHeritage Grand, Srinagar",
-        "phone": "+91 194 310 1730",
-        "website": "https://www.welcomheritagehotels.in/hotel-details/welcomheritage-m-grand",
-        "address": "Parraypora, Airport Rd, Baghat, Srinagar, Jammu and Kashmir 190014",
-        "rating": 4.7,
-        "review_count": 192,
-        "category": "Hotel",
-        "opening_hours": [],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=WelcomHeritage%20Grand%2C%20Srinagar&query_place_id=ChIJ8WzrIuOP4TgRT3zChY9ITJE",
-        "reviews": [
-            {
-                "author": "Rakesh Sahoo",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-26T03:41:37.596Z"
-            },
-            {
-                "author": "SAHIL",
-                "rating": 5,
-                "text": "Best hotel in this area must Go there, especially atmosphere!",
-                "date": "2026-03-23T06:36:59.693Z"
-            },
-            {
-                "author": "Khanday Muzamil",
-                "rating": 5,
-                "text": "My stay at **Hotel Welcome Grand Srinagar** was truly memorable and filled with warmth. The hotel has a beautiful and peaceful ambience, but what really touched my heart was the incredible behaviour of the staff and management. They genuinely live up to the name **“Welcome”** — from the moment you arrive, you feel respected, valued, and cared for.\n\nThe restaurant experience was the highlight of our visit. The manager was such a gentle and humble host, and the entire team was extremely polite and attentive. Their kindness and hospitality made us feel less like guests and more like family.\n\nAnd the food… absolutely outstanding. It was honestly **one of the best meals I have ever had in Kashmir**. Every dish was full of flavour and prepared with great care, making the dining experience truly unforgettable.\n\nWith such passionate management and such a respectful, hardworking team, I am sure this hotel will rise to **an even greater level very soon**. Wishing them all the success they deserve.\nMuzamil owner of Kashmirani",
-                "date": "2026-03-11T19:46:27.758Z"
-            },
-            {
-                "author": "Megha Vijay",
-                "rating": 5,
-                "text": "The hospitality at the hotel is beyond compare. The reception staff (Tahir,  another gentelman and the lady) were excellent. The kitchen staff especially the team of ladies taking the orders and serving are very friendly, the housekeeping staff is exceptionally prompt.\n\nThe food was fresh and very well made.\n\nWas also great to have a small impromptu conversation with the owner one of the nights, he gave us a beautiful insight to the Kashmir of yesterday years and some recommendations for our next trip.",
-                "date": "2026-03-11T10:08:18.980Z"
-            },
-            {
-                "author": "ONTHEGO TRAVELS",
-                "rating": 5,
-                "text": "Nice hotel",
-                "date": "2026-03-01T08:42:50.005Z"
-            },
-            {
-                "author": "Uday Uday",
-                "rating": 5,
-                "text": null,
-                "date": "2026-02-28T03:58:19.408Z"
-            },
-            {
-                "author": "shaila jadhav",
-                "rating": 5,
-                "text": "We had an amazing stay at Welcome Grand Heritage in Srinagar. The hospitality was truly exceptional and made our trip even more special.\n\nA special thanks to the Front Office team — Radif, Tahir, and Hardeep — for their warm welcome and smooth assistance throughout our stay. Their professionalism and polite nature were truly appreciated.\n\nHousekeeping staff Tanveer and Altaf ensured our room was always spotless and comfortable. Their attention to detail did not go unnoticed.\n\nThe F&B team — Meenu, Khushi, and Jasira — were extremely courteous and attentive, making every dining experience pleasant.\n\nA big compliment to the Chef team — Jamsheed, Rohit, and Nikhil — for the delicious food. Every meal was fresh, flavorful, and perfectly prepared.\n\nOverall, the service, food, and ambiance were outstanding. We highly recommend this hotel to anyone visiting Srinagar and would definitely love to come back again! ❤️",
-                "date": "2026-02-27T11:50:35.729Z"
-            },
-            {
-                "author": "Kuldeep Rathod",
-                "rating": 5,
-                "text": "Mariya and hardeep served us best and we had a great experience staying in M grand heritage hotel loved it ❤️",
-                "date": "2026-02-27T05:29:30.914Z"
-            },
-            {
-                "author": "Ashish reddy",
-                "rating": 4,
-                "text": "Clean rooms with good hospitality by Hardeep and Mariya",
-                "date": "2026-02-21T05:18:37.491Z"
-            },
-            {
-                "author": "Akib Sorathiya",
-                "rating": 5,
-                "text": null,
-                "date": "2026-02-10T04:05:17.362Z"
-            }
-        ]
-    },
-    {
-        "name": "The Orchard Retreat & Spa, Srinagar",
-        "phone": "+91 99068 82200",
-        "website": "http://www.theorchardsrinagar.com/",
-        "address": "Pathan Colony, Hazratbal Rd, Zakura, Srinagar, Jammu and Kashmir 190006",
-        "rating": 4.4,
-        "review_count": 2439,
-        "category": "Hotel",
-        "opening_hours": [],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The%20Orchard%20Retreat%20%26%20Spa%2C%20Srinagar&query_place_id=ChIJQ3bI2X-E4TgRTuCgXjBVny0",
-        "reviews": [
-            {
-                "author": "Digvijay Singh",
-                "rating": 5,
-                "text": "Mr Javed from F and B thank you for the wonderful stay and hospitality. Best place to stay and a must visit resort. Thank you to  Rahil also for the great hospitality",
-                "date": "2026-03-22T04:58:00.087Z"
-            },
-            {
-                "author": "PARAMAGURU SHASHITARAN",
-                "rating": 5,
-                "text": "Very nice n beautiful property equip with all the facilities needed. Food esp dinner was marvellous. Service rendered was good. Staff are very helpful n friendly esp Mr Bilal, Rahil and Mr Javid",
-                "date": "2026-03-20T03:51:10.089Z"
-            },
-            {
-                "author": "Veena Gohrani",
-                "rating": 4,
-                "text": "The service is top notch, the staff is very friendly and they listen to the requirements.\nIt's on the outskirts so you need to consider that if you want accessibility to dal lake.\nThe only disadvantage was that the gym timings are 9-9 so makes it difficult to use if you are out and about the whole day.",
-                "date": "2026-03-17T11:44:05.774Z"
-            },
-            {
-                "author": "vijay agrawal",
-                "rating": 5,
-                "text": "I recently had the pleasure of staying at Orchard Retreat & Spa, Srinagar, and it was truly a wonderful experience. From the moment I arrived, the property impressed me with its beautiful surroundings, peaceful atmosphere, and well-maintained open spaces. It’s the kind of place where you instantly feel relaxed and connected with nature.\n\nWhat really made the stay special was the amazing service. The staff were incredibly courteous, attentive, and always ready to help with genuine warmth. Their hospitality made the entire experience feel very personal and comfortable.\n\nThe facilities are excellent — the open areas are perfect for unwinding, and the gym and sauna are clean, well-equipped, and thoughtfully maintained. It’s clear that a lot of care goes into keeping the property in great shape.\n\nThe food was another highlight of the stay — fresh, delicious, and prepared with great attention to taste and quality.\n\nOverall, Orchard Retreat & Spa is a calm, beautiful, and well-managed property that offers a perfect blend of comfort, hospitality, and relaxation. I would happily recommend it to anyone visiting Srinagar who wants a peaceful and memorable stay.",
-                "date": "2026-03-16T16:06:09.045Z"
-            },
-            {
-                "author": "Tayeb Khan",
-                "rating": 1,
-                "text": null,
-                "date": "2026-03-15T17:33:01.955Z"
-            },
-            {
-                "author": "DIVYASRI SARIPALLI",
-                "rating": 5,
-                "text": "The hotel is really good. Staff latif, rahil and ashraf are very helpful",
-                "date": "2026-03-15T02:15:44.114Z"
-            },
-            {
-                "author": "Dr Shivani Jaiswar",
-                "rating": 5,
-                "text": "mr. Bilal Ahmed has been amazing at Service. Everything else, rooms, ambience, till the time left has been a flawless experience! Thanks a lot for being so welcoming!",
-                "date": "2026-03-11T04:53:30.547Z"
-            },
-            {
-                "author": "HARSH JAYESH MANGE",
-                "rating": 5,
-                "text": "Rooms are quite spacious as well as with nice view of orchards.\nThe service was very good as well,",
-                "date": "2026-03-11T03:31:12.841Z"
-            },
-            {
-                "author": "ROBIN SHAHU",
-                "rating": 5,
-                "text": "We stayed here for two nights….The property is superb… the hygiene and  cleaningness is upto the mark… food quality is very good …. Staff here are so humble and professional… specially Mr Javed and Mr Tehir. Thank you 😊 the property have so many amenities… outdoor games… spa… jacuzzi etc …. Best option in J&K to opt for.",
-                "date": "2026-03-10T16:08:22.651Z"
-            },
-            {
-                "author": "Suriya Narayanan",
-                "rating": 4,
-                "text": null,
-                "date": "2026-03-08T05:42:08.306Z"
-            }
-        ]
-    },
-    {
-        "name": "Four Points by Sheraton Srinagar",
-        "phone": "+91 194 246 9000",
-        "website": "https://www.marriott.com/en-us/hotels/sxrfp-four-points-srinagar/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0",
-        "address": "3R8V+PJW, Badami Bagh Cantonment, Ram Munshi Bagh, Guzarwaan Mohalla, Sonwar Bagh, Srinagar, Jammu and Kashmir 190004",
-        "rating": 4.2,
-        "review_count": 1785,
-        "category": "Hotel",
-        "opening_hours": [],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Four%20Points%20by%20Sheraton%20Srinagar&query_place_id=ChIJ_9hwZhOP4TgR-cS_tHtCOOo",
-        "reviews": [
-            {
-                "author": "Priyanshu Rai",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-22T07:41:57.272Z"
-            },
-            {
-                "author": "Jasmine Cheema",
-                "rating": 5,
-                "text": "I recently had the pleasure of staying at Four Points by Sheraton Srinagar, and it was truly an exceptional experience from start to finish. The hotel perfectly combines comfort, modern amenities, and warm hospitality, all set against the breathtaking backdrop of Srinagar.\n\nWhat really made my stay memorable was the outstanding service provided by the staff. A special shoutout to Nasir Ahmed from the housekeeping team, whose attention to detail and dedication ensured that my room was always spotless and welcoming. His effort did not go unnoticed and added a personal touch to my stay.\n\nThe dining experience was equally impressive. I would like to sincerely thank Farooz and Ishfaq from the kitchen staff for their incredible work. The food was consistently delicious, fresh, and beautifully prepared. Their passion and commitment to quality truly elevated every meal.\n\nOverall, the service throughout the hotel was fantastic—professional, friendly, and always ready to go the extra mile. I highly recommend this hotel to anyone visiting Srinagar, and I look forward to returning again soon.",
-                "date": "2026-03-21T06:24:34.957Z"
-            },
-            {
-                "author": "Priti Milind",
-                "rating": 5,
-                "text": "Stayed for 2 days …..Really enjoyed the stay. Food was very tasty…chef Rashid and chef aqib made delicious breakfast ..enjoyed it…excellent service by Farooq and ishfaq .. staff is really nice…enjoyed our stay at four points by Sheraton … would like to come again..n definitely recommend 😊\nThank you so much 👍😊",
-                "date": "2026-03-21T04:49:50.116Z"
-            },
-            {
-                "author": "Arup Dutta",
-                "rating": 4,
-                "text": "good hotel. With good staff specially the F & B section. They take personal care of each guest in the resturent.",
-                "date": "2026-03-14T13:06:50.949Z"
-            },
-            {
-                "author": "Aadil Bhatt",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-13T17:17:03.852Z"
-            },
-            {
-                "author": "sunil acharya",
-                "rating": 5,
-                "text": "We stayed at Four Points by Sheraton Srinagar from 7–9 March 2026 and had a wonderful experience. The check-in was smooth and quick, and our room was clean, comfortable, and ready when we arrived.\nThe food at the restaurant was excellent, every dish we tried was delicious.\nWhat truly stood out was the hospitality of the staff. Everyone was courteous and attentive to even the smallest requests. A special thanks to Muzaffar, Zahoor, and Ishfaq, and another team member whose name I unfortunately missed, they all took great care of us.\nA very pleasant stay overall. Highly recommended if you’re visiting Srinagar.",
-                "date": "2026-03-13T05:45:13.500Z"
-            },
-            {
-                "author": "Komal Hooda",
-                "rating": 3,
-                "text": null,
-                "date": "2026-03-07T01:29:20.745Z"
-            },
-            {
-                "author": "Taha Mudasir",
-                "rating": 1,
-                "text": null,
-                "date": "2026-02-25T01:14:38.074Z"
-            },
-            {
-                "author": "Zakir Hussain Kumar",
-                "rating": 5,
-                "text": "Four points is very beautiful with The hotel is widely considered one of the best \"value-for-luxury\" stays in Srinagar",
-                "date": "2026-02-24T15:55:22.957Z"
-            },
-            {
-                "author": "Saluja Doors",
-                "rating": 5,
-                "text": "Great experience\nFarooq FNB, Shanawaz Chef, Tariq Manager, Muzaffar FNB, Rashid Chef and Bilal from housekeeping made our stay very pleasant.",
-                "date": "2026-02-24T14:00:44.013Z"
-            }
-        ]
-    },
-    {
-        "name": "The LaLiT Grand Palace Srinagar",
-        "phone": "+91 194 250 1001",
-        "website": "http://www.thelalit.com/the-lalit-srinagar/",
-        "address": "Gupkar Rd, Srinagar, Jammu and Kashmir 190001",
-        "rating": 4.3,
-        "review_count": 3292,
-        "category": "Hotel",
-        "opening_hours": [],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The%20LaLiT%20Grand%20Palace%20Srinagar&query_place_id=ChIJC44nGWyP4TgRk0Z4d_c2Ds0",
-        "reviews": [
-            {
-                "author": "Mayeen Afsan",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-27T13:57:47.695Z"
-            },
-            {
-                "author": "Krushna Patil",
+                "author": "Tanveer Ahmad Bhat",
                 "rating": 5,
                 "text": "Good",
-                "date": "2026-03-23T12:30:07.786Z"
-            },
-            {
-                "author": "Bradley Nestadt",
-                "rating": 5,
-                "text": "A relative of my wife grew up in this palace in the 1920-30's, so we went to have a look around. Wajahat, probably the concierge, was most hospitable and showed us around. He was well informed and amenable. The interior decor and structure is impressive and the massive gardens are as well. The hotel appears to be a true five star affair.  Thanks again to Wajahat for taking us through.",
-                "date": "2026-03-19T03:30:32.944Z"
-            },
-            {
-                "author": "Tsewang Nurbu",
-                "rating": 4,
-                "text": null,
-                "date": "2026-02-25T17:48:04.795Z"
-            },
-            {
-                "author": "sandeep singh",
-                "rating": 5,
-                "text": "Had a great experience at The Lalit Srinagar. The property is huge and beautifully maintained, offering a royal palace feel. The food was delicious and the staff were extremely courteous and welcoming throughout our stay. It's walkable to Dal lake.\n\nSpecial thanks to Ms. Safia for giving us a detailed palace tour and explaining the history and significance of each area so wonderfully.\n\nHighly recommended!",
-                "date": "2026-02-25T11:59:33.320Z"
-            },
-            {
-                "author": "SARTAJ BHAT",
-                "rating": 5,
-                "text": null,
-                "date": "2026-02-24T13:32:19.266Z"
-            },
-            {
-                "author": "Shafiq Kales",
-                "rating": 5,
-                "text": "Food was awesome",
-                "date": "2026-02-18T05:46:21.139Z"
-            },
-            {
-                "author": "Mudasir Rather",
-                "rating": 5,
-                "text": null,
-                "date": "2026-02-17T09:54:02.969Z"
-            },
-            {
-                "author": "Dar Kubra",
-                "rating": 1,
-                "text": null,
-                "date": "2026-02-12T19:02:35.558Z"
-            },
-            {
-                "author": "Sumaya Qazi",
-                "rating": 5,
-                "text": "Had such a wonderful time in this beautiful.. met such a beautiful soul names Zing.. she was so hospitable..",
-                "date": "2026-02-04T10:26:43.546Z"
-            }
-        ]
-    },
-    {
-        "name": "Taj Dal View, Srinagar",
-        "phone": "+91 194 246 2424",
-        "website": "https://www.tajhotels.com/en-in/hotels/taj-dal-view-srinagar?utm_source=google&utm_medium=local&utm_campaign=taj-dal-view",
-        "address": "Kralsangri, Brein, Srinagar, Jammu and Kashmir 191121",
-        "rating": 4.5,
-        "review_count": 4792,
-        "category": "Hotel",
-        "opening_hours": [],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Taj%20Dal%20View%2C%20Srinagar&query_place_id=ChIJaYZy3pOP4TgRl5SOY2zhmQw",
-        "reviews": [
-            {
-                "author": "Faisal Ahmad",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-28T03:11:16.470Z"
-            },
-            {
-                "author": "Rg Garg",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-27T12:14:36.473Z"
-            },
-            {
-                "author": "Sharan Heran",
-                "rating": 5,
-                "text": "Exceptional location paired with truly outstanding service. Every member of the team went above and beyond to make our stay memorable. A special mention to Danish, whose attentiveness and warmth at the Vista for breakfast and dinner experience elevated our entire three-night experience.\n\nThe staff were incredibly welcoming, took the time to connect with us personally, and offered thoughtful recommendations that enhanced our time in Srinagar. Breakfast was delicious with a great variety, and the housekeeping manager ensured our comfort was always a top priority.\n\nA genuinely seamless and memorable stay.",
-                "date": "2026-03-25T15:21:49.774Z"
-            },
-            {
-                "author": "Adeeb mudasir",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-21T13:54:51.198Z"
-            },
-            {
-                "author": "B Singh",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-20T11:53:22.170Z"
-            },
-            {
-                "author": "Mathivanan Gnanasambandam",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-19T10:57:23.843Z"
-            },
-            {
-                "author": "Vishal Manghnani",
-                "rating": 5,
-                "text": "The hotel was superb, the property extremely well maintained.\n\nOur room balcony had a spectacular view of the Dal Lake, the bathroom was spacious and my wife totally loved it, comfortable and equipped with all amenities.\n\nThe hotel staff, from the food and beverage team to the housekeeping caretakers (Shabur), were helpful, courteous and very hospitable, especially, Ishfaq, Stanzin, Sangi, Payel  and of course Triy Ambada.\n\nWe were pampered beyond imagination with their attention and their efforts, they made our short stay a memorable one.\n\nWe’re both already planning our next Kashmir trip, and Srinagar Taj Dal Lake will be on the itinerary.\n\nThank you Team Taj Dal Lake!",
-                "date": "2026-03-18T02:52:57.820Z"
-            },
-            {
-                "author": "shakir ahmad",
-                "rating": 5,
-                "text": null,
-                "date": "2026-03-18T01:51:32.193Z"
-            },
-            {
-                "author": "Chandrashekhar Mhaskar",
-                "rating": 5,
-                "text": "खुपच सुंदर लोकेशन\nअतीशय मस्त वातावरण\nनम्र कर्मचारी वर्ग .",
-                "date": "2026-03-16T13:15:15.479Z"
-            },
-            {
-                "author": "Saurabh Sultania",
-                "rating": 5,
-                "text": "I recently stayed at Taj Srinagar and it was truly a mesmerizing experience. The hotel is beautifully located with a hill on one side and the stunning Dal Lake on the other, offering breathtaking views.\n\nThe rooms were spacious, clean, and very comfortable. The service was prompt and efficient, and the staff was very courteous. The food was also excellent, with a great variety and quality.\n\nOverall, it was a wonderful and memorable stay. I would highly recommend Taj Srinagar to anyone visiting the city.",
-                "date": "2026-03-16T12:31:36.326Z"
+                "date": "2026-01-20T06:41:13.776Z"
             }
         ]
     }
