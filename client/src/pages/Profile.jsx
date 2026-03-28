@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Save, Zap, Building2, Target, CheckCircle2, ChevronDown } from 'lucide-react';
 
 export default function WorkspaceProfile() {
+  const navigate = useNavigate();
   // In a real app, you would initialize this state from your router context or backend API
   const [profileData, setProfileData] = useState({
     startupName: 'Acme Corp',
@@ -40,7 +42,7 @@ export default function WorkspaceProfile() {
     // Simulate API call for lead generation
     setTimeout(() => {
       setIsGenerating(false);
-      alert("Agent deployment successful! Redirecting to Lead Pipeline...");
+      navigate('/dashboard');
     }, 2000);
   };
 

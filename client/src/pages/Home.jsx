@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ArrowRight, ArrowLeft, CheckCircle2, ChevronDown, UserCircle } from 'lucide-react';
 import { supabase } from '/lib/supabaseClient.jsx'; // Adjust path as needed
 
 export default function LeadScraperPipeline() {
+  const navigate = useNavigate();
   const [step, setStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -65,8 +67,7 @@ export default function LeadScraperPipeline() {
 
       if (campaignError) throw campaignError;
 
-      alert('Successfully saved! Redirecting to your profile...');
-      // If using React Router: navigate('/profile');
+      navigate('/profile');
 
     } catch (error) {
       console.error('Error saving details:', error.message);
