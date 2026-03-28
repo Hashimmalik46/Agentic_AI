@@ -10,7 +10,15 @@ from email_sender import send_bulk_emails
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173", "http://localhost:5174", os.getenv("FRONTEND_URL", "*")])
+CORS(app)
+
+
+@app.after_request
+def add_cors_headers(response):
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+    return response
 
 
 @app.route("/generate-leads", methods=["POST"])
