@@ -1,0 +1,13 @@
+flask
+groq
+serpapi
+google-search-results
+python-dotenv
+supabase
+google-generativeai
+requests 
+beautifulsoup4 
+lxml 
+playwright
+#npx playwright install chromium
+#playwright install
