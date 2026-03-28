@@ -1,60 +1,61 @@
-# flask setup and route definition and flask entry point.
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
-from services.niche_parser import parse_niche
-from services.query_generator import generate_queries
-from scraper import fetch_leads
+from pipeline import run_pipeline
+from service_configs import list_services
+from db.insert import save_pipeline_output
 
-load_dotenv()  # Loads GROQ_API_KEY from .env file
+load_dotenv()
 
 app = Flask(__name__)
 
 
 @app.route("/generate-leads", methods=["POST"])
 def generate_leads():
-    print("sending req")
     """
-    Entry point for the lead generation pipeline.
+    Run the full lead generation pipeline.
 
-    Expected JSON body:
-    {
-        "niche": "dentists in Delhi"
-    }
-
-    Returns:
-    {
-        "niche": "dentists in Delhi",
-        "parsed": { "industry": "dentists", "location": "Delhi" },
-        "queries": ["dental clinic Delhi", "orthodontist in Delhi", ...]
-    }
+    Request body:
+        {
+            "niche": "restaurants in Delhi",
+            "service_type": "video_creation",   (optional, default: website_development)
+            "max_results": 20                   (optional, default: 20)
+        }
     """
     data = request.get_json()
 
     if not data or "niche" not in data:
         return jsonify({"error": "Missing 'niche' in request body"}), 400
 
-    raw_niche = data["niche"].strip()
-    if not raw_niche:
+    niche = data["niche"].strip()
+    if not niche:
         return jsonify({"error": "'niche' cannot be empty"}), 400
 
-    # Step 1: Parse niche into structured industry + location
-    parsed = parse_niche(raw_niche)
+    service_type = data.get("service_type", "website_development").strip()
+    max_results  = int(data.get("max_results", 20))
+    user_id      = data.get("user_id")  # optional for now
 
-    # Step 2: Generate expanded search queries using Groq LLM
-    queries = generate_queries(parsed["industry"], parsed["location"])
+    result = run_pipeline(niche, service_type, max_results)
 
-    fetch_leads(queries[1])
+    # Push to DB if user_id provided
+    if user_id:
+        try:
+            run_id = save_pipeline_output(result, user_id)
+            result["run_id"] = run_id
+        except Exception as e:
+            print(f"  DB push failed: {e}")
 
-    return jsonify({
-        "niche": raw_niche,
-        "parsed": parsed,
-        "queries": queries
-    })
+    return jsonify(result)
+
+
+@app.route("/services", methods=["GET"])
+def services():
+    """List all available service types."""
+    return jsonify({"services": list_services()})
 
 
 @app.route("/health", methods=["GET"])
 def health():
-    return jsonify({"status": "ok", "model": "groq/llama-3.3-70b-versatile"})
+    return jsonify({"status": "ok"})
 
 
 if __name__ == "__main__":

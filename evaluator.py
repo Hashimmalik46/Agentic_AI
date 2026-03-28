@@ -5,80 +5,65 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# ==========================================
-# 1. API Configuration
-# ==========================================
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=GOOGLE_API_KEY)
 
-model = genai.GenerativeModel('gemini-3-flash-preview')
+model = genai.GenerativeModel('gemini-2.0-flash')
 
-# ==========================================
-# 2. The Core Evaluator Function
-# ==========================================
-def evaluate_website_data(scraped_json_data):
+
+def evaluate_website_data(scraped_data: dict, business_category: str = "") -> dict:
     """
-    Takes parsed JSON data from the scraper and returns an LLM evaluation in JSON.
+    Audits a scraped website and returns flaws + improvement suggestions.
+
+    Returns:
+        {
+            "overall_score": int (0-100, LOWER = worse website = better lead),
+            "flaws": [...],
+            "improvements": [...]
+        }
     """
-    print("Evaluating data with the LLM...")
-    
-    # The prompt forces the LLM to act as an auditor and return strict JSON
+    niche_hint = f"This is a {business_category} business. " if business_category else ""
+
     prompt = f"""
-    You are an expert website evaluator and UX auditor. 
-    Analyze the following scraped website data and provide a score from 1 to 100.
-    
-    Evaluate based on:
-    1. SEO best practices (title, description, headers).
-    2. Content structure (logical H1/H2s).
-    3. Technical health (missing alt text, word count).
-    
-    Website Data:
-    {json.dumps(scraped_json_data, indent=2)}
-    
-    You MUST return ONLY a valid JSON object matching this exact structure:
-    {{
-      "overall_score": 85,
-      "needs_improvement": true,
-      "strengths": ["...", "..."],
-      "critical_issues": ["...", "..."],
-      "actionable_recommendations": ["...", "..."]
-    }}
-    """
-    
+You are a website auditor for a digital marketing agency hunting for clients.
+{niche_hint}Analyze this scraped website data and identify what's wrong with it.
+
+A LOW score means the website is bad — which means it's a GOOD lead for us.
+
+Website Data:
+{json.dumps(scraped_data, indent=2)}
+
+Evaluate based on:
+1. Missing or weak SEO (title, meta description, headers)
+2. Poor content (thin text, no CTAs, outdated content)
+3. Technical issues (broken links, no SSL, no mobile viewport, missing alt text)
+4. Missing features a {business_category or "local"} business should have (booking, contact form, reviews section, etc.)
+
+You MUST return ONLY a valid JSON object:
+{{
+  "overall_score": 40,
+  "flaws": [
+    "Missing meta description",
+    "No online booking CTA despite being a clinic",
+    "3 images missing alt text"
+  ],
+  "improvements": [
+    "Add a prominent 'Book Appointment' button above the fold",
+    "Write a meta description targeting local search keywords",
+    "Add patient testimonials section to build trust"
+  ]
+}}
+"""
+
     try:
-        # We explicitly ask the Gemini model to return JSON natively
         response = model.generate_content(
             prompt,
             generation_config=genai.GenerationConfig(
                 response_mime_type="application/json",
-                temperature=0.2 # Lower temperature for analytical, consistent scoring
+                temperature=0.2
             )
         )
-        
-        # The response is guaranteed to be a JSON string, so we parse it into a Python dictionary
         return json.loads(response.text)
-        
     except Exception as e:
-        print(f"Error during LLM evaluation: {e}")
-        return None
-
-# ==========================================
-# 3. How to Use It (Example Execution)
-# ==========================================
-if __name__ == "__main__":
-    incoming_data_from_scraper = {
-        "page_metadata": {
-            "url": "https://example.com",
-            "title_tag": "Home | Example",
-            "meta_description": "" 
-        },
-        "technical_and_ux_indicators": {
-            "images_without_alt_text": 3,
-            "broken_links_found": 0
-        }
-    }
-    
-    evaluation_result = evaluate_website_data(incoming_data_from_scraper)
-    
-    print("\n--- Final Evaluation Result ---")
-    print(json.dumps(evaluation_result, indent=2))
+        print(f"    Website evaluation error: {e}")
+        return {"overall_score": 50, "flaws": [], "improvements": []}
