@@ -1,8 +1,15 @@
-import React from 'react'
+import Home from "./pages/Home"
+import Discription from "./pages/Discription"
+import Output from "./pages/Output"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      {/* <Home /> */}
+      <Discription />
+      {/* <Output /> */}
+
+    </div>
   )
 }
 
