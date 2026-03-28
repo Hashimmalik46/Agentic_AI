@@ -99,6 +99,9 @@
                 "text": null,
                 "date": "2023-06-07T09:34:03.544Z"
             }
+        ],
+        "emails": [
+            "reservations@theorchardsrinagar.com"
         ]
     },
     {
@@ -201,6 +204,7 @@
                 "text": null,
                 "date": "2025-10-13T09:06:48.976Z"
             }
-        ]
+        ],
+        "emails": []
     }
 ]
