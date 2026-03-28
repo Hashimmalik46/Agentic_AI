@@ -1,17 +1,37 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useMemo, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Save, Zap, Building2, Target, CheckCircle2, ChevronDown } from 'lucide-react';
 
 export default function WorkspaceProfile() {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const initialProfileData = useMemo(() => {
+    const state = location.state;
+    if (!state) {
+      return {
+        startupName: 'Acme Corp',
+        niche: 'B2B SaaS',
+        targetRoles: 'CTO, VP of Logistics',
+        location: 'North America, UK',
+        companySize: '50-200 Employees',
+        keywords: 'Shopify, B2B, Supply Chain'
+      };
+    }
+
+    return {
+      startupName: state.startupName || 'Acme Corp',
+      niche: state.niche || 'B2B SaaS',
+      targetRoles: state.targetRoles || '',
+      location: state.location || '',
+      companySize: state.companySize || '',
+      keywords: state.keywords || ''
+    };
+  }, [location.state]);
+
   // In a real app, you would initialize this state from your router context or backend API
   const [profileData, setProfileData] = useState({
-    startupName: 'Acme Corp',
-    niche: 'B2B SaaS',
-    targetRoles: 'CTO, VP of Logistics',
-    location: 'North America, UK',
-    companySize: '50-200 Employees',
-    keywords: 'Shopify, B2B, Supply Chain'
+    ...initialProfileData
   });
 
   const [isSaved, setIsSaved] = useState(false);
@@ -42,7 +62,7 @@ export default function WorkspaceProfile() {
     // Simulate API call for lead generation
     setTimeout(() => {
       setIsGenerating(false);
-      navigate('/dashboard');
+      navigate('/dashboard', { state: { profileData } });
     }, 2000);
   };
 

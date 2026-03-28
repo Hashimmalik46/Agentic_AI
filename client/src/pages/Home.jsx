@@ -67,7 +67,16 @@ export default function LeadScraperPipeline() {
 
       if (campaignError) throw campaignError;
 
-      navigate('/profile');
+      navigate('/profile', {
+        state: {
+          startupName: formData.startupName,
+          niche: formData.niche,
+          targetRoles: formData.targetRoles,
+          location: formData.location,
+          companySize: formData.companySize,
+          keywords: formData.keywords
+        }
+      });
 
     } catch (error) {
       console.error('Error saving details:', error.message);
