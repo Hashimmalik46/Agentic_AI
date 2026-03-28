@@ -5,9 +5,10 @@ google-search-results
 python-dotenv
 supabase
 google-generativeai
-requests 
-beautifulsoup4 
-lxml 
+requests
+beautifulsoup4
+lxml
 playwright
+apify-client
 #npx playwright install chromium
 #playwright install

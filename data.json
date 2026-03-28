@@ -1,20 +1,677 @@
 [
     {
-        "name": "GEETANJALI DENTAL OPTIONS Dental clinic south Delhi Dentist near me",
-        "phone": "+91 98100 15577",
-        "website": "https://geetanjalidental.in/?utm_source=GMB&utm_medium=organic",
-        "rating": 4.9
+        "name": "Haemath",
+        "phone": "+91 96227 70066",
+        "website": "http://www.haemath.com/",
+        "address": "Haemath complex, Nai Sarak Rd, Habba Kadal, Srinagar, Jammu and Kashmir 190001",
+        "rating": 4.9,
+        "review_count": 229,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "8:30 AM to 9:30 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Haemath&query_place_id=ChIJDXQYYbOP4TgR3numDw7j27Q",
+        "reviews": []
     },
     {
-        "name": "Crown And Roots Dental Clinic",
-        "phone": "+91 98219 99447",
-        "website": "https://www.crownandroots.com/",
-        "rating": 4.9
+        "name": "Treatment Pharmacy",
+        "phone": "+91 194 231 3999",
+        "website": null,
+        "address": "Gogji Bagh, Jawahar Nagar, Srinagar, Jammu and Kashmir 190008",
+        "rating": 4,
+        "review_count": 6,
+        "category": "Pharmacy",
+        "opening_hours": [],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Treatment%20Pharmacy&query_place_id=ChIJc404pb2P4TgRvYjUnr5CZXE",
+        "reviews": []
     },
     {
-        "name": "Meraki Dental Studio - Best Dentist in Delhi India",
-        "phone": "+91 11 4160 6066",
-        "website": "https://merakidentalstudio.com/?utm_source=gmb&utm_medium=website-link",
-        "rating": 4.9
+        "name": "Dhar Pharmacy",
+        "phone": "+91 94190 14886",
+        "website": null,
+        "address": "2RM5+F8M, Chanpora, Srinagar, Jammu and Kashmir 190015",
+        "rating": 3.6,
+        "review_count": 79,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "8:30 AM to 10 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dhar%20Pharmacy&query_place_id=ChIJrQ0xE0aO4TgRoCS0K5aIDUU",
+        "reviews": []
+    },
+    {
+        "name": "Central Drug House- pharmacy",
+        "phone": "+91 94190 40828",
+        "website": "https://centraldrug.house/",
+        "address": "Batamaloo- Mominabad Rd, opp. District Court Complex, Mominabad, Srinagar, Jammu and Kashmir 190010",
+        "rating": 4.7,
+        "review_count": 74,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "9 AM to 9:30 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "9 AM to 9:30 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "9 AM to 9:30 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "9 AM to 9:30 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "9 AM to 9:30 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "9 AM to 9:30 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "10 AM to 9 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Central%20Drug%20House-%20pharmacy&query_place_id=ChIJLUhlAseP4TgRe0s42TKxYmc",
+        "reviews": []
+    },
+    {
+        "name": "illaaj Healthcare - Medicine Home Delivery",
+        "phone": "+91 96221 23434",
+        "website": "https://illaaj.com/",
+        "address": "Babademb Crossing, Anzimar, near Ghousia Hospital Road, Khanyaar, Srinagar, Jammu and Kashmir 190003",
+        "rating": 4.9,
+        "review_count": 408,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "9 AM to 9 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "9 AM to 10 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=illaaj%20Healthcare%20-%20Medicine%20Home%20Delivery&query_place_id=ChIJJ_YadgWP4TgR9HkfpGRqMXg",
+        "reviews": []
+    },
+    {
+        "name": "Tawheed Pharmacy",
+        "phone": null,
+        "website": null,
+        "address": "5R95+J3H, Ahmad Nagar, Srinagar, Jammu and Kashmir 190020",
+        "rating": 4.7,
+        "review_count": 13,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Thursday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Friday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Saturday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Sunday",
+                "hours": "Open 24 hours"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Tawheed%20Pharmacy&query_place_id=ChIJjwBYawCF4TgRTL0Ye27-wSs",
+        "reviews": []
+    },
+    {
+        "name": "New Light Medical Hall",
+        "phone": null,
+        "website": null,
+        "address": "opp. SMHS Hospital, Shireen Bagh, Nawabazar, Srinagar, Jammu and Kashmir 190010",
+        "rating": 4.9,
+        "review_count": 27,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Thursday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Friday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Saturday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Sunday",
+                "hours": "Open 24 hours"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=New%20Light%20Medical%20Hall&query_place_id=ChIJoUVEZuWF4TgRy6riTBUpMBg",
+        "reviews": []
+    },
+    {
+        "name": "MAX CARE",
+        "phone": "+91 88973 30878",
+        "website": null,
+        "address": "789, Road, Gulab Bagh, Srinagar, Jammu and Kashmir 190020",
+        "rating": 4.9,
+        "review_count": 44,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Thursday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Friday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Saturday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Sunday",
+                "hours": "Open 24 hours"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MAX%20CARE&query_place_id=ChIJk2QSsCqD4TgR04WMCoHV2eM",
+        "reviews": []
+    },
+    {
+        "name": "Royal Pharmacy",
+        "phone": "+91 94190 63400",
+        "website": null,
+        "address": "2, opposite Nevera Public School, Rajbagh, Srinagar, Jammu and Kashmir 190008",
+        "rating": 4.4,
+        "review_count": 23,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "8 AM to 11 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "8 AM to 11 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "8 AM to 11 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "8 AM to 11 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "8 AM to 11 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "8 AM to 11 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "8 AM to 11 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Royal%20Pharmacy&query_place_id=ChIJkfwmj5-P4TgRSqxCk1Ki1T0",
+        "reviews": []
+    },
+    {
+        "name": "24x7 Chemist and Druggist",
+        "phone": "+91 97960 10303",
+        "website": null,
+        "address": "3R43+6HJ, Solina bazaar near womens police station opposite Modern Public High School, solina, Srinagar, 190009",
+        "rating": 3.9,
+        "review_count": 14,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Thursday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Friday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Saturday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Sunday",
+                "hours": "Open 24 hours"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=24x7%20Chemist%20and%20Druggist&query_place_id=ChIJzVkAiMeP4TgRFZbFNsj0m58",
+        "reviews": []
+    },
+    {
+        "name": "Kashmir Medical Store",
+        "phone": "+91 99063 45734",
+        "website": null,
+        "address": "1, Hazratbal Rd, near Sub Centre, Habak, Nasim Bagh, Srinagar, Jammu and Kashmir 190006",
+        "rating": 4.8,
+        "review_count": 23,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "9 AM to 10 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kashmir%20Medical%20Store&query_place_id=ChIJ7y3hC8KF4TgRvF1LuVmaeDo",
+        "reviews": []
+    },
+    {
+        "name": "Foreshore Medicate",
+        "phone": "+91 78895 40321",
+        "website": null,
+        "address": "13, Habbak Road Near Uni Hostital TV, Srinagar, Jammu and Kashmir 190006",
+        "rating": 5,
+        "review_count": 10,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "8 AM to 11 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "8 AM to 11 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "8 AM to 11 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "8 AM to 11 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "8 AM to 11 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "8 AM to 11 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "8 AM to 11 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Foreshore%20Medicate&query_place_id=ChIJpSQfLhiF4TgRhjgqQ-ddS6o",
+        "reviews": []
+    },
+    {
+        "name": "City Care chemists and druggist Parraypora bagat new airport road",
+        "phone": null,
+        "website": null,
+        "address": "New Airport Rd, Parray Pora, Chinar Colony, Srinagar, Jammu and Kashmir 190005",
+        "rating": 4.5,
+        "review_count": 54,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "8:30 AM to 10:30 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "8:30 AM to 10:30 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "8:30 AM to 10:30 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "8:30 AM to 10:30 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "8:30 AM to 10:30 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "8:30 AM to 10:30 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "8:30 AM to 10:30 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=City%20Care%20chemists%20and%20druggist%20Parraypora%20bagat%20new%20airport%20road&query_place_id=ChIJ-SXa8KmP4TgRB-6YHwVy5aQ",
+        "reviews": []
+    },
+    {
+        "name": "Medical Store",
+        "phone": "+91 70510 89707",
+        "website": null,
+        "address": "1, Noushera, Srinagar, Jammu and Kashmir 190011",
+        "rating": 4,
+        "review_count": 4,
+        "category": "Pharmacy",
+        "opening_hours": [],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Medical%20Store&query_place_id=ChIJpWpQPJ2F4TgRLmDb2s4QTYs",
+        "reviews": []
+    },
+    {
+        "name": "24×7 pharmacy",
+        "phone": null,
+        "website": null,
+        "address": "04, Humhama, Srinagar, Badgam, Jammu and Kashmir 190005",
+        "rating": 5,
+        "review_count": 9,
+        "category": "Pharmacy",
+        "opening_hours": [],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=24%C3%977%20pharmacy&query_place_id=ChIJlxdzcQCR4TgRr9Jg9QKThi0",
+        "reviews": []
+    },
+    {
+        "name": "M R Pharmacy",
+        "phone": "+91 70064 92379",
+        "website": null,
+        "address": "Silk Factory Rd, LD Hospital Rd, Wazir Bagh, Srinagar, Jammu and Kashmir 190008",
+        "rating": 4.3,
+        "review_count": 13,
+        "category": "Pharmacy",
+        "opening_hours": [],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=M%20R%20Pharmacy&query_place_id=ChIJsYZci5WP4TgRX4mebDGTy_s",
+        "reviews": []
+    },
+    {
+        "name": "COOPERATIVE MEDICAL SHOP",
+        "phone": "+91 70061 78068",
+        "website": null,
+        "address": "SMHS Rd, Sarai, Karan Nagar, Srinagar, Jammu and Kashmir 190010",
+        "rating": 4.7,
+        "review_count": 12,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Thursday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Friday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Saturday",
+                "hours": "Open 24 hours"
+            },
+            {
+                "day": "Sunday",
+                "hours": "Open 24 hours"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=COOPERATIVE%20MEDICAL%20SHOP&query_place_id=ChIJF5q2Ll-F4TgR9FCBz3RBecI",
+        "reviews": []
+    },
+    {
+        "name": "Care Plus Chemists & Druggists",
+        "phone": "+91 60057 78186",
+        "website": "https://carepluschemistsdruggists.framer.website/",
+        "address": "near J&K Bank ATM, opposite furniture market, Barbar Shah, Baghwanpora, Sathu, Srinagar, Jammu and Kashmir 190001",
+        "rating": 4.9,
+        "review_count": 33,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "8:30 AM to 10 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Care%20Plus%20Chemists%20%26%20Druggists&query_place_id=ChIJbTF15Q-P4TgRILu_UOVTpoU",
+        "reviews": []
+    },
+    {
+        "name": "Madina Medicate",
+        "phone": "+91 70063 18114",
+        "website": null,
+        "address": "near Power Grid station Ilahi Market, Housing Colony, Bemina, Srinagar, Jammu and Kashmir 190018",
+        "rating": 4.9,
+        "review_count": 46,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "9 AM to 9:30 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "9 AM to 9:30 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "9 AM to 9:30 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "9 AM to 9:30 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "9 AM to 9:30 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "9 AM to 9:30 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "9 AM to 9:30 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Madina%20Medicate&query_place_id=ChIJGcT3nH6R4TgRoPOyiGzSLxs",
+        "reviews": []
+    },
+    {
+        "name": "Kashmir Pharmacy",
+        "phone": null,
+        "website": null,
+        "address": "3R85+HC7, Silk Factory Rd, Saraibal, Srinagar, Jammu and Kashmir 190008",
+        "rating": 3.5,
+        "review_count": 4,
+        "category": "Pharmacy",
+        "opening_hours": [],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kashmir%20Pharmacy&query_place_id=ChIJGSrFwZWP4TgRoPnyesYj26Y",
+        "reviews": []
     }
 ]
