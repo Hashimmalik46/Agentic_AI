@@ -5,8 +5,8 @@ import Output from "./pages/Output"
 const App = () => {
   return (
     <div>
-      {/* <Home /> */}
-      <Discription />
+      <Home />
+      {/* <Discription /> */}
       {/* <Output /> */}
 
     </div>
