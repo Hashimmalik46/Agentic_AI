@@ -27,6 +27,7 @@ from scraper_apify import fetch_leads
 from enrichment import enrich_lead
 from lead_scorer import score_leads
 from service_configs import get_service, list_services
+from email_extractor import extract_emails_from_url
 
 
 # ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -98,6 +99,7 @@ def _scrape_and_evaluate(lead: dict, service_type: str) -> dict:
         lead["website_score"]        = 0
         lead["website_flaws"]        = []
         lead["website_improvements"] = []
+        lead["emails"]              = []
         return lead
 
     print(f"    [{service_type}] Enriching: {lead['website']}")
@@ -124,6 +126,7 @@ def _slim(lead: dict) -> dict:
         "rating":               lead.get("rating"),
         "review_count":         lead.get("review_count"),
         "website":              lead.get("website"),
+        "emails":               lead.get("emails", []),
         "google_maps_url":      lead.get("google_maps_url"),
         "negative_reviews":     negative_reviews,
         "website_flaws":        lead.get("website_flaws", []),
@@ -186,6 +189,18 @@ def run_pipeline(niche: str, service_type: str = "website_development", max_resu
     with ThreadPoolExecutor(max_workers=5) as executor:
         worker = functools.partial(_scrape_and_evaluate, service_type=service_type)
         leads = list(executor.map(worker, leads))
+
+    # ── Step 4.5: Extract emails (threaded) ─────────────────────────────────
+    print(f"\n[4.5/7] Extracting emails from websites (threaded)...")
+    def _add_emails(lead: dict) -> dict:
+        if not lead.get("website"):
+            lead["emails"] = []
+            return lead
+        lead["emails"] = extract_emails_from_url(lead["website"])
+        return lead
+
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        leads = list(executor.map(_add_emails, leads))
 
     # Pre-compute website_gap before signals scoring (signals use it)
     for lead in leads:

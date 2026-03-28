@@ -68,6 +68,11 @@ function LeadRow({ lead }) {
               {lead.stage}
             </div>
           ) : null}
+          {lead.finalScore != null ? (
+            <div className="text-xs text-[#dee5ff] bg-[#091328]/60 border border-[#40485d]/25 px-2 py-1 rounded-lg tabular-nums">
+              Score {lead.finalScore}
+            </div>
+          ) : null}
         </div>
         <div className="mt-2 text-sm text-[#a3aac4]">
           <span className="text-[#a3aac4]">Location:</span> {lead.location || '—'}
@@ -76,6 +81,9 @@ function LeadRow({ lead }) {
         </div>
         <div className="mt-2 text-xs text-[#a3aac4]/80 truncate">
           {lead.website || 'No website captured'}
+        </div>
+        <div className="mt-2 text-xs text-[#a3aac4]/80 truncate">
+          {lead.emails?.length ? `Emails: ${lead.emails.join(', ')}` : 'Emails: none found'}
         </div>
       </div>
       <div className="flex items-center gap-3 shrink-0">
@@ -94,6 +102,7 @@ export default function Dashboard() {
   const navigate = useNavigate();
   const location = useLocation();
   const profileData = location.state?.profileData;
+  const pipelineResult = location.state?.pipelineResult;
 
   const [search, setSearch] = useState('');
 
@@ -118,28 +127,26 @@ export default function Dashboard() {
   }, [profileData]);
 
   const leads = useMemo(() => {
-    const base = [
-      { name: 'Bright Dental Studio', rating: 4.6, location: 'Delhi', website: 'https://brightdental.example', stage: 'New', source: 'Google Maps' },
-      { name: 'OrthoCare Clinic', rating: 4.3, location: 'Delhi', website: 'https://orthocare.example', stage: 'Contacted', source: 'Google Maps' },
-      { name: 'Smile Avenue', rating: 4.7, location: 'Delhi', website: null, stage: 'Qualified', source: 'Google Maps' },
-      { name: 'Pearl Dental & Implants', rating: 4.2, location: 'Delhi', website: 'https://pearldental.example', stage: 'New', source: 'Google Maps' },
-      { name: 'City Dental Lab', rating: null, location: 'Delhi', website: 'https://citydentallab.example', stage: 'New', source: 'Web' }
-    ];
-
-    const roleCount = formatList(normalized.targetRoles).length;
-    const keywordCount = formatList(normalized.keywords).length;
-    const locationCount = formatList(normalized.location).length;
-
-    const suffix = normalized.startupName && normalized.startupName !== 'Your Workspace'
-      ? ` • for ${normalized.startupName}`
-      : '';
-
-    return base.map((l, i) => ({
-      ...l,
-      name: i === 0 ? `${l.name}${suffix}` : l.name,
-      score: Math.round(65 + (l.rating ? l.rating * 6 : 0) + roleCount * 2 + keywordCount + locationCount)
+    const fromPipeline = (pipelineResult?.leads || []).map((l) => ({
+      name: l.name,
+      rating: l.rating,
+      location: l.address || l.category || '—',
+      website: l.website,
+      stage: l.priority || '—',
+      source: 'Google Maps',
+      emails: l.emails || [],
+      finalScore: l.scores?.final_score
     }));
-  }, [normalized.keywords, normalized.location, normalized.startupName, normalized.targetRoles]);
+
+    if (fromPipeline.length) return fromPipeline;
+
+    // Fallback mock data (shown only if user opens /dashboard directly)
+    return [
+      { name: 'Bright Dental Studio', rating: 4.6, location: 'Delhi', website: 'https://brightdental.example', stage: 'HIGH', source: 'Google Maps', emails: ['hello@brightdental.example'], finalScore: 82 },
+      { name: 'OrthoCare Clinic', rating: 4.3, location: 'Delhi', website: 'https://orthocare.example', stage: 'MEDIUM', source: 'Google Maps', emails: [], finalScore: 55 },
+      { name: 'Smile Avenue', rating: 4.7, location: 'Delhi', website: null, stage: 'HIGH', source: 'Google Maps', emails: [], finalScore: 77 },
+    ];
+  }, [pipelineResult?.leads]);
 
   const filteredLeads = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -157,7 +164,7 @@ export default function Dashboard() {
       .filter(v => v != null);
     const avgRatingValue = avgRating.length ? avgRating.reduce((a, b) => a + b, 0) / avgRating.length : 0;
 
-    const scoreAvg = leads.reduce((a, l) => a + (l.score || 0), 0) / Math.max(leads.length, 1);
+    const scoreAvg = leads.reduce((a, l) => a + (l.finalScore || 0), 0) / Math.max(leads.length, 1);
 
     return {
       total,
@@ -251,9 +258,16 @@ export default function Dashboard() {
         </div>
 
         <div className="mt-10">
-          <div className="flex items-center justify-between gap-4 mb-4">
-            <h2 className="text-xl font-semibold text-[#dee5ff]">Leads</h2>
-            <div className="text-sm text-[#a3aac4]">{filteredLeads.length} shown</div>
+            <div className="flex items-center justify-between gap-4 mb-4">
+              <h2 className="text-xl font-semibold text-[#dee5ff]">Leads</h2>
+            <div className="text-sm text-[#a3aac4]">
+              {filteredLeads.length} shown
+              {pipelineResult?.email_dispatch?.requested ? (
+                <span className="ml-3 text-[#ba9eff]">
+                  Emails: {pipelineResult.email_dispatch.sent_count} sent / {pipelineResult.email_dispatch.failed_count} failed
+                </span>
+              ) : null}
+            </div>
           </div>
 
           <div className="space-y-4">

@@ -58,12 +58,36 @@ export default function WorkspaceProfile() {
   const handleGenerateLeads = () => {
     setIsGenerating(true);
     console.log('Deploying LLM Agent with payload:', profileData);
-    
-    // Simulate API call for lead generation
-    setTimeout(() => {
-      setIsGenerating(false);
-      navigate('/dashboard', { state: { profileData } });
-    }, 2000);
+
+    const niche = `${profileData.niche} in ${profileData.location || 'global'}`;
+
+    fetch('http://localhost:5000/generate-leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        niche,
+        service_type: 'website_development',
+        max_results: 20,
+        send_emails: true,
+        max_emails_total: 30,
+        max_emails_per_lead: 2
+      })
+    })
+      .then(async (res) => {
+        const json = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(json?.error || 'Failed to generate leads');
+        return json;
+      })
+      .then((result) => {
+        navigate('/dashboard', { state: { profileData, pipelineResult: result } });
+      })
+      .catch((err) => {
+        console.error(err);
+        alert(err.message || 'Something went wrong while generating leads.');
+      })
+      .finally(() => {
+        setIsGenerating(false);
+      });
   };
 
   return (
