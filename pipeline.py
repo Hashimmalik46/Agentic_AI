@@ -119,6 +119,7 @@ def _slim(lead: dict) -> dict:
 
     return {
         "name":                 lead.get("name"),
+        "phone":                lead.get("phone"),
         "category":             lead.get("category"),
         "address":              lead.get("address"),
         "rating":               lead.get("rating"),

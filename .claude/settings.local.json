@@ -4,7 +4,10 @@
       "Bash(find /d/code/hackathon/Agentic_AI -maxdepth 2 -name scraper* -o -name *scraper*)",
       "Bash(python -c \"from enrichment import enrich_lead; print\\(''import ok''\\)\")",
       "Bash(.venv/Scripts/python -c \"from enrichment import enrich_lead; print\\(''import ok''\\)\")",
-      "Bash(.venv/Scripts/python push_to_db.py --user da3eb3c0-cf85-4609-97e2-19c1d82b1c21)"
+      "Bash(.venv/Scripts/python push_to_db.py --user da3eb3c0-cf85-4609-97e2-19c1d82b1c21)",
+      "Bash(.venv/Scripts/pip install:*)",
+      "Bash(.venv/Scripts/python -c \"import supabase; print\\(supabase.__version__\\)\")",
+      "Bash(.venv/Scripts/python -c \":*)"
     ]
   }
 }
