@@ -1,5 +1,6 @@
 flask
 flask-cors
+gunicorn
 groq
 serpapi
 google-search-results
@@ -11,7 +12,3 @@ beautifulsoup4
 lxml
 playwright
 apify-client
-#sentence-transformers scikit-learn
-#npx playwright install chromium
-#playwright install
-

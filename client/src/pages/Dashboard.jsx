@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { supabase } from '/lib/supabaseClient.jsx';
 import { useAuth } from '../App';
+import { api } from '../lib/api';
 
 const PRIORITY_COLORS = {
   HIGH:   { bg: 'bg-green-500/15 border-green-500/30',   text: 'text-green-400' },
@@ -536,7 +537,7 @@ export default function Dashboard() {
                     setEmailSending(true);
                     setEmailResult(null);
                     try {
-                      const res = await fetch('/send-emails', {
+                      const res = await api('/send-emails', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({

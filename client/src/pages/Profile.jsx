@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Save, Zap, Building2, Target, CheckCircle2, ChevronDown, LogOut } from 'lucide-react';
 import { supabase } from '/lib/supabaseClient.jsx';
 import { useAuth } from '../App';
+import { api } from '../lib/api';
 
 const SERVICE_TYPES = [
   { value: 'website_development', label: 'Website Development' },
@@ -132,7 +133,7 @@ export default function WorkspaceProfile() {
       : profileData.niche;
 
     try {
-      const res = await fetch('/generate-leads', {
+      const res = await api('/generate-leads', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

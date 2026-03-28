@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import os
 from dotenv import load_dotenv
 from pipeline import run_pipeline
 from service_configs import list_services
@@ -9,7 +10,7 @@ from email_sender import send_bulk_emails
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["http://localhost:5173", "http://localhost:5174", os.getenv("FRONTEND_URL", "*")])
 
 
 @app.route("/generate-leads", methods=["POST"])
