@@ -2,7 +2,7 @@ import React, { useMemo, useState, useEffect, useCallback } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import {
   ArrowLeft, Search, Star, TrendingUp, Users, ExternalLink,
-  ChevronDown, ChevronUp, LogOut, Phone, Mail, Send, Zap, Clock,
+  ChevronDown, ChevronUp, LogOut, Phone, Mail, Send, Zap, Clock, X, Loader2,
 } from 'lucide-react';
 import { supabase } from '/lib/supabaseClient.jsx';
 import { useAuth } from '../App';
@@ -213,6 +213,13 @@ export default function Dashboard() {
   const location  = useLocation();
   const { user }  = useAuth();
   const [search, setSearch] = useState('');
+
+  // Email modal state
+  const [showEmailModal, setShowEmailModal] = useState(false);
+  const [emailSubject, setEmailSubject] = useState('');
+  const [emailBody, setEmailBody] = useState('');
+  const [emailSending, setEmailSending] = useState(false);
+  const [emailResult, setEmailResult] = useState(null);
 
   // DB state
   const [dbRuns,    setDbRuns]    = useState([]);
@@ -452,13 +459,17 @@ export default function Dashboard() {
                   <h3 className="text-xl font-semibold text-[#dee5ff] mb-1">Bulk Email Campaign</h3>
                   <p className="text-[#a3aac4] text-sm">
                     {emailLeads.length} of {filteredLeads.length} leads have email addresses.
-                    <span className="ml-1 text-[#699cff]">Connect an email provider to launch a campaign.</span>
+                    <span className="ml-1 text-[#699cff]">Compose and send personalised outreach in one click.</span>
                   </p>
                 </div>
                 <button
-                  disabled
-                  title="Email sending coming soon"
-                  className="flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-bold tracking-wide whitespace-nowrap bg-gradient-to-r from-[#699cff] to-[#ba9eff] text-[#000000] opacity-60 cursor-not-allowed"
+                  onClick={() => { setShowEmailModal(true); setEmailResult(null); }}
+                  disabled={emailLeads.length === 0}
+                  className={`flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-bold tracking-wide whitespace-nowrap transition-all ${
+                    emailLeads.length === 0
+                      ? 'bg-gradient-to-r from-[#699cff] to-[#ba9eff] text-[#000000] opacity-40 cursor-not-allowed'
+                      : 'bg-gradient-to-r from-[#699cff] to-[#ba9eff] text-[#000000] hover:shadow-[0_0_20px_0_rgba(105,156,255,0.35)] hover:-translate-y-0.5'
+                  }`}
                 >
                   <Send className="w-5 h-5" />
                   Send Bulk Email ({emailLeads.length})
@@ -467,6 +478,97 @@ export default function Dashboard() {
             </div>
           );
         })()}
+
+        {/* Email Compose Modal */}
+        {showEmailModal && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onClick={() => !emailSending && setShowEmailModal(false)}>
+            <div className="w-full max-w-lg bg-[#091328] border border-[#40485d]/40 rounded-3xl p-8 shadow-[0_0_80px_-20px_rgba(186,158,255,0.15)]"
+              onClick={e => e.stopPropagation()}>
+
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-xl font-semibold text-[#dee5ff]">Compose Bulk Email</h3>
+                <button onClick={() => !emailSending && setShowEmailModal(false)} className="text-[#a3aac4] hover:text-[#dee5ff] transition-colors">
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
+              <p className="text-xs text-[#a3aac4] mb-5 bg-[#ba9eff]/5 border border-[#ba9eff]/15 rounded-xl px-3 py-2">
+                Placeholders: <code className="text-[#ba9eff]">{'{name}'}</code> (lead name), <code className="text-[#ba9eff]">{'{business}'}</code> (category), <code className="text-[#ba9eff]">{'{why_approach}'}</code> (AI reason)
+              </p>
+
+              <div className="flex flex-col gap-5">
+                <div className="flex flex-col gap-2">
+                  <label className="text-[11px] uppercase tracking-[0.1em] text-[#ba9eff] font-medium">Subject</label>
+                  <input
+                    value={emailSubject}
+                    onChange={e => setEmailSubject(e.target.value)}
+                    placeholder="e.g. Grow your online presence with a professional website"
+                    className="bg-transparent border-b border-[#40485d]/50 py-2.5 text-sm outline-none text-[#dee5ff] focus:border-[#699cff] transition-colors placeholder:text-[#a3aac4]/40"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label className="text-[11px] uppercase tracking-[0.1em] text-[#ba9eff] font-medium">Body</label>
+                  <textarea
+                    rows={8}
+                    value={emailBody}
+                    onChange={e => setEmailBody(e.target.value)}
+                    placeholder={`Hi {name},\n\nI noticed {why_approach}\n\nWe help businesses like {business} build modern websites that attract more customers.\n\nWould you be open to a quick chat this week?\n\nBest,\n${startupName}`}
+                    className="bg-transparent border border-[#40485d]/30 rounded-xl p-3 text-sm outline-none text-[#dee5ff] focus:border-[#699cff] transition-colors placeholder:text-[#a3aac4]/30 resize-none"
+                  />
+                </div>
+
+                {emailResult && (
+                  <div className={`text-sm rounded-xl px-4 py-3 border ${
+                    emailResult.errors?.length > 0 && emailResult.sent === 0
+                      ? 'text-red-400 bg-red-400/10 border-red-400/20'
+                      : 'text-green-400 bg-green-400/10 border-green-400/20'
+                  }`}>
+                    {emailResult.sent > 0 && <span>Sent {emailResult.sent} emails successfully. </span>}
+                    {emailResult.failed > 0 && <span>{emailResult.failed} failed. </span>}
+                    {emailResult.errors?.length > 0 && emailResult.sent === 0 && <span>{emailResult.errors[0]}</span>}
+                  </div>
+                )}
+
+                <button
+                  onClick={async () => {
+                    if (!emailSubject.trim() || !emailBody.trim()) return;
+                    setEmailSending(true);
+                    setEmailResult(null);
+                    try {
+                      const res = await fetch('/send-emails', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                          run_id: activeRun?.id,
+                          subject: emailSubject,
+                          body: emailBody,
+                          sender_name: startupName,
+                        }),
+                      });
+                      const data = await res.json();
+                      setEmailResult(data);
+                    } catch (err) {
+                      setEmailResult({ sent: 0, failed: 0, errors: [err.message] });
+                    }
+                    setEmailSending(false);
+                  }}
+                  disabled={emailSending || !emailSubject.trim() || !emailBody.trim()}
+                  className={`flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold tracking-wide transition-all ${
+                    emailSending || !emailSubject.trim() || !emailBody.trim()
+                      ? 'bg-[#a3aac4] opacity-60 cursor-not-allowed text-black'
+                      : 'bg-gradient-to-r from-[#699cff] to-[#ba9eff] text-black hover:shadow-[0_0_20px_0_rgba(105,156,255,0.35)] hover:-translate-y-0.5'
+                  }`}
+                >
+                  {emailSending
+                    ? <><Loader2 className="w-4 h-4 animate-spin" /> Sending...</>
+                    : <><Send className="w-4 h-4" /> Send to {filteredLeads.filter(l => l.emails?.length > 0).length} Leads</>
+                  }
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
 
       </div>
     </div>

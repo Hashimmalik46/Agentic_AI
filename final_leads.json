@@ -6,19 +6,104 @@
             "industry": "EdTech",
             "location": "Srinagar"
         },
-        "total_leads": 1,
+        "total_leads": 4,
         "high": 0,
-        "medium": 1,
-        "low": 0
+        "medium": 3,
+        "low": 1
     },
     "leads": [
+        {
+            "name": "Education Zone",
+            "phone": null,
+            "emails": [
+                "info@educationzone.in",
+                "admin@educationzone.in",
+                "director@educationzone.in",
+                "info@example.com"
+            ],
+            "category": "Educational consultant",
+            "address": "3rd floor, city center plaza, Karan Nagar Gole Market Rd, opposite j&k bank, Karan Nagar, Srinagar, Jammu and Kashmir 190010",
+            "rating": 4.9,
+            "review_count": 146,
+            "website": "http://www.educationzone.in/",
+            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Education%20Zone&query_place_id=ChIJ197dhsyP4TgRMiLjwy9xdlI",
+            "negative_reviews": [],
+            "website_flaws": [],
+            "website_improvements": [],
+            "signal_matches": [],
+            "scores": {
+                "llm_score": 85,
+                "website_gap": 50,
+                "signals_score": 0,
+                "final_score": 58
+            },
+            "priority": "MEDIUM",
+            "why_approach": "The business has a website, but it's not available or not scraped, indicating a potential issue with their online presence that needs to be addressed",
+            "why_not": "The business has a high rating and no negative reviews, suggesting a strong reputation, but the website issue presents an opportunity for improvement"
+        },
+        {
+            "name": "Multichannel Educational Institute Pvt. Ltd.",
+            "phone": null,
+            "emails": [
+                "hello@example.com"
+            ],
+            "category": "Vocational school",
+            "address": "Post Office Road, Lal Bazar, Srinagar, Jammu and Kashmir 190023",
+            "rating": 4.9,
+            "review_count": 73,
+            "website": "http://www.meinstitute.org/",
+            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Multichannel%20Educational%20Institute%20Pvt.%20Ltd.&query_place_id=ChIJT5msAAKF4TgRr-xMX5QjKJ8",
+            "negative_reviews": [],
+            "website_flaws": [],
+            "website_improvements": [],
+            "signal_matches": [],
+            "scores": {
+                "llm_score": 72,
+                "website_gap": 50,
+                "signals_score": 0,
+                "final_score": 51
+            },
+            "priority": "MEDIUM",
+            "why_approach": "The website is not available or not scraped, indicating potential issues with their online presence that need to be addressed",
+            "why_not": "The business has a high rating and no negative reviews, suggesting a strong reputation and potentially lower motivation to change their current setup"
+        },
+        {
+            "name": "ILS Srinagar",
+            "phone": "+91 90864 41234",
+            "emails": [],
+            "category": "Software training institute",
+            "address": "Regal Lane, Residency Road, near Hotel Regal Palace, Srinagar, Jammu and Kashmir 190001",
+            "rating": 4.5,
+            "review_count": 106,
+            "website": "https://ilssrinagar.com/",
+            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=ILS%20Srinagar&query_place_id=ChIJy5oDBdYExkgR54MknAJAtaA",
+            "negative_reviews": [
+                {
+                    "author": "16__Murtaza Bashir",
+                    "rating": 2,
+                    "text": "I was informed at the time of admission that  paid internship would be provided after the 3 month course. Now after completing the course, the requirement changed to a 6 month unpaid internship. This difference in commitment was disappointing. I hope the institute improves transparency and communication with students"
+                }
+            ],
+            "website_flaws": [],
+            "website_improvements": [],
+            "signal_matches": [],
+            "scores": {
+                "llm_score": 72,
+                "website_gap": 50,
+                "signals_score": 0,
+                "final_score": 51
+            },
+            "priority": "MEDIUM",
+            "why_approach": "The business has a website, but it's not available or not scraped, indicating potential website flaws that need to be addressed",
+            "why_not": "The business already has a website and a high rating, which might indicate a lower need for website development services"
+        },
         {
             "name": "EDUCADD LEARNING SOLUTIONS",
             "phone": "+91 70514 90048",
             "emails": [
-                "franchise@educadd.net",
+                "contact@educadd.net",
                 "support@educadd.net",
-                "contact@educadd.net"
+                "franchise@educadd.net"
             ],
             "category": "Training center",
             "address": "Qureshi Manzil, opposite Wani Medicate, behind J And K Bank, Jawahar Nagar, Srinagar, Jammu and Kashmir 190008",
@@ -31,14 +116,14 @@
             "website_improvements": [],
             "signal_matches": [],
             "scores": {
-                "llm_score": 55,
+                "llm_score": 39,
                 "website_gap": 50,
                 "signals_score": 0,
-                "final_score": 42
+                "final_score": 34
             },
-            "priority": "MEDIUM",
-            "why_approach": "Their website is not available or not scraped, indicating potential issues with their online presence",
-            "why_not": "They already have a website and a high rating with no negative reviews, suggesting a relatively strong online presence"
+            "priority": "LOW",
+            "why_approach": "their website is not available or not scraped, indicating potential issues with online presence",
+            "why_not": "they already have a website and high customer ratings, suggesting a strong online presence"
         }
     ]
 }
