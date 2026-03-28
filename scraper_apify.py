@@ -20,13 +20,17 @@ def fetch_leads(business_type: str, city: str, max_results: int = 20) -> list[di
     print(f"\nSearching: '{search_query}' (max {max_results} results)\n")
 
     run_input = {
-        "searchStringsArray": [search_query],
-        "maxCrawledPlacesPerSearch": max_results,
-        "language": "en",
-        "maxReviews": 10,          # >0 enables review scraping
-        "reviewsSort": "newest",
-        "exportPlaceUrls": True,
+    "searchStringsArray": [search_query],
+    "maxCrawledPlacesPerSearch": max_results,
+    "language": "en",
+    "scrapePlaceDetailPage": True,
+    "maxReviews": 10,
+    "reviewsSort": "newest",
+    "reviewsOrigin": "google",
+    "scrapeReviewsPersonalData": True,
+    "exportPlaceUrls": True,
     }
+
 
     # Run the actor and wait for it to finish
     run = client.actor("compass/crawler-google-places").call(run_input=run_input)
