@@ -5,9 +5,12 @@ google-search-results
 python-dotenv
 supabase
 google-generativeai
-requests 
-beautifulsoup4 
-lxml 
+requests
+beautifulsoup4
+lxml
 playwright
+apify-client
+#sentence-transformers scikit-learn
 #npx playwright install chromium
 #playwright install
+

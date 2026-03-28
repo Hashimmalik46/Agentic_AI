@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /d/code/hackathon/Agentic_AI -maxdepth 2 -name scraper* -o -name *scraper*)",
+      "Bash(python -c \"from enrichment import enrich_lead; print\\(''import ok''\\)\")",
+      "Bash(.venv/Scripts/python -c \"from enrichment import enrich_lead; print\\(''import ok''\\)\")"
+    ]
+  }
+}

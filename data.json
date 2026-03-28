@@ -1,20 +1,308 @@
 [
     {
-        "name": "GEETANJALI DENTAL OPTIONS Dental clinic south Delhi Dentist near me",
-        "phone": "+91 98100 15577",
-        "website": "https://geetanjalidental.in/?utm_source=GMB&utm_medium=organic",
-        "rating": 4.9
+        "name": "Dhar Pharmacy",
+        "phone": "+91 94190 14886",
+        "website": null,
+        "address": "2RM5+F8M, Chanpora, Srinagar, Jammu and Kashmir 190015",
+        "rating": 3.6,
+        "review_count": 79,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "8:30 AM to 10 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "8:30 AM to 10 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dhar%20Pharmacy&query_place_id=ChIJrQ0xE0aO4TgRoCS0K5aIDUU",
+        "reviews": [
+            {
+                "author": "Sameena Naz",
+                "rating": 4,
+                "text": "Good quality meds no doubt.But the madam there is exceptionally biased,disrespectful and rude towards customers..",
+                "date": "2026-03-17T14:01:54.299Z"
+            },
+            {
+                "author": "owaise rashid",
+                "rating": 5,
+                "text": null,
+                "date": "2026-01-11T16:29:13.938Z"
+            },
+            {
+                "author": "Pinu Andrabi",
+                "rating": 1,
+                "text": "Very rude.",
+                "date": "2026-01-03T05:12:11.932Z"
+            },
+            {
+                "author": "Bashir Ahmad Sheer Gojree, Srinagar",
+                "rating": 5,
+                "text": "Pharmacy",
+                "date": "2025-12-25T05:29:03.589Z"
+            },
+            {
+                "author": "Beigh Bilal (Plumber)",
+                "rating": 4,
+                "text": null,
+                "date": "2025-12-19T08:19:39.233Z"
+            },
+            {
+                "author": "suhaib wani",
+                "rating": 5,
+                "text": null,
+                "date": "2025-10-28T13:50:36.861Z"
+            },
+            {
+                "author": "Shoukat Ahmad",
+                "rating": 4,
+                "text": null,
+                "date": "2025-10-12T08:30:52.224Z"
+            },
+            {
+                "author": "Faisal Majeed",
+                "rating": 1,
+                "text": "Expensive",
+                "date": "2025-09-30T13:20:22.252Z"
+            },
+            {
+                "author": "ZUHAIB KHAN",
+                "rating": 4,
+                "text": "Medicines are sold at MRP and no discount is given. But, if there is a medicine that's not available at most of the medical stores, you have a great chance that you will find it here. So, there is a trade off between medicine availability and cost.",
+                "date": "2025-09-29T19:46:33.987Z"
+            },
+            {
+                "author": "Wani Danish",
+                "rating": 2,
+                "text": null,
+                "date": "2025-07-27T13:47:50.250Z"
+            }
+        ]
     },
     {
-        "name": "Crown And Roots Dental Clinic",
-        "phone": "+91 98219 99447",
-        "website": "https://www.crownandroots.com/",
-        "rating": 4.9
+        "name": "Haemath",
+        "phone": "+91 96227 70066",
+        "website": "http://www.haemath.com/",
+        "address": "Haemath complex, Nai Sarak Rd, Habba Kadal, Srinagar, Jammu and Kashmir 190001",
+        "rating": 4.9,
+        "review_count": 229,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "8:30 AM to 9:30 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "8:30 AM to 9:30 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Haemath&query_place_id=ChIJDXQYYbOP4TgR3numDw7j27Q",
+        "reviews": [
+            {
+                "author": "Sheikh Asim",
+                "rating": 5,
+                "text": null,
+                "date": "2026-03-25T08:42:17.255Z"
+            },
+            {
+                "author": "Mohsin",
+                "rating": 5,
+                "text": "Received my medicines within few hours. The packaging was good and with full privacy.",
+                "date": "2026-02-08T12:51:01.111Z"
+            },
+            {
+                "author": "sa i",
+                "rating": 3,
+                "text": "I Ordered medicine and baby food and recieved within hour with free delivery amazing service 🙌 Thanks",
+                "date": "2026-01-20T12:30:48.145Z"
+            },
+            {
+                "author": "nighat bashir",
+                "rating": 5,
+                "text": null,
+                "date": "2025-12-07T13:25:29.324Z"
+            },
+            {
+                "author": "Chinar Residency G.H.",
+                "rating": 5,
+                "text": null,
+                "date": "2025-12-03T11:14:42.340Z"
+            },
+            {
+                "author": "Nida Banday",
+                "rating": 5,
+                "text": "Awesome experience. They delivered my ordered medicine on time.I truly appreciate all the hard work. Thank u, Haemath.",
+                "date": "2025-11-26T09:50:45.562Z"
+            },
+            {
+                "author": "Lubran",
+                "rating": 5,
+                "text": null,
+                "date": "2025-11-26T08:24:32.569Z"
+            },
+            {
+                "author": "Faizan Mehraj",
+                "rating": 5,
+                "text": null,
+                "date": "2025-11-21T15:32:20.470Z"
+            },
+            {
+                "author": "Mir Suhail",
+                "rating": 5,
+                "text": null,
+                "date": "2025-11-18T14:43:12.934Z"
+            },
+            {
+                "author": "Syed Hanan Basit Bukhari",
+                "rating": 5,
+                "text": "Great..same day delivery with discounts.\nAnd you will get free delivery as well. 😊",
+                "date": "2025-10-24T16:52:45.778Z"
+            }
+        ]
     },
     {
-        "name": "Meraki Dental Studio - Best Dentist in Delhi India",
-        "phone": "+91 11 4160 6066",
-        "website": "https://merakidentalstudio.com/?utm_source=gmb&utm_medium=website-link",
-        "rating": 4.9
+        "name": "Kashmir Medical Store",
+        "phone": "+91 99063 45734",
+        "website": null,
+        "address": "1, Hazratbal Rd, near Sub Centre, Habak, Nasim Bagh, Srinagar, Jammu and Kashmir 190006",
+        "rating": 4.8,
+        "review_count": 23,
+        "category": "Pharmacy",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "9 AM to 10 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "9 AM to 10 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kashmir%20Medical%20Store&query_place_id=ChIJ7y3hC8KF4TgRvF1LuVmaeDo",
+        "reviews": [
+            {
+                "author": "Meeran Nazir Janwari",
+                "rating": 5,
+                "text": "Top notch medicine",
+                "date": "2026-03-17T07:45:56.087Z"
+            },
+            {
+                "author": "Nazir Ahmed",
+                "rating": 5,
+                "text": "Hi I need a bit of information\nThere is pharmacy at crossing owned by Shah's\nCan you provide the name of that pharmacy\nA bit urgent",
+                "date": "2026-03-07T07:16:03.688Z"
+            },
+            {
+                "author": "Gulzar Wani",
+                "rating": 5,
+                "text": null,
+                "date": "2026-02-13T15:41:35.874Z"
+            },
+            {
+                "author": "Athar Rafiq",
+                "rating": 5,
+                "text": null,
+                "date": "2026-02-08T05:18:47.507Z"
+            },
+            {
+                "author": "Emaan Mine",
+                "rating": 5,
+                "text": null,
+                "date": "2026-02-08T03:11:02.790Z"
+            },
+            {
+                "author": "Bilal Softy Point (Sheikh Bilal)",
+                "rating": 5,
+                "text": "Best medical shop in Habak",
+                "date": "2026-02-07T23:58:01.268Z"
+            },
+            {
+                "author": "Adil Dar",
+                "rating": 5,
+                "text": null,
+                "date": "2026-02-07T17:13:41.770Z"
+            },
+            {
+                "author": "Mir Amir",
+                "rating": 5,
+                "text": "Kashmir medical store  is very good. It has been there for a long time and all high-quality medicines are always available there.",
+                "date": "2026-02-07T16:46:13.412Z"
+            },
+            {
+                "author": "Mir Azim",
+                "rating": 5,
+                "text": "Best quality medison and good service",
+                "date": "2026-01-30T13:57:28.491Z"
+            },
+            {
+                "author": "Tanveer Ahmad Bhat",
+                "rating": 5,
+                "text": "Good",
+                "date": "2026-01-20T06:41:13.776Z"
+            }
+        ]
     }
 ]
