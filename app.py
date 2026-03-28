@@ -1,15 +1,35 @@
+import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
 from pipeline import run_pipeline
 from service_configs import list_services
-from db.insert import save_pipeline_output
 from emailer_sendgrid import send_email_via_sendgrid
 
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+# Allow the Vite dev server (and other clients) to call this API.
+# This also ensures the browser's OPTIONS preflight succeeds.
+CORS(
+    app,
+    resources={r"/*": {"origins": "*"}},
+    methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization"],
+)
+
+
+@app.after_request
+def _add_cors_headers(resp):
+    """
+    Belt-and-suspenders CORS headers.
+    Some environments/proxies can interfere with flask-cors; this keeps dev unblocked.
+    """
+    origin = request.headers.get("Origin") or "*"
+    resp.headers.setdefault("Access-Control-Allow-Origin", origin)
+    resp.headers.setdefault("Access-Control-Allow-Methods", "GET,POST,OPTIONS")
+    resp.headers.setdefault("Access-Control-Allow-Headers", "Content-Type,Authorization")
+    return resp
 
 
 def _build_email_content(lead: dict, meta: dict) -> tuple[str, str]:
@@ -35,7 +55,7 @@ def _build_email_content(lead: dict, meta: dict) -> tuple[str, str]:
     return subject, html
 
 
-@app.route("/generate-leads", methods=["POST"])
+@app.route("/generate-leads", methods=["POST", "OPTIONS"])
 def generate_leads():
     """
     Run the full lead generation pipeline.
@@ -47,6 +67,9 @@ def generate_leads():
             "max_results": 20                   (optional, default: 20)
         }
     """
+    if request.method == "OPTIONS":
+        return ("", 204)
+
     data = request.get_json()
 
     if not data or "niche" not in data:
@@ -62,15 +85,16 @@ def generate_leads():
     send_emails  = bool(data.get("send_emails", False))
 
     email_from   = data.get("from_email")
-    email_reply_to = data.get("reply_to")
-    max_emails_total = int(data.get("max_emails_total", 30))
-    max_emails_per_lead = int(data.get("max_emails_per_lead", 2))
+    email_reply_to = data.get("reply_to") or os.getenv("SENDGRID_REPLY_TO")
+    max_emails_total = int(data.get("max_emails_total", 500))
+    max_emails_per_lead = int(data.get("max_emails_per_lead", 20))
 
     result = run_pipeline(niche, service_type, max_results)
 
     # Push to DB if user_id provided
     if user_id:
         try:
+            from db.insert import save_pipeline_output
             run_id = save_pipeline_output(result, user_id)
             result["run_id"] = run_id
         except Exception as e:

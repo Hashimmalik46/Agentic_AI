@@ -69,8 +69,8 @@ export default function WorkspaceProfile() {
         service_type: 'website_development',
         max_results: 20,
         send_emails: true,
-        max_emails_total: 30,
-        max_emails_per_lead: 2
+        max_emails_total: 500,
+        max_emails_per_lead: 50
       })
     })
       .then(async (res) => {

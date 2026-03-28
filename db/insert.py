@@ -1,4 +1,4 @@
-from db.client import supabase
+from db.client import get_supabase
 
 
 def save_pipeline_output(output: dict, user_id: str) -> str:
@@ -14,6 +14,7 @@ def save_pipeline_output(output: dict, user_id: str) -> str:
     """
     meta  = output.get("meta", {})
     leads = output.get("leads", [])
+    supabase = get_supabase()
 
     # ── Insert run ────────────────────────────────────────────────────────────
     run_row = {
