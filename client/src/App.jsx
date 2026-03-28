@@ -1,13 +1,12 @@
 import Home from "./pages/Home"
-import Discription from "./pages/Discription"
-import Output from "./pages/Output"
+import Profile from "./pages/Profile"
+
 
 const App = () => {
   return (
     <div>
-      <Home />
-      {/* <Discription /> */}
-      {/* <Output /> */}
+      {/* <Home /> */}
+      <Profile />
 
     </div>
   )
