@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 from pipeline import run_pipeline
 from service_configs import list_services
+from db.insert import save_pipeline_output
 
 load_dotenv()
 
@@ -31,8 +32,18 @@ def generate_leads():
 
     service_type = data.get("service_type", "website_development").strip()
     max_results  = int(data.get("max_results", 20))
+    user_id      = data.get("user_id")  # optional for now
 
     result = run_pipeline(niche, service_type, max_results)
+
+    # Push to DB if user_id provided
+    if user_id:
+        try:
+            run_id = save_pipeline_output(result, user_id)
+            result["run_id"] = run_id
+        except Exception as e:
+            print(f"  DB push failed: {e}")
+
     return jsonify(result)
 
 
