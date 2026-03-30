@@ -42,6 +42,8 @@ def save_pipeline_output(output: dict, user_id: str) -> str:
             "run_id":               run_id,
             "user_id":              user_id,
             "name":                 lead.get("name"),
+            "phone":                lead.get("phone"),
+            "emails":               lead.get("emails", []),
             "category":             lead.get("category"),
             "address":              lead.get("address"),
             "rating":               lead.get("rating"),

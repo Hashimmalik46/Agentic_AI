@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from dotenv import load_dotenv
 from pipeline import run_pipeline
 from service_configs import list_services
@@ -7,6 +8,7 @@ from db.insert import save_pipeline_output
 load_dotenv()
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route("/generate-leads", methods=["POST"])
@@ -41,8 +43,11 @@ def generate_leads():
         try:
             run_id = save_pipeline_output(result, user_id)
             result["run_id"] = run_id
+            print(f"  DB push OK — run_id={run_id}")
         except Exception as e:
-            print(f"  DB push failed: {e}")
+            import traceback
+            traceback.print_exc()
+            result["db_error"] = str(e)
 
     return jsonify(result)
 
@@ -56,6 +61,23 @@ def services():
 @app.route("/health", methods=["GET"])
 def health():
     return jsonify({"status": "ok"})
+
+
+@app.route("/test-db", methods=["GET"])
+def test_db():
+    """Verify DB connection and that public.users table is reachable."""
+    import os
+    from db.client import supabase
+    try:
+        res = supabase.table("users").select("id, email").limit(5).execute()
+        return jsonify({
+            "status": "ok",
+            "key_prefix": (os.getenv("SUPABASE_SERVICE_KEY") or "")[:20] + "...",
+            "users_found": len(res.data),
+            "sample": res.data,
+        })
+    except Exception as e:
+        return jsonify({"status": "error", "detail": str(e)}), 500
 
 
 if __name__ == "__main__":

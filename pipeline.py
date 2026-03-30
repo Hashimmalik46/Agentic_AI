@@ -23,7 +23,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 from services.niche_parser import parse_niche
 from services.query_generator import generate_queries
-from scraper_apify import fetch_leads
+from email_scraper_apify import fetch_leads
 from enrichment import enrich_lead
 from lead_scorer import score_leads
 from service_configs import get_service, list_services
@@ -119,6 +119,8 @@ def _slim(lead: dict) -> dict:
 
     return {
         "name":                 lead.get("name"),
+        "phone":                lead.get("phone"),
+        "emails":               lead.get("emails", []),
         "category":             lead.get("category"),
         "address":              lead.get("address"),
         "rating":               lead.get("rating"),

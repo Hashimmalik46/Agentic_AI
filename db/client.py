@@ -4,7 +4,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Backend always uses the service_role key so it can bypass RLS
+# and insert rows on behalf of any user.
 supabase = create_client(
     os.getenv("SUPABASE_URL"),
-    os.getenv("SUPABASE_KEY")
+    os.getenv("SUPABASE_SERVICE_KEY"),
 )

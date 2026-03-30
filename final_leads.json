@@ -1,105 +1,44 @@
 {
     "meta": {
-        "niche": "pharmacies in srinagar kashmir",
+        "niche": "EdTech in Srinagar",
         "service": "Website Development",
         "parsed": {
-            "industry": "pharmacies",
-            "location": "srinagar kashmir"
+            "industry": "EdTech",
+            "location": "Srinagar"
         },
-        "total_leads": 3,
-        "high": 2,
-        "medium": 0,
-        "low": 1
+        "total_leads": 1,
+        "high": 0,
+        "medium": 1,
+        "low": 0
     },
     "leads": [
         {
-            "name": "Dhar Pharmacy",
-            "category": "Pharmacy",
-            "address": "2RM5+F8M, Chanpora, Srinagar, Jammu and Kashmir 190015",
-            "rating": 3.6,
-            "review_count": 79,
-            "website": null,
-            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Dhar%20Pharmacy&query_place_id=ChIJrQ0xE0aO4TgRoCS0K5aIDUU",
-            "negative_reviews": [
-                {
-                    "author": "Pinu Andrabi",
-                    "rating": 1,
-                    "text": "Very rude."
-                },
-                {
-                    "author": "Faisal Majeed",
-                    "rating": 1,
-                    "text": "Expensive"
-                }
+            "name": "EDUCADD LEARNING SOLUTIONS",
+            "phone": "+91 70514 90048",
+            "emails": [
+                "franchise@educadd.net",
+                "support@educadd.net",
+                "contact@educadd.net"
             ],
-            "website_flaws": [],
-            "website_improvements": [],
-            "signal_matches": [
-                "No website at all — immediate need",
-                "Website gap score > 60 — poor existing site"
-            ],
-            "scores": {
-                "llm_score": 85,
-                "website_gap": 100,
-                "signals_score": 45,
-                "final_score": 82
-            },
-            "priority": "HIGH",
-            "why_approach": "The business has no website, making it hard for customers to find them online and potentially book or get in touch, which is a significant pain point",
-            "why_not": "Some negative customer feedback about the business being rude and expensive might indicate deeper issues that a website alone cannot solve"
-        },
-        {
-            "name": "Kashmir Medical Store",
-            "category": "Pharmacy",
-            "address": "1, Hazratbal Rd, near Sub Centre, Habak, Nasim Bagh, Srinagar, Jammu and Kashmir 190006",
-            "rating": 4.8,
-            "review_count": 23,
-            "website": null,
-            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Kashmir%20Medical%20Store&query_place_id=ChIJ7y3hC8KF4TgRvF1LuVmaeDo",
-            "negative_reviews": [],
-            "website_flaws": [],
-            "website_improvements": [],
-            "signal_matches": [
-                "No website at all — immediate need",
-                "Website gap score > 60 — poor existing site"
-            ],
-            "scores": {
-                "llm_score": 85,
-                "website_gap": 100,
-                "signals_score": 45,
-                "final_score": 82
-            },
-            "priority": "HIGH",
-            "why_approach": "The business has no website, making it a prime target for outreach to establish an online presence and improve customer engagement",
-            "why_not": "The lack of negative reviews suggests the business is doing well offline, which might reduce the sense of urgency for them to invest in a website"
-        },
-        {
-            "name": "Haemath",
-            "category": "Pharmacy",
-            "address": "Haemath complex, Nai Sarak Rd, Habba Kadal, Srinagar, Jammu and Kashmir 190001",
+            "category": "Training center",
+            "address": "Qureshi Manzil, opposite Wani Medicate, behind J And K Bank, Jawahar Nagar, Srinagar, Jammu and Kashmir 190008",
             "rating": 4.9,
-            "review_count": 229,
-            "website": "http://www.haemath.com/",
-            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Haemath&query_place_id=ChIJDXQYYbOP4TgR3numDw7j27Q",
-            "negative_reviews": [
-                {
-                    "author": "sa i",
-                    "rating": 3,
-                    "text": "I Ordered medicine and baby food and recieved within hour with free delivery amazing service 🙌 Thanks"
-                }
-            ],
+            "review_count": 34,
+            "website": "http://www.educadd.co.in/",
+            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=EDUCADD%20LEARNING%20SOLUTIONS&query_place_id=ChIJ679S7yOP4TgROGLY-HBdv50",
+            "negative_reviews": [],
             "website_flaws": [],
             "website_improvements": [],
             "signal_matches": [],
             "scores": {
-                "llm_score": 39,
+                "llm_score": 55,
                 "website_gap": 50,
                 "signals_score": 0,
-                "final_score": 34
+                "final_score": 42
             },
-            "priority": "LOW",
-            "why_approach": "their website is not available or not scraped, indicating potential issues with online presence",
-            "why_not": "they have a high rating and positive customer feedback, indicating a strong presence and low need for improvement"
+            "priority": "MEDIUM",
+            "why_approach": "Their website is not available or not scraped, indicating potential issues with their online presence",
+            "why_not": "They already have a website and a high rating with no negative reviews, suggesting a relatively strong online presence"
         }
     ]
 }
