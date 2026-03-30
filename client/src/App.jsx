@@ -4,6 +4,7 @@ import { supabase } from '/lib/supabaseClient.jsx';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
+import Onboarding from './pages/Onboarding';
 import Profile from './pages/Profile';
 import Dashboard from './pages/Dashboard';
 
@@ -37,6 +38,7 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<RequireAuth><Home /></RequireAuth>} />
+        <Route path="/onboarding" element={<RequireAuth><Onboarding /></RequireAuth>} />
         <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>} />
         <Route path="/dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} />
       </Routes>

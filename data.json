@@ -1,0 +1,109 @@
+[
+    {
+        "name": "EDUCADD LEARNING SOLUTIONS",
+        "phone": "+91 70514 90048",
+        "website": "http://www.educadd.co.in/",
+        "address": "Qureshi Manzil, opposite Wani Medicate, behind J And K Bank, Jawahar Nagar, Srinagar, Jammu and Kashmir 190008",
+        "rating": 4.9,
+        "review_count": 34,
+        "category": "Training center",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "10 AM to 5 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "10 AM to 5 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "10 AM to 5 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "10 AM to 5 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "10 AM to 5 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "10 AM to 5 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "Closed"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=EDUCADD%20LEARNING%20SOLUTIONS&query_place_id=ChIJ679S7yOP4TgROGLY-HBdv50",
+        "reviews": [
+            {
+                "author": "Irtika farooq",
+                "rating": 5,
+                "text": "Great experience & learned a lot\nthanks to Shamiya ma'am for being  such a motivational and understanding  teacher ❣️🥹",
+                "date": "2024-02-14T17:15:14.974Z"
+            },
+            {
+                "author": "ishrat jan",
+                "rating": 5,
+                "text": null,
+                "date": "2023-09-28T05:17:11.825Z"
+            },
+            {
+                "author": "wajid Rather",
+                "rating": 5,
+                "text": "Great experience, special thanks to shamiya maam",
+                "date": "2023-09-21T05:59:01.688Z"
+            },
+            {
+                "author": "sohail saa",
+                "rating": 5,
+                "text": "Thanks thanks a lot  shamiya mam and the institution edu CADD learning centre jawahar nagar Srinagar .I recommend all students to join you will find learning above your expectations.\nThanking you\nMam shamiya Mam",
+                "date": "2023-09-21T05:05:22.851Z"
+            },
+            {
+                "author": "Khaja Saleem",
+                "rating": 5,
+                "text": "Great experience & We learned a lot\nSpecial thanks to Shamiya ma'am",
+                "date": "2023-09-21T04:55:33.891Z"
+            },
+            {
+                "author": "Nailah 39",
+                "rating": 5,
+                "text": "I was amazed with the faculty the teacher was too good 👍",
+                "date": "2023-08-16T07:58:11.644Z"
+            },
+            {
+                "author": "khubiya",
+                "rating": 5,
+                "text": "Best autocad training institute",
+                "date": "2023-08-16T07:57:54.282Z"
+            },
+            {
+                "author": "unknown",
+                "rating": 5,
+                "text": "The AutoCAD training program exceeded my expectations with its comprehensive curriculum  and hands on project, greatly enhancing my design skills.\nThe training was well structured and paced perfectly making it easy to grasp concepts even for someone new to CAD software.\nThanks to EduCADD  srinagar  skilled instructors who made the journey enjoyable and insightful.",
+                "date": "2023-08-11T09:47:42.782Z"
+            },
+            {
+                "author": "sabreena langoo",
+                "rating": 5,
+                "text": null,
+                "date": "2023-06-08T10:32:32.932Z"
+            },
+            {
+                "author": "Syed Sadiq",
+                "rating": 5,
+                "text": null,
+                "date": "2023-06-07T09:34:03.544Z"
+            }
+        ],
+        "emails": [
+            "franchise@educadd.net",
+            "support@educadd.net",
+            "contact@educadd.net"
+        ]
+    }
+]

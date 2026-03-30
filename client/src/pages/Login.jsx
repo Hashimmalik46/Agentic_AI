@@ -18,7 +18,7 @@ export default function Authentication() {
     e.preventDefault();
     setIsLoading(true);
     setError('');
-    const { error } = await supabase.auth.signInWithPassword({
+    const { data, error } = await supabase.auth.signInWithPassword({
       email: formData.email,
       password: formData.password,
     });
@@ -26,7 +26,13 @@ export default function Authentication() {
       setError(error.message);
       setIsLoading(false);
     } else {
-      navigate('/profile');
+      // Check if user has completed onboarding
+      const { data: profile } = await supabase
+        .from('users')
+        .select('startup_name')
+        .eq('id', data.user.id)
+        .single();
+      navigate(profile?.startup_name ? '/profile' : '/onboarding');
     }
   };
 

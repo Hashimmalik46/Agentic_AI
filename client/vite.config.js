@@ -10,6 +10,7 @@ export default defineConfig({
       '/generate-leads': 'http://localhost:5000',
       '/services': 'http://localhost:5000',
       '/health': 'http://localhost:5000',
+      '/send-emails': 'http://localhost:5000',
     },
   },
 })
