@@ -17,6 +17,8 @@ export default function LeadScraperPipeline() {
     keywords: ''
   });
 
+
+
   const industries = [
     'B2B SaaS', 'E-commerce', 'Fintech', 'Healthcare Tech',
     'Logistics & Supply Chain', 'Real Estate', 'EdTech', 'Other'
