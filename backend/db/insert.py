@@ -1,4 +1,4 @@
-from db.client import supabase
+from backend.db.client import supabase
 
 
 def save_pipeline_output(output: dict, user_id: str) -> str:
@@ -61,6 +61,9 @@ def save_pipeline_output(output: dict, user_id: str) -> str:
             "website_flaws":        lead.get("website_flaws", []),
             "website_improvements": lead.get("website_improvements", []),
             "negative_reviews":     lead.get("negative_reviews", []),
+            "vector_score":         scores.get("vector_score"),
+            "vector_category":      lead.get("vector_category"),
+            "vector_reason":        lead.get("vector_reason"),
         })
 
     supabase.table("leads").insert(rows).execute()

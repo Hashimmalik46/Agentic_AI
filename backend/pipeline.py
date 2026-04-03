@@ -21,12 +21,13 @@ import json
 import functools
 from concurrent.futures import ThreadPoolExecutor
 
-from services.niche_parser import parse_niche
-from services.query_generator import generate_queries
-from email_scraper_apify import fetch_leads
-from enrichment import enrich_lead
-from lead_scorer import score_leads
-from service_configs import get_service, list_services
+from backend.services.niche_parser import parse_niche
+from backend.services.query_generator import generate_queries
+from backend.email_scraper_apify import fetch_leads
+from backend.enrichment import enrich_lead
+from backend.lead_scorer import score_leads
+from backend.vector_scoring import score_leads as vector_score_leads
+from backend.service_configs import get_service, list_services
 
 
 # ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -140,9 +141,12 @@ def _slim(lead: dict) -> dict:
             "llm_score":     lead.get("llm_score", 0),
             "website_gap":   lead.get("website_gap", 0),
             "signals_score": lead.get("signals_score", 0),
+            "vector_score":  lead.get("vector_score", 0),
             "final_score":   lead.get("final_score", 0),
         },
-        "priority":     lead.get("priority"),
+        "priority":         lead.get("priority"),
+        "vector_category":  lead.get("vector_category"),
+        "vector_reason":    lead.get("vector_reason"),
         "why_approach": lead.get("why_approach", ""),
         "why_not":      lead.get("why_not", ""),
     }
@@ -199,25 +203,30 @@ def run_pipeline(niche: str, service_type: str = "website_development", max_resu
     # ── Step 6: LLM scoring ──────────────────────────────────────────────────
     print("\n[5/7] LLM scoring leads...")
     leads = score_leads(leads, llm_context=service_cfg["llm_context"])
-
+    # ── Step 6.5: Vector scoring (semantic pain signals) ──────────────────────
+    print("[5b/7] Vector scoring leads...")
+    leads = vector_score_leads(leads)
     # ── Step 7: Signals + final score ────────────────────────────────────────
     print("\n[6/7] Computing final scores...")
     for lead in leads:
-        llm_score    = lead.get("llm_score", 0)
-        website_gap  = lead.get("website_gap", 0)
+        llm_score     = lead.get("llm_score", 0)
+        website_gap   = lead.get("website_gap", 0)
+        vector_score  = lead.get("vector_score", 0)
         sig_score, matched = _signals_score(lead, service_cfg)
 
         final_score = round(
-            (0.5 * llm_score) +
-            (0.3 * website_gap) +
-            (0.2 * sig_score)
+            (0.45 * llm_score) +
+            (0.25 * website_gap) +
+            (0.2 * sig_score) +
+            (0.1 * vector_score)
         )
         final_score = max(0, min(100, final_score))
 
-        lead["signals_score"]  = sig_score
-        lead["signal_matches"] = matched
-        lead["final_score"]    = final_score
-        lead["priority"]       = _priority(final_score)
+        lead["signals_score"]     = sig_score
+        lead["signal_matches"]    = matched
+        lead["final_score"]       = final_score
+        lead["priority"]          = _priority(final_score)
+        lead["vector_score"]      = vector_score
 
     leads.sort(key=lambda x: x["final_score"], reverse=True)
 

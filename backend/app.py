@@ -2,10 +2,10 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
 from dotenv import load_dotenv
-from pipeline import run_pipeline
-from service_configs import list_services
-from db.insert import save_pipeline_output
-from email_sender import send_bulk_emails
+from backend.pipeline import run_pipeline
+from backend.service_configs import list_services
+from backend.db.insert import save_pipeline_output
+from backend.email_sender import send_bulk_emails
 
 load_dotenv()
 
@@ -96,7 +96,7 @@ def send_emails():
         return jsonify({"error": "run_id, subject, and body are required"}), 400
 
     # Fetch leads with emails for this run
-    from db.client import supabase
+    from backend.db.client import supabase
     res = supabase.table("leads").select("*").eq("run_id", run_id).execute()
     leads_rows = res.data or []
 
@@ -119,7 +119,7 @@ def health():
 def test_db():
     """Verify DB connection and that public.users table is reachable."""
     import os
-    from db.client import supabase
+    from backend.db.client import supabase
     try:
         res = supabase.table("users").select("id, email").limit(5).execute()
         return jsonify({

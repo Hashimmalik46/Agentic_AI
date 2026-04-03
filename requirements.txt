@@ -10,5 +10,9 @@ google-generativeai
 requests
 beautifulsoup4
 lxml
-playwright
+playwright 
+#install chromium
 apify-client
+pinecone-client 
+sentence-transformers 
+scikit-learn

@@ -1,116 +1,60 @@
 {
     "meta": {
-        "niche": "IT in delhi",
+        "niche": "software in delhi",
         "service": "Website Development",
         "parsed": {
-            "industry": "IT",
+            "industry": "software",
             "location": "delhi"
         },
-        "total_leads": 6,
+        "total_leads": 4,
         "high": 0,
-        "medium": 3,
+        "medium": 1,
         "low": 3
     },
     "leads": [
         {
-            "name": "I. T. Solutions",
-            "phone": "+91 11 4152 3242",
-            "emails": [],
-            "category": "Computer repair service",
-            "address": "Gate No. 8, A-6, 1st Floor, Inner Circle, Above Post office, near ICICI Bank, Bon Ton and Metro, Connaught Place, New Delhi, Delhi 110001, India",
+            "name": "Binarysoft Technologies (We bring IT)",
+            "phone": "+91 92054 71661",
+            "emails": [
+                "info@binaysoft.com",
+                "info@binarysoft.com"
+            ],
+            "category": "Software company",
+            "address": "1st Floor, 1626/33, Block 27F, Naiwala, Karol Bagh, Delhi, 110005, India",
+            "rating": 5,
+            "review_count": 214,
+            "website": "http://www.binarysoft.com/",
+            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Binarysoft%20Technologies%20(We%20bring%20IT)&query_place_id=ChIJPR796sD9DDkRLo5M9V9l1nA",
+            "negative_reviews": [],
+            "website_flaws": [],
+            "website_improvements": [],
+            "signal_matches": [],
+            "scores": {
+                "llm_score": 85,
+                "website_gap": 50,
+                "signals_score": 0,
+                "vector_score": 10,
+                "final_score": 52
+            },
+            "priority": "MEDIUM",
+            "vector_category": "Low Opportunity",
+            "vector_reason": "Mostly positive feedback.",
+            "why_approach": "The business has a website, but it's not available or not scraped, indicating a potential issue with their online presence that needs to be addressed",
+            "why_not": "The business has a high rating and no negative reviews, suggesting a strong reputation, but the website issue presents an opportunity for improvement"
+        },
+        {
+            "name": "Posistrength Software Solution Pvt.Ltd.",
+            "phone": "+91 89832 05821",
+            "emails": [
+                "info@posistrength.com"
+            ],
+            "category": "Software company",
+            "address": "Workingdom,E-13/29, First Floor, Harsha Bhawan, Inner Circle, Block E, Connaught Place, New Delhi, Delhi 110001, India",
             "rating": 4.9,
-            "review_count": 1406,
-            "website": "http://www.itsolutioncp.com/",
-            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=I.%20T.%20Solutions&query_place_id=ChIJC3MN3zb9DDkR-JxtEG9cQg0",
+            "review_count": 43,
+            "website": "https://www.posistrength.com/",
+            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Posistrength%20Software%20Solution%20Pvt.Ltd.&query_place_id=ChIJExoZbgP9DDkRd2Q8vmEWFgc",
             "negative_reviews": [],
-            "website_flaws": [],
-            "website_improvements": [],
-            "signal_matches": [],
-            "scores": {
-                "llm_score": 85,
-                "website_gap": 50,
-                "signals_score": 0,
-                "final_score": 58
-            },
-            "priority": "MEDIUM",
-            "why_approach": "The business has a website, but it's not available or not scraped, indicating a potential issue with their online presence that needs to be addressed",
-            "why_not": "The business has a high rating and no negative reviews, suggesting a strong reputation, but the website issue still presents an opportunity for improvement"
-        },
-        {
-            "name": "Indian Technocrat Limited",
-            "phone": "+91 11 4953 1100",
-            "emails": [
-                "info@itl.net.in"
-            ],
-            "category": "Engineering consultant",
-            "address": "SG Shopping Mall, Community Center, 301-301A, Rohini Sector 9, Sector 9, Rohini, Delhi, 110085, India",
-            "rating": 4.5,
-            "review_count": 25,
-            "website": "http://www.itl.net.in/",
-            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indian%20Technocrat%20Limited&query_place_id=ChIJr2x2ttMdDTkRHAITAJ2ZJOI",
-            "negative_reviews": [],
-            "website_flaws": [],
-            "website_improvements": [],
-            "signal_matches": [],
-            "scores": {
-                "llm_score": 85,
-                "website_gap": 50,
-                "signals_score": 0,
-                "final_score": 58
-            },
-            "priority": "MEDIUM",
-            "why_approach": "The business has a website, but it's not available or not scraped, indicating a potential issue with their online presence that needs to be addressed",
-            "why_not": "The business has a high rating and no negative reviews, suggesting a strong reputation, but the website issue still presents an opportunity for improvement"
-        },
-        {
-            "name": "NIELIT Delhi Centre Inderlok, Janakpuri and Karkardooma",
-            "phone": "+91 11 2364 4849",
-            "emails": [],
-            "category": "Education center",
-            "address": "2nd Floor, Metro Station Inderlok, Parsvnath Metro Mall, Inderlok, New Delhi, Delhi, 110035, India",
-            "rating": 4.1,
-            "review_count": 474,
-            "website": "https://www.nielit.gov.in/delhi/index.php",
-            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=NIELIT%20Delhi%20Centre%20Inderlok%2C%20Janakpuri%20and%20Karkardooma&query_place_id=ChIJD6vqdF0CDTkRqhNG2321uHo",
-            "negative_reviews": [
-                {
-                    "author": "Sahil Rajput",
-                    "rating": 1,
-                    "text": "Worst centre ever i seen , teachers never come on time , total wastage of money and time , kindly think about for taking admission , explore another centre for course and learning."
-                }
-            ],
-            "website_flaws": [],
-            "website_improvements": [],
-            "signal_matches": [],
-            "scores": {
-                "llm_score": 72,
-                "website_gap": 50,
-                "signals_score": 0,
-                "final_score": 51
-            },
-            "priority": "MEDIUM",
-            "why_approach": "The business has a website, but it's not available or not scraped, and negative customer feedback indicates potential issues with their overall online presence and customer experience",
-            "why_not": "The business already has a website and a relatively high rating, which might indicate a lower need for website development services"
-        },
-        {
-            "name": "Indian Institute Of Technology Delhi (IIT Delhi)",
-            "phone": "+91 11 2659 7135",
-            "emails": [
-                "webadmincsc@iitd.ac.in"
-            ],
-            "category": "Institute of technology",
-            "address": "IIT Campus, Hauz Khas, New Delhi, Delhi 110016, India",
-            "rating": 4.6,
-            "review_count": 4770,
-            "website": "https://home.iitd.ac.in/",
-            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indian%20Institute%20Of%20Technology%20Delhi%20(IIT%20Delhi)&query_place_id=ChIJtV8FufYdDTkRwKMeayYLwYE",
-            "negative_reviews": [
-                {
-                    "author": "AKSHAT",
-                    "rating": 3,
-                    "text": "Agar aloo pedh pe ugta toh vo seb ke keemat pe bikta ya aloo ke?  Kash mai koi na hota"
-                }
-            ],
             "website_flaws": [],
             "website_improvements": [],
             "signal_matches": [],
@@ -118,30 +62,25 @@
                 "llm_score": 40,
                 "website_gap": 50,
                 "signals_score": 0,
-                "final_score": 35
+                "vector_score": 10,
+                "final_score": 32
             },
             "priority": "LOW",
+            "vector_category": "Low Opportunity",
+            "vector_reason": "Mostly positive feedback.",
             "why_approach": "their website is not available or not scraped, indicating potential issues with online presence",
-            "why_not": "the business has a strong overall rating and existing website, suggesting a lower need for services"
+            "why_not": "they already have a website and a high rating, suggesting a strong online presence"
         },
         {
-            "name": "Indraprastha Institute of Information Technology Delhi",
-            "phone": null,
-            "emails": [
-                "admin-placement@iiitd.ac.in",
-                "info@iiitd.ac.in",
-                "admin-btech@iiitd.ac.in",
-                "admin-phd@iiitd.ac.in",
-                "admin-mtech@iiitd.ac.in",
-                "admin-web@iiitd.ac.in",
-                "admin-academic@iiitd.ac.in"
-            ],
-            "category": "University",
-            "address": "Okhla Industrial Estate, Phase III, near Govind Puri Metro Station, Shyam Nagar, Okhla Industrial Estate, New Delhi, Delhi 110020, India",
-            "rating": 4.5,
-            "review_count": 1073,
-            "website": "http://www.iiitd.ac.in/",
-            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Indraprastha%20Institute%20of%20Information%20Technology%20Delhi&query_place_id=ChIJHazaZOXjDDkRVsV7DjQuWCw",
+            "name": "SLN Softwares - Software Development Company",
+            "phone": "+91 93158 98126",
+            "emails": [],
+            "category": "Software company",
+            "address": "UNIT NO.111 /FIRST FLOOR, APRA NORTH-EX PLAZA, PLOT NO.H-2,, NETAJI SUBHASH PLACE,, PITAM PURA, New Delhi, Delhi 110034, India",
+            "rating": 4.8,
+            "review_count": 33,
+            "website": "https://www.slnsoftwares.com/",
+            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SLN%20Softwares%20-%20Software%20Development%20Company&query_place_id=ChIJ_____88GDTkR71Y4pAWiTtA",
             "negative_reviews": [],
             "website_flaws": [],
             "website_improvements": [],
@@ -150,22 +89,25 @@
                 "llm_score": 40,
                 "website_gap": 50,
                 "signals_score": 0,
-                "final_score": 35
+                "vector_score": 10,
+                "final_score": 32
             },
             "priority": "LOW",
-            "why_approach": "their website has flaws, being not available or not scraped, which indicates potential for improvement",
-            "why_not": "they already have a website and a strong online presence with a high rating, indicating a low need for services"
+            "vector_category": "Low Opportunity",
+            "vector_reason": "Mostly positive feedback.",
+            "why_approach": "their website is not available or not scraped, indicating potential issues with their online presence",
+            "why_not": "they already have a website and a high rating, suggesting a strong online presence"
         },
         {
-            "name": "Department of Computer Science and Engineering",
-            "phone": "+91 11 2659 1291",
+            "name": "MLM Software Company in Delhi | MLM Software Development Company in Delhi | India - SOFTKWIT",
+            "phone": "+91 88829 25582",
             "emails": [],
-            "category": "Academic department",
-            "address": "G5WR+27P, Block IIA,Bharti Building, Khosla IT Building, Indian Institute of Technology Delhi, Hauz Khas, New Delhi, Delhi 110016, India",
-            "rating": 4.7,
-            "review_count": 59,
-            "website": "http://www.cse.iitd.ac.in/",
-            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Department%20of%20Computer%20Science%20and%20Engineering&query_place_id=ChIJa4_srvYdDTkR67Zwa9yGaA0",
+            "category": "Software company",
+            "address": "801B, Janakpuri District Center, Janakpuri, Delhi, 110058, India",
+            "rating": 5,
+            "review_count": 64,
+            "website": "https://softkwit.in/mlm-software.php",
+            "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MLM%20Software%20Company%20in%20Delhi%20%7C%20MLM%20Software%20Development%20Company%20in%20Delhi%20%7C%20India%20-%20SOFTKWIT&query_place_id=ChIJNXr6L0rlDDkR6RsxvAj3Rbw",
             "negative_reviews": [],
             "website_flaws": [],
             "website_improvements": [],
@@ -174,11 +116,14 @@
                 "llm_score": 39,
                 "website_gap": 50,
                 "signals_score": 0,
-                "final_score": 34
+                "vector_score": 10,
+                "final_score": 31
             },
             "priority": "LOW",
+            "vector_category": "Low Opportunity",
+            "vector_reason": "Mostly positive feedback.",
             "why_approach": "their website is not available or not scraped, indicating potential issues with online presence",
-            "why_not": "they already have a website and a high rating with no negative reviews, indicating a strong online presence"
+            "why_not": "they already have a website and a high rating with no negative reviews, suggesting a strong online presence"
         }
     ]
 }

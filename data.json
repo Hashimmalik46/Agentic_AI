@@ -1,109 +1,472 @@
 [
     {
-        "name": "EDUCADD LEARNING SOLUTIONS",
-        "phone": "+91 70514 90048",
-        "website": "http://www.educadd.co.in/",
-        "address": "Qureshi Manzil, opposite Wani Medicate, behind J And K Bank, Jawahar Nagar, Srinagar, Jammu and Kashmir 190008",
-        "rating": 4.9,
-        "review_count": 34,
-        "category": "Training center",
+        "name": "Almondz Software Development Company in Delhi",
+        "phone": "+91 88824 72824",
+        "website": "https://www.almondz.com/software-development.php",
+        "address": "F, Pocket D, Okhla Phase II, Okhla Industrial Estate, New Delhi, Delhi 110020, India",
+        "rating": 5,
+        "review_count": 1,
+        "category": "Software company",
         "opening_hours": [
             {
                 "day": "Monday",
-                "hours": "10 AM to 5 PM"
+                "hours": "9:30 AM to 5:30 AM"
             },
             {
                 "day": "Tuesday",
-                "hours": "10 AM to 5 PM"
+                "hours": "9:30 AM to 5:30 AM"
             },
             {
                 "day": "Wednesday",
-                "hours": "10 AM to 5 PM"
+                "hours": "9:30 AM to 5:30 AM"
             },
             {
                 "day": "Thursday",
-                "hours": "10 AM to 5 PM"
+                "hours": "9:30 AM to 5:30 AM"
             },
             {
                 "day": "Friday",
-                "hours": "10 AM to 5 PM"
+                "hours": "9:30 AM to 5:30 AM"
             },
             {
                 "day": "Saturday",
-                "hours": "10 AM to 5 PM"
+                "hours": "Closed"
             },
             {
                 "day": "Sunday",
                 "hours": "Closed"
             }
         ],
-        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=EDUCADD%20LEARNING%20SOLUTIONS&query_place_id=ChIJ679S7yOP4TgROGLY-HBdv50",
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Almondz%20Software%20Development%20Company%20in%20Delhi&query_place_id=ChIJNf6fwwvhDDkR1ySSXaNZwHE",
         "reviews": [
             {
-                "author": "Irtika farooq",
+                "author": "Ansh Pratap singh",
                 "rating": 5,
-                "text": "Great experience & learned a lot\nthanks to Shamiya ma'am for being  such a motivational and understanding  teacher ❣️🥹",
-                "date": "2024-02-14T17:15:14.974Z"
-            },
-            {
-                "author": "ishrat jan",
-                "rating": 5,
-                "text": null,
-                "date": "2023-09-28T05:17:11.825Z"
-            },
-            {
-                "author": "wajid Rather",
-                "rating": 5,
-                "text": "Great experience, special thanks to shamiya maam",
-                "date": "2023-09-21T05:59:01.688Z"
-            },
-            {
-                "author": "sohail saa",
-                "rating": 5,
-                "text": "Thanks thanks a lot  shamiya mam and the institution edu CADD learning centre jawahar nagar Srinagar .I recommend all students to join you will find learning above your expectations.\nThanking you\nMam shamiya Mam",
-                "date": "2023-09-21T05:05:22.851Z"
-            },
-            {
-                "author": "Khaja Saleem",
-                "rating": 5,
-                "text": "Great experience & We learned a lot\nSpecial thanks to Shamiya ma'am",
-                "date": "2023-09-21T04:55:33.891Z"
-            },
-            {
-                "author": "Nailah 39",
-                "rating": 5,
-                "text": "I was amazed with the faculty the teacher was too good 👍",
-                "date": "2023-08-16T07:58:11.644Z"
-            },
-            {
-                "author": "khubiya",
-                "rating": 5,
-                "text": "Best autocad training institute",
-                "date": "2023-08-16T07:57:54.282Z"
-            },
-            {
-                "author": "unknown",
-                "rating": 5,
-                "text": "The AutoCAD training program exceeded my expectations with its comprehensive curriculum  and hands on project, greatly enhancing my design skills.\nThe training was well structured and paced perfectly making it easy to grasp concepts even for someone new to CAD software.\nThanks to EduCADD  srinagar  skilled instructors who made the journey enjoyable and insightful.",
-                "date": "2023-08-11T09:47:42.782Z"
-            },
-            {
-                "author": "sabreena langoo",
-                "rating": 5,
-                "text": null,
-                "date": "2023-06-08T10:32:32.932Z"
-            },
-            {
-                "author": "Syed Sadiq",
-                "rating": 5,
-                "text": null,
-                "date": "2023-06-07T09:34:03.544Z"
+                "text": "The Almondz company developed an application for me, and the almondz team provided me with a very good and friendly app. Almondz is truly the best software development company in Delhi, India.",
+                "date": "2024-09-25T06:26:11.996Z"
             }
         ],
         "emails": [
-            "franchise@educadd.net",
-            "support@educadd.net",
-            "contact@educadd.net"
+            "info@almondz.com",
+            "rashmi.punia@almondz.com",
+            "almondz@linkedin.com"
         ]
+    },
+    {
+        "name": "Posistrength Software Solution Pvt.Ltd.",
+        "phone": "+91 89832 05821",
+        "website": "https://www.posistrength.com/",
+        "address": "Workingdom,E-13/29, First Floor, Harsha Bhawan, Inner Circle, Block E, Connaught Place, New Delhi, Delhi 110001, India",
+        "rating": 4.9,
+        "review_count": 43,
+        "category": "Software company",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "9 AM to 5 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "9 AM to 5 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "9 AM to 5 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "9 AM to 5 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "9 AM to 5 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "9 AM to 5 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "9 AM to 5 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Posistrength%20Software%20Solution%20Pvt.Ltd.&query_place_id=ChIJExoZbgP9DDkRd2Q8vmEWFgc",
+        "reviews": [
+            {
+                "author": "Akash Tomar",
+                "rating": 5,
+                "text": "Posistrength software solution Pvt Ltd is a reliable and professional IT company. They deliver quality solutions on time, communicate clearly, and offer excellent support. Highly recommended for businesses seeking efficient IT services.",
+                "date": "2025-05-26T12:30:48.087Z"
+            },
+            {
+                "author": "Dharvendra Kachhi",
+                "rating": 5,
+                "text": null,
+                "date": "2025-05-26T05:23:00.017Z"
+            },
+            {
+                "author": "Justin Smith",
+                "rating": 5,
+                "text": "Very nice and affordable company. I have been working with posistrength since 2015 and they always help me whenever needed day and night. Hope to continue to use their services. Thanks Arun ji and team.",
+                "date": "2025-05-25T22:33:02.538Z"
+            },
+            {
+                "author": "Kanchan Krupale",
+                "rating": 5,
+                "text": null,
+                "date": "2025-01-18T14:45:42.641Z"
+            },
+            {
+                "author": "ROHIT SHARMA",
+                "rating": 5,
+                "text": null,
+                "date": "2024-05-14T18:15:06.316Z"
+            },
+            {
+                "author": "DHARMENDRA Diwakar",
+                "rating": 5,
+                "text": null,
+                "date": "2023-04-07T12:15:05.220Z"
+            },
+            {
+                "author": "Anzar Ali",
+                "rating": 5,
+                "text": null,
+                "date": "2022-11-30T17:52:25.518Z"
+            },
+            {
+                "author": "Rawal Foods",
+                "rating": 5,
+                "text": null,
+                "date": "2022-10-14T14:00:15.437Z"
+            },
+            {
+                "author": "Vidushi",
+                "rating": 5,
+                "text": null,
+                "date": "2022-07-02T06:34:03.874Z"
+            },
+            {
+                "author": "girish PANDEY",
+                "rating": 5,
+                "text": null,
+                "date": "2022-06-20T00:46:52.847Z"
+            }
+        ],
+        "emails": [
+            "info@posistrength.com"
+        ]
+    },
+    {
+        "name": "Binarysoft Technologies (We bring IT)",
+        "phone": "+91 92054 71661",
+        "website": "http://www.binarysoft.com/",
+        "address": "1st Floor, 1626/33, Block 27F, Naiwala, Karol Bagh, Delhi, 110005, India",
+        "rating": 5,
+        "review_count": 214,
+        "category": "Software company",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "8 AM to 7:30 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "8 AM to 7:30 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "8 AM to 7:30 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "8 AM to 7:30 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "8 AM to 7:30 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "8 AM to 7:30 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "8 AM to 7:30 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Binarysoft%20Technologies%20(We%20bring%20IT)&query_place_id=ChIJPR796sD9DDkRLo5M9V9l1nA",
+        "reviews": [
+            {
+                "author": "Vincent Chacko",
+                "rating": 5,
+                "text": "We trust Binarysoft for our Tally works. They are always available and give the right solution. Even late hours sometimes they help. That’s rare these days.",
+                "date": "2026-03-09T10:18:23.913Z"
+            },
+            {
+                "author": "Nature's Club",
+                "rating": 5,
+                "text": "We trust Binarysoft for our Tally works. They are always available and give the right solution. Even late hours sometimes they help. That’s rare these days.",
+                "date": "2026-02-26T09:30:11.512Z"
+            },
+            {
+                "author": "Sarswati Vidhya Mandir Bhinyad",
+                "rating": 5,
+                "text": "very good",
+                "date": "2026-02-25T04:47:55.026Z"
+            },
+            {
+                "author": "Rajani Garlapadu",
+                "rating": 5,
+                "text": "Binarysoft really helped us with Tally. Many times we got stuck and they fixed it fast. Also their team always responds nicely, not like others. N.K. SagarGood",
+                "date": "2026-02-17T07:17:29.082Z"
+            },
+            {
+                "author": "Tripti Verma",
+                "rating": 2,
+                "text": null,
+                "date": "2026-02-02T15:15:13.982Z"
+            },
+            {
+                "author": "Rajani Thottempudi",
+                "rating": 5,
+                "text": "I am purchased Tally Prime Gold Edition multi user from this website. they will get back service with in minutes.thanking you",
+                "date": "2025-12-15T08:59:57.438Z"
+            },
+            {
+                "author": "Manish Kumar Tiwari",
+                "rating": 5,
+                "text": "Support is very good from Binarysoft. They know their work well specially in Tally. I’m using Tally from long time but never got such proper guidance before.",
+                "date": "2025-12-01T08:33:05.522Z"
+            },
+            {
+                "author": "Genetics account department Cryobank",
+                "rating": 5,
+                "text": "Thank you so much NK Sagar Sir , Sagar Sir is very Helpful & Kind",
+                "date": "2025-11-28T07:44:49.725Z"
+            },
+            {
+                "author": "rahul sharma",
+                "rating": 5,
+                "text": "I was confused with few things in Tally and Binarysoft team cleared all my doubts. They don't rush and give time to explain. That’s what I liked most.",
+                "date": "2025-11-19T10:10:41.199Z"
+            },
+            {
+                "author": "Sonia Gautam",
+                "rating": 5,
+                "text": "The service is very good they are really very supportive and their team have a very good knowledge in tally prime must recommended also in tally erp as well.",
+                "date": "2025-09-25T12:05:31.872Z"
+            }
+        ],
+        "emails": [
+            "info@binaysoft.com",
+            "info@binarysoft.com"
+        ]
+    },
+    {
+        "name": "SLN Softwares - Software Development Company",
+        "phone": "+91 93158 98126",
+        "website": "https://www.slnsoftwares.com/",
+        "address": "UNIT NO.111 /FIRST FLOOR, APRA NORTH-EX PLAZA, PLOT NO.H-2,, NETAJI SUBHASH PLACE,, PITAM PURA, New Delhi, Delhi 110034, India",
+        "rating": 4.8,
+        "review_count": 33,
+        "category": "Software company",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "10 AM to 7 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "10 AM to 7 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "10 AM to 7 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "10 AM to 7 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "10 AM to 7 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "Closed"
+            },
+            {
+                "day": "Sunday",
+                "hours": "Closed"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=SLN%20Softwares%20-%20Software%20Development%20Company&query_place_id=ChIJ_____88GDTkR71Y4pAWiTtA",
+        "reviews": [
+            {
+                "author": "Misbah uddeen",
+                "rating": 5,
+                "text": "One of the best things about the company is the opportunity to learn new technologies and improve technical skills. Regular project exposure helps employees gain practical experience in software development and problem-solving.",
+                "date": "2026-03-16T14:18:05.986Z"
+            },
+            {
+                "author": "Sumit Garg",
+                "rating": 5,
+                "text": "Highly recommended for any kind of Software Development work (CRM awa Website). Mr. Vivek is thorough professional in his dealings, and his team is super dynamic and talented. I am writing this review after doing lakhs of business with him. Recommended any day of the week.",
+                "date": "2025-11-21T08:31:09.968Z"
+            },
+            {
+                "author": "Amit Kumar",
+                "rating": 5,
+                "text": null,
+                "date": "2025-04-30T09:59:14.545Z"
+            },
+            {
+                "author": "hemant gangwal",
+                "rating": 5,
+                "text": "Good teem",
+                "date": "2025-04-04T10:00:08.913Z"
+            },
+            {
+                "author": "Powermat India",
+                "rating": 5,
+                "text": "Good job & service support.",
+                "date": "2024-12-17T06:41:34.619Z"
+            },
+            {
+                "author": "DELHI INTERNATIONAL ETHNIC FOLKLORRE FESTIVAL",
+                "rating": 5,
+                "text": "SLN Software is an excellent web designer company who are really patient listening to our requirements and makes it easier to work.  They won’t restrict or limit us for making any changes in the design. I must thank to their knowledge and determination who are extremely well in designing two of my websites. Our websites looks great and functions really smooth.\n\nI should thank Mr.Vivek kumar and of course the designer for everything.",
+                "date": "2024-11-29T07:01:51.498Z"
+            },
+            {
+                "author": "parveen garg",
+                "rating": 5,
+                "text": "Thank you so much team SLN Softwares for serving with such a great service. You have given my business a great online presence through your website designing services and also I am thankful of your social media services. The services are still going on with more requirements and having very good experience.",
+                "date": "2024-05-20T09:27:50.542Z"
+            },
+            {
+                "author": "rachappa hulsoor",
+                "rating": 5,
+                "text": "We had very nice experience with SLN software. They  created our school website according to ours requirements. The team is very good and supportive. The team has excellent technical skills. Overall we like their services.",
+                "date": "2024-04-05T09:16:24.609Z"
+            },
+            {
+                "author": "daksh kapoor",
+                "rating": 5,
+                "text": "I have visited 2 times for some web designing and software devlopment related work I really have good experience to work with them",
+                "date": "2023-07-10T12:16:54.459Z"
+            },
+            {
+                "author": "Sandeep Kumar",
+                "rating": 5,
+                "text": null,
+                "date": "2023-06-27T06:11:19.526Z"
+            }
+        ],
+        "emails": []
+    },
+    {
+        "name": "MLM Software Company in Delhi | MLM Software Development Company in Delhi | India - SOFTKWIT",
+        "phone": "+91 88829 25582",
+        "website": "https://softkwit.in/mlm-software.php",
+        "address": "801B, Janakpuri District Center, Janakpuri, Delhi, 110058, India",
+        "rating": 5,
+        "review_count": 64,
+        "category": "Software company",
+        "opening_hours": [
+            {
+                "day": "Monday",
+                "hours": "7 AM to 9:30 PM"
+            },
+            {
+                "day": "Tuesday",
+                "hours": "7 AM to 9:30 PM"
+            },
+            {
+                "day": "Wednesday",
+                "hours": "7 AM to 9:30 PM"
+            },
+            {
+                "day": "Thursday",
+                "hours": "7 AM to 9:30 PM"
+            },
+            {
+                "day": "Friday",
+                "hours": "7 AM to 9:30 PM"
+            },
+            {
+                "day": "Saturday",
+                "hours": "7 AM to 9:30 PM"
+            },
+            {
+                "day": "Sunday",
+                "hours": "7 AM to 9:30 PM"
+            }
+        ],
+        "google_maps_url": "https://www.google.com/maps/search/?api=1&query=MLM%20Software%20Company%20in%20Delhi%20%7C%20MLM%20Software%20Development%20Company%20in%20Delhi%20%7C%20India%20-%20SOFTKWIT&query_place_id=ChIJNXr6L0rlDDkR6RsxvAj3Rbw",
+        "reviews": [
+            {
+                "author": "Ramswaroop Naroliya",
+                "rating": 5,
+                "text": null,
+                "date": "2026-03-12T16:58:44.565Z"
+            },
+            {
+                "author": "SATISH SINGH",
+                "rating": 5,
+                "text": "Very good service provider verry eco frandly",
+                "date": "2026-01-12T16:36:14.603Z"
+            },
+            {
+                "author": "Vikram Raj",
+                "rating": 5,
+                "text": "Amazing software service here\nValueble things here",
+                "date": "2026-01-12T14:18:49.095Z"
+            },
+            {
+                "author": "Yogendra Singh",
+                "rating": 5,
+                "text": "Very good Service and Excellent Coding & Design are Superb! And Especially Ashish bhai Behaviour Is very Good a very Humble Person",
+                "date": "2026-01-12T14:17:24.067Z"
+            },
+            {
+                "author": "Nav Nayak",
+                "rating": 5,
+                "text": "Super",
+                "date": "2026-01-12T14:16:47.406Z"
+            },
+            {
+                "author": "BNB Cash",
+                "rating": 5,
+                "text": "softkwit is 100% genuine and very good service provider in india. best blockchain and crypto based mlm software company in delhi.",
+                "date": "2025-11-26T10:09:07.532Z"
+            },
+            {
+                "author": "CIP",
+                "rating": 5,
+                "text": "This is not really sufficient to say softkwit is best mlm software company that develop best crypto and blockchain software and provide very good service to software industry",
+                "date": "2025-09-04T11:46:58.238Z"
+            },
+            {
+                "author": "Abhishek Bhardwaj",
+                "rating": 5,
+                "text": "Best softwares provided by softkwit solutions it is the best software and website development company in Delhi",
+                "date": "2025-07-21T10:46:06.727Z"
+            },
+            {
+                "author": "Vineet Chauhan",
+                "rating": 5,
+                "text": "I had an amazing experience with MLM software Their team was professional, responsive, and delivered a stunning website that exceeded my expectations. The design was modern, user-friendly, and perfectly captured my brand's essence.\n\nTheir communication was top-notch, and they ensured I was involved throughout the process. The website's performance has been outstanding, and I've seen a significant increase in engagement and conversions.\n\nI highly recommend MLM software Company or their expertise, creativity, and dedication. Five stars isn't enough – I'd give them ten stars if I could! ⭐️⭐️⭐️⭐️⭐️\"\n\n*Feel free to customize it as needed! 😊*",
+                "date": "2025-06-10T14:28:13.265Z"
+            },
+            {
+                "author": "Kunal Tomar",
+                "rating": 5,
+                "text": "No doubt\nSoftkwit is best software company in Delhi\nThey provides me good usdt crypto mlm software",
+                "date": "2025-06-10T14:12:44.726Z"
+            }
+        ],
+        "emails": []
     }
 ]

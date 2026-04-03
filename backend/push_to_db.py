@@ -11,7 +11,7 @@ Usage:
 
 import json
 import argparse
-from db.insert import save_pipeline_output
+from backend.db.insert import save_pipeline_output
 
 
 def main():

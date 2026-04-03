@@ -4,7 +4,7 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from db.insert import save_leads
+from backend.db.insert import save_leads
 
 def test_supabase_insert():
     print("🚀 Starting test insert...")

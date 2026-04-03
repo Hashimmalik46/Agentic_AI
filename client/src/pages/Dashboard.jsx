@@ -55,7 +55,12 @@ function LeadCard({ lead }) {
             <span className={`text-xs px-2 py-0.5 rounded-lg border ${pc.bg} ${pc.text}`}>{priority}</span>
             {scores.final_score != null && (
               <span className="text-xs text-[#699cff] bg-[#699cff]/10 border border-[#699cff]/20 px-2 py-0.5 rounded-lg">
-                Score: {scores.final_score}
+                Final: {scores.final_score}
+              </span>
+            )}
+            {scores.vector_score != null && (
+              <span className="text-xs text-violet-300 bg-violet-500/10 border border-violet-500/20 px-2 py-0.5 rounded-lg">
+                Vector: {scores.vector_score}
               </span>
             )}
           </div>
@@ -113,11 +118,12 @@ function LeadCard({ lead }) {
       {expanded && (
         <div className="mt-4 pt-4 border-t border-[#40485d]/25 space-y-3 text-sm">
           {scores.final_score != null && (
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
               {[
                 { label: 'LLM Score',    val: scores.llm_score },
                 { label: 'Website Gap',  val: scores.website_gap },
                 { label: 'Signals',      val: scores.signals_score },
+                { label: 'Vector Score', val: scores.vector_score },
                 { label: 'Final Score',  val: scores.final_score },
               ].map(({ label, val }) => (
                 <div key={label} className="bg-[#091328]/60 rounded-xl p-3 border border-[#40485d]/20 text-center">
@@ -137,6 +143,13 @@ function LeadCard({ lead }) {
             <div className="bg-yellow-500/5 border border-yellow-500/20 rounded-xl p-3">
               <div className="text-xs text-yellow-400 font-medium mb-1">Potential concern</div>
               <div className="text-[#dee5ff]/80">{lead.why_not}</div>
+            </div>
+          )}
+          {lead.vector_category && (
+            <div className="bg-violet-500/5 border border-violet-500/20 rounded-xl p-3">
+              <div className="text-xs text-violet-300 font-medium mb-1">Vector-based Opportunity</div>
+              <div className="text-[#dee5ff]/80">{lead.vector_category}</div>
+              {lead.vector_reason && <div className="text-xs text-[#a3aac4] mt-1">{lead.vector_reason}</div>}
             </div>
           )}
           {lead.signal_matches?.length > 0 && (
@@ -200,10 +213,13 @@ function mapDbRow(row) {
     website_flaws:        row.website_flaws  || [],
     website_improvements: row.website_improvements || [],
     negative_reviews:     row.negative_reviews || [],
+    vector_category:      row.vector_category,
+    vector_reason:        row.vector_reason,
     scores: {
       llm_score:     row.llm_score,
       website_gap:   row.website_gap,
       signals_score: row.signals_score,
+      vector_score:  row.vector_score,
       final_score:   row.final_score,
     },
   };
@@ -222,19 +238,49 @@ export default function Dashboard() {
   const [emailSending, setEmailSending] = useState(false);
   const [emailResult, setEmailResult] = useState(null);
 
-  // DB state
-  const [dbRuns,    setDbRuns]    = useState([]);
-  const [activeRun, setActiveRun] = useState(null);   // full run row
-  const [dbLeads,   setDbLeads]   = useState([]);
-  const [loadingLeads, setLoadingLeads] = useState(false);
-
   // Fresh run passed in via navigate (may or may not exist)
   const { result, profileData } = location.state || {};
+  const freshLeads = Array.isArray(result?.leads) ? result.leads : [];
   const freshRunId = result?.run_id ?? null;
+  const fallbackRun = result?.meta
+    ? {
+        id: freshRunId || 'local-run',
+        niche: result.meta.niche,
+        service: result.meta.service,
+        location: result.meta.parsed?.location,
+        high: result.meta.high,
+        medium: result.meta.medium,
+        low: result.meta.low,
+      }
+    : null;
+
+  // DB state
+  const [dbRuns,    setDbRuns]    = useState([]);
+  const [activeRun, setActiveRun] = useState(fallbackRun);
+  const [dbLeads,   setDbLeads]   = useState(freshLeads);
+  const [loadingLeads, setLoadingLeads] = useState(false);
+
+  const fetchLeadsForRun = useCallback(async (run) => {
+    setLoadingLeads(true);
+    setActiveRun(run);
+    const { data } = await supabase
+      .from('leads')
+      .select('*')
+      .eq('run_id', run.id)
+      .order('final_score', { ascending: false });
+    setDbLeads((data || []).map(mapDbRow));
+    setLoadingLeads(false);
+  }, []);
 
   // ── Load run history ───────────────────────────────────────────────────────
   useEffect(() => {
     if (!user) return;
+
+    if (freshLeads.length > 0) {
+      setDbLeads(freshLeads);
+      setActiveRun(prev => prev || fallbackRun);
+    }
+
     supabase
       .from('runs')
       .select('*')
@@ -249,25 +295,23 @@ export default function Dashboard() {
           const freshRow = runs.find(r => r.id === freshRunId);
           if (freshRow) {
             setActiveRun(freshRow);
-            setDbLeads(result.leads);   // already have leads from pipeline response
+            if (freshLeads.length > 0) {
+              setDbLeads(freshLeads);
+            } else {
+              fetchLeadsForRun(freshRow);
+            }
             return;
           }
         }
+
+        if (freshLeads.length > 0) {
+          setActiveRun(prev => prev || fallbackRun);
+          return;
+        }
+
         if (runs.length > 0) fetchLeadsForRun(runs[0]);
       });
-  }, [user]);
-
-  const fetchLeadsForRun = useCallback(async (run) => {
-    setLoadingLeads(true);
-    setActiveRun(run);
-    const { data } = await supabase
-      .from('leads')
-      .select('*')
-      .eq('run_id', run.id)
-      .order('final_score', { ascending: false });
-    setDbLeads((data || []).map(mapDbRow));
-    setLoadingLeads(false);
-  }, []);
+  }, [user, freshRunId, freshLeads, fallbackRun, fetchLeadsForRun]);
 
   const handleSelectRun = (run) => {
     if (activeRun?.id === run.id) return;

@@ -12,8 +12,8 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-from website_scraper import scrape_site_advanced
-from evaluator import evaluate_website_data
+from backend.website_scraper import scrape_site_advanced
+from backend.evaluator import evaluate_website_data
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 TIMEOUT = 7
